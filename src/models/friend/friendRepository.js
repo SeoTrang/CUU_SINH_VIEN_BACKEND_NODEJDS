@@ -1,4 +1,7 @@
 const sequelize = require("../../db/configDB");
+const NotificationChangesRepository = require("../notificationChanges/notificationChangesRepository");
+const NotificationObjectsRepository = require("../notificationObjects/notificationObjectsRepository");
+const NotificationsRepository = require("../notifications/notificationsRepository");
 const Friend = require("./friend");
 
 const friendRepository = {
@@ -26,6 +29,21 @@ const friendRepository = {
         } catch (error) {
             console.error('Lỗi khi lấy danh sách bạn bè:', error);
             return { error: error };
+        }
+    },
+    checkExists: async (user_send_request_id,user_receive_id)=> {
+        try {
+            let result = await sequelize.query(`
+            SELECT *
+            FROM friends AS f
+            WHERE (f.user_id = ${user_send_request_id} and f.friend_id = ${user_receive_id}) or (f.user_id = ${user_receive_id} and f.friend_id = ${user_send_request_id});
+            `, { type: sequelize.QueryTypes.SELECT });
+            // console.log(result);
+            if(result.length > 0) return true;
+            return false;
+        } catch (error) {
+            console.error( error);
+            return { error: error.message };
         }
     },
     getSentRequests: async (id) => {
@@ -114,8 +132,114 @@ const friendRepository = {
             console.log(error);
             return {error: error.message}
         }
+    },
+
+    SentRequests: async (user_send_request_id,user_receive_id) => {
+        try {
+            const friend = {
+                user_id: user_send_request_id,
+                friend_id: user_receive_id
+            }
+            const result = await Friend.create(friend);
+            //-------------  inseart notifications ------------------------------
+            //1. table notification_objects
+            const data_notification_objects = {
+                entity_type_id: 5,
+                entity_id: null,
+                url: null
+            }
+
+            const notification_objects = await NotificationObjectsRepository.create(data_notification_objects);
+            // 2. table notification_changes
+            const data_notification_changes = {
+                notification_object_id: notification_objects.success.id,
+                actor_id: user_send_request_id,
+                actor_affected_id: null,
+                entity_affected_type: null
+            }
+
+            NotificationChangesRepository.create(data_notification_changes);
+
+            // 3. table notifications
+            NotificationsRepository.create({notification_object_id:notification_objects.success.id,receiver_id: user_receive_id})
+            
+            
+            if(result.friendship_id) return {success: result}
+        } catch (error) {
+            console.log(error);
+            return {error: error.message}
+        }
+    },
+
+    updateStatusFriend: async (friendShip_id,status,user_id,friend_id) => {
+        try {
+            const result = await Friend.update({
+                status: status
+            },
+            {
+                where: {
+                    friendShip_id: friendShip_id
+                }
+            })
+
+            if(status == 'accepted'){
+            //-------------  inseart notifications ------------------------------
+            //1. table notification_objects
+            const data_notification_objects = {
+                entity_type_id: 6,
+                entity_id: null,
+                url: null
+            }
+
+            const notification_objects = await NotificationObjectsRepository.create(data_notification_objects);
+            // 2. table notification_changes
+            const data_notification_changes = {
+                notification_object_id: notification_objects.success.id,
+                actor_id: user_id,
+                actor_affected_id: null,
+                entity_affected_type: null
+            }
+
+            NotificationChangesRepository.create(data_notification_changes);
+
+            // 3. table notifications
+            NotificationsRepository.create({notification_object_id:notification_objects.success.id,receiver_id: friend_id})
+            
+            }
+
+            return {success: result}
+        } catch (error) {
+            console.log(error);
+            return {error: error.message}
+        }
+    },
+    getFriendShip: async (user_id,friend_id)=> {
+        try {
+            let result = await sequelize.query(`
+            SELECT *
+            FROM friends AS f
+            WHERE (f.user_id = ${user_id} and f.friend_id = ${friend_id}) or (f.user_id = ${friend_id} and f.friend_id = ${user_id});
+            `, { type: sequelize.QueryTypes.SELECT });
+            console.log(result);
+            if(result.length > 0) return {success: result};
+        } catch (error) {
+            console.log(error);
+            return {error: error.message}
+        }
+    },
+    deleteFriendShip: async(friendship_id)=> {
+        try {
+            const resultdelete = await Friend.destroy({
+                where: {
+                    friendship_id: friendship_id
+                }
+            })
+            if(resultdelete) return {success: resultdelete}
+        } catch (error) {
+            console.log(error);
+            return {error: error.message}
+        }
     }
-    
 }
 
 module.exports = friendRepository;

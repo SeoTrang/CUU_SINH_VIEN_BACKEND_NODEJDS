@@ -137,13 +137,12 @@ const conversationController = {
             let user_id = req.body.decode.id;
             let result = await conversationService.getAllConversationFromUser(user_id);
             // console.log(result);
-            
+        
             let data = result.success;
             for (let index = 0; index < data.length; index++) {
                 
                     
                     let listUser = await conversationService.getUserFromConversationID(data[index].conversation_id);
-                    
 
                     let latestMessage = await messageService.getLatestMessageByConversationId(data[index].conversation_id);
 

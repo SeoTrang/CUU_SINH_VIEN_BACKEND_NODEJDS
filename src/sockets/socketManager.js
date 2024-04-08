@@ -46,7 +46,7 @@ const socketManager = (io) => {
       });
 
       socket.on("room-message",async (data)=>{
-        // console.log(data);
+        console.log(data);
         const { room, message, user, type, userIds } = data;
         // insert message into database
         // console.log(user);

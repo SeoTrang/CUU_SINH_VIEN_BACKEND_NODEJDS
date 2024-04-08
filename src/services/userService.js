@@ -16,6 +16,17 @@ const userService = {
 
     getAllUsers: async() => {
         return await userRepository.getAllUsers();
+    },
+
+    update: async(data,user_id) => {
+        return await userRepository.update(data,user_id);
+    },
+
+    getImgLibrary: async(items_per_page,skip_items,user_id) => {
+        return await userRepository.getImgLibrary(items_per_page,skip_items,user_id);
+    },
+    getMyImgLibrary: async(items_per_page,skip_items,user_id) => {
+        return await userRepository.getMyImgLibrary(items_per_page,skip_items,user_id);
     }
 
     

@@ -1,3 +1,4 @@
+
 const postContentService = require("../services/postContentService");
 const postReactionService = require("../services/postReactionService");
 const postService = require("../services/postService");
@@ -6,6 +7,7 @@ const postTagService = require("../services/postTagService");
 const postController = {
     create: async (req,res) => {
         try {
+            
             const {caption, user_tag_id, content} = req.body.data;
             const user_id = req.body.decode.id;
             
@@ -44,11 +46,32 @@ const postController = {
             return res.status(500).json({error: error.message});
         }
     },
+    getFeed2: async (req,res) => {
+        try {
+            let user_id = req.body.decode.id;
+            let result = await postService.getFeed2(user_id);
+            res.json(result);
+        } catch (error) {
+            console.log(error);
+            return res.status(500).json({error: error.message});
+        }
+    },
     getPost: async (req,res) => {
         try {
             let post_id = req.params.post_id;
 
             let result = await postService.getPost(post_id);
+            res.json(result);
+        } catch (error) {
+            console.log(error);
+            return res.status(500).json({error: error.message});
+        }
+    },
+    getPostByUser: async (req,res) => {
+        try {
+            const user_id = req.params.user_id;
+
+            let result = await postService.getPostByUser(user_id);
             res.json(result);
         } catch (error) {
             console.log(error);
@@ -96,6 +119,7 @@ const postController = {
                 user_id: user_id
             }
             let saveReaction = await postReactionService.create(data);
+            
             if(saveReaction.success) return res.status(200).json('success');
             throw new Error(saveReaction.error)
         } catch (error) {
@@ -104,6 +128,19 @@ const postController = {
         }
     },
 
+    update: async (req,res) => {
+        try {
+            const post_id = req.params.post_id;
+            if(!post_id) return res.status(400).json('post_id could not be empty');
+
+            const data = req.body.data;
+
+            const updated = await postService.update(post_id,data);
+        } catch (error) {
+            console.log(error);
+            return res.status(500).json(error);
+        }
+    },
 
     delete: async(req,res) => {
         try {
@@ -115,7 +152,10 @@ const postController = {
             console.log(error);
             return res.status(500).json({error: error.message});
         }
-    }
+    },
+
+
+    
 
 
 }

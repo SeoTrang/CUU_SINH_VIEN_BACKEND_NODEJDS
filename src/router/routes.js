@@ -2,8 +2,10 @@ const router = require('express').Router();
 
 const addressController = require('../controllers/addressController');
 const commentController = require('../controllers/commentController');
+const commonController = require('../controllers/commonController');
 const conversationController = require('../controllers/conversationController');
 const messageController = require('../controllers/messageController');
+const Notificationcontroller = require('../controllers/notificationController');
 const postController = require('../controllers/postController');
 const schoolController = require('../controllers/schoolController');
 const userController = require('../controllers/userController');
@@ -32,6 +34,12 @@ router.get('/friend/get-sent-request',checkLogin,userController.getSentRequests)
 
 // Get a list of friends who have sent you requests
 router.get('/friend/get-received-request',checkLogin, userController.getReceivedRequests);
+
+
+//send a request to a friend
+router.post('/friend/send-request/:user_id',checkLogin,userController.SentRequests);
+router.put('/friend/update',checkLogin,userController.updateStatusFriend);
+router.delete('/friend/delete/:friend_id',checkLogin,userController.deleteFriendShip);
 
 
 // -----------------------------------profile
@@ -79,11 +87,15 @@ router.delete('/post/:id',postController.delete);
 
 // get the list of latest post
 router.get('/post/feed', checkLogin, postController.getFeed);
+router.get('/post/feed2', checkLogin, postController.getFeed2);
+
 // ve viet route nay vao swagger
 router.get('/post/get-post/:post_id', checkLogin, postController.getPost);
+router.get('/post/get-post-by-user/:user_id', checkLogin, postController.getPostByUser);
 router.get('/post/reacion-by-post/:post_id', checkLogin, postController.getReactionByPost);
 router.post('/post/reaction', checkLogin, postController.reactionPost);
 router.delete('/post/delete-reaction/:post_id', checkLogin, postController.reactionDelete);
+router.put('/post/:post_id', checkLogin, postController.update);
 
 // ----------------------------------------comment --------------------------------
 router.post('/comment/create',checkLogin,commentController.create);
@@ -92,7 +104,23 @@ router.get('/comment/get-by-post/:post_id',checkLogin,commentController.getByPos
 
 // --------------------------------------- user ----------------------------
 router.get('/user/all-users',checkLogin,userController.getAllUsers)
+router.get('/user/:user_id',checkLogin,userController.getUserByID)
+router.put('/user',checkLogin,userController.update)
 
+router.get('/user/get-img-library/:user_id',checkLogin, userController.getImgLibrary)
+
+
+// -------------------------------------- notifications --------------------------------
+router.post('/notifications/notification-entity-types',checkLogin,Notificationcontroller.createNotificationEntityTypes)
+router.get('/notifications',checkLogin,Notificationcontroller.getAllNotificationByUserId)
+router.delete('/notifications/:notification_id',checkLogin,Notificationcontroller.deleteNotification)
+router.put('/notifications/update/:notification_id',checkLogin,Notificationcontroller.updateNotification)
+router.put('/notifications/update',checkLogin,Notificationcontroller.updateAllNotificationByUserID)
+
+// ---------------------------------------get user post profile conversation----------------------------
+
+
+router.get('/get-all-data',checkLogin,commonController.getAllData);
 
 
 module.exports = router;

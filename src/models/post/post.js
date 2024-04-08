@@ -12,6 +12,11 @@ const Post = sequelize.define('posts',{
     caption:{
         type: DataTypes.TEXT,
         allowNull: true
+    },
+
+    is_public:{
+        type: DataTypes.BOOLEAN,
+        defaultValue: true
     }
 })
 

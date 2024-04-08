@@ -15,6 +15,7 @@ const sequelize = new Sequelize(
 
 (async () => {
   try {
+    console.log(process.env.DB_NAME);
     await sequelize.authenticate();
     // await syncDatabase();
     console.log('Kết nối thành công!');
