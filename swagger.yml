@@ -1,0 +1,2889 @@
+openapi: 3.0.3
+info:
+  title: Swagger social network - OpenAPI 3.0
+  description: |
+
+  termsOfService: http://swagger.io/terms/
+  contact:
+    email: seotrangbh24@gmail.com
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.0.11
+externalDocs:
+  description: Find out more about Swagger
+  url: http://swagger.io
+servers:
+  - url: https://trang-dev.ictu.vn:10093/api
+securityDefinitions:
+  JWT:
+    type: apiKey
+    name: Authorization
+    in: header
+paths:
+  /auth/register:
+    post:
+      tags:
+        - Auth
+      summary: "Register account"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                data:
+                  "user_name": "Trang1"
+                  "phone": "0386640397"
+                  "pass": "trang789"
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              examples:
+                success:
+                  value: "success"
+        "400":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "error when insert to database"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "server error"
+  /auth/login:
+    post:
+      tags:
+        - Auth
+      summary: "Login with account"
+      
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                data:
+                  "phone": "0386640397"
+                  "pass": "trang789"
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              example:
+                refreshToken: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzA1Mjg1NTE2LCJleHAiOjE3MDUyODkxMTZ9.1FEGKlxtkmEhVWPhjlxFQtOyikWGE_7xNIxN1MYolDk"
+                accessToken: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiYWRtaW4iOjAsImlhdCI6MTcwNTI4NTUxNiwiZXhwIjoxNzA1Mjg3MzE2fQ.3Q7X06-Z3YU3UHM-Qq0K4cWCGO73p9etwe-SqBmSXhk"
+        "404":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "not found"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "server error"
+
+  /file/img:
+    post:
+      tags:
+        - File
+      summary: "Upload file images"
+      security:
+        - JWT: []
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                img:
+                  type: string
+                  format: binary
+                  description: "The image file"
+              required:
+                - img
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  filepath:
+                    type: string
+                    description: "Path to the uploaded image"
+                    example: "/uploads/image.jpg"
+  /file/files:
+    post:
+      tags:
+        - File
+      summary: "Upload file images"
+      security:
+        - JWT: []
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                files:
+                  type: array
+                  format: binary
+                  description: "The image file"
+              required:
+                - files
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  filepath:
+                    type: array
+                    description: "Path to the uploaded image"
+                    example: ["/uploads/test.docx", "uploads/Book1.xlsx"]
+  /file/deleteFile?filePath={filePath}:
+    delete:
+      tags:
+        - File
+      summary: "Delete file"
+      security:
+        - JWT: []
+      responses:
+        "200":
+          description: "Successful operation"
+
+  # address ---------------------------------------------------------
+  /all-address:
+    get:
+      tags:
+        - Address
+      summary: "Get all addresses"
+      security:
+        - JWT: []
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                type: array
+                example:
+                  - id: 1
+                    name: "An Giang"
+                    createdAt: "2023-12-29T04:00:23.000Z"
+                    updatedAt: "2023-12-29T04:00:23.000Z"
+                  - id: 2
+                    name: "Bà Rịa - Vũng Tàu"
+                    createdAt: "2023-12-29T04:00:23.000Z"
+                    updatedAt: "2023-12-29T04:00:23.000Z"
+  # school ---------------------------------------------------------
+  /school/all-school?address={address_id}:
+    get:
+      tags:
+        - School
+      summary: "Get all school by address"
+      security:
+        - JWT: []
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                type: array
+                example:
+                  - id: 1
+                    name: "ĐH CNTT An Giang"
+                    address_id: 1
+                    createdAt: "2023-12-29T04:00:23.000Z"
+                    updatedAt: "2023-12-29T04:00:23.000Z"
+                  - id: 2
+                    name: "ĐH Thương Mại An Giang"
+                    address_id: 1
+                    createdAt: "2023-12-29T04:00:23.000Z"
+                    updatedAt: "2023-12-29T04:00:23.000Z"
+        "400":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "missing data"
+                  description: 'The required parameter "address_id" is missing.'
+        "404":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "not found"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+  /school/all-school-by-name?address={address_name}:
+    get:
+      tags:
+        - School
+      summary: "Get all school by address name"
+      security:
+        - JWT: []
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                type: array
+                example:
+                  - id: 1
+                    name: "ĐH CNTT An Giang"
+                    address_id: 1
+                    createdAt: "2023-12-29T04:00:23.000Z"
+                    updatedAt: "2023-12-29T04:00:23.000Z"
+                  - id: 2
+                    name: "ĐH Thương Mại An Giang"
+                    address_id: 1
+                    createdAt: "2023-12-29T04:00:23.000Z"
+                    updatedAt: "2023-12-29T04:00:23.000Z"
+        "400":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "missing data"
+                  description: 'The required parameter "address_id" is missing.'
+        "404":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "not found"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+
+  /school:
+    post:
+      tags:
+        - School
+      summary: "Get all school by address"
+      security:
+        - JWT: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                data:
+                  type: object
+                  example:
+                    - name: ĐH Kinh Tế
+                      address_id: 1
+
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              example: "success"
+        "400":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "missing data"
+                  description: "Enter the complete data field."
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+
+  # friend -----------------------------------------------------
+  /friend/get-all:
+    get:
+      tags:
+        - Friend
+      summary: "get all friends"
+      security:
+        - JWT: []
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                type: array
+                example:
+                  - "user_name": "Giàng Seo Chua"
+                    "phone": "0386640398"
+                    "avatar": "/img/avatar_default/avatar_3.jpg"
+                    "status": "accepted"
+                    "sender": 1,
+                    "receiver": 2,
+                    "id": 2
+                  - "user_name": "Ma Deo Dế"
+                    "phone": "0386640399"
+                    "avatar": "/img/avatar_default/avatar_14.jpg"
+                    "status": "accepted"
+                    "sender": 3
+                    "receiver": 1
+                    "id": 3
+
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+  /friend/get-sent-request:
+    get:
+      tags:
+        - Friend
+      summary: "Get the list of friends you sent the request to"
+
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                type: array
+                example:
+                  - "user_name": "Giàng Seo Chua"
+                    "phone": "0386640398"
+                    "avatar": "/img/avatar_default/avatar_3.jpg"
+                    "status": "accepted"
+                    "sender": 1,
+                    "receiver": 2,
+                    "id": 2
+                  - "user_name": "Ma Deo Dế"
+                    "phone": "0386640399"
+                    "avatar": "/img/avatar_default/avatar_14.jpg"
+                    "status": "accepted"
+                    "sender": 3
+                    "receiver": 1
+                    "id": 3
+
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+
+  /friend/get-received-request:
+    get:
+      tags:
+        - Friend
+      summary: "Get a list of friends who have sent you requests"
+
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                type: array
+                example:
+                  - "user_name": "Giàng Seo Chua"
+                    "phone": "0386640398"
+                    "avatar": "/img/avatar_default/avatar_3.jpg"
+                    "status": "accepted"
+                    "sender": 1,
+                    "receiver": 2,
+                    "id": 2
+                  - "user_name": "Ma Deo Dế"
+                    "phone": "0386640399"
+                    "avatar": "/img/avatar_default/avatar_14.jpg"
+                    "status": "accepted"
+                    "sender": 3
+                    "receiver": 1
+                    "id": 3
+
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+
+  /friend/send-request/{friend_id}:
+    post:
+      tags:
+        - Friend
+      summary: "send request to friend"
+      security:
+        - JWT: []
+      responses:
+        "200":
+          description: "Successful operation"
+
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+  /friend/update:
+    put:
+      tags:
+        - Friend
+      summary: "send request to friend"
+      security:
+        - JWT: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                status:
+                  type: string
+                  enum: ["pending", "accepted", "rejected"]
+                  
+                friend_id:
+                  type: integer
+                  description: ID của bạn bè.
+              example:
+                  data:
+                    "status": "accepted"
+                    "friend_id": 6
+      responses:
+        "200":
+          description: "Successful operation"
+
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+  
+  /friend/delete/{friend_id}:
+    delete:
+      tags:
+        - Friend
+      summary: ""
+      security:
+        - JWT: []
+      
+      responses:
+        "200":
+          description: "Successful operation"
+
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+  
+  # profile -----------------------------------------------------------------------------
+  /profile:
+    get:
+      tags:
+        - Profile
+      summary: "Get my profile information"
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  - "id": 1,
+                    "user_name": "Trang"
+                    "phone": "0386640397"
+                    "pass": "$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy"
+                    "avatar": "/img/avatar_default/avatar_24.jpg"
+                    "role": 0
+                    "createdAt": "2023-12-29T01:31:57.000Z"
+                    "updatedAt": "2023-12-29T01:31:57.000Z"
+
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+
+  # conversation ------------------------------------------------------------------
+  /conversation/private-chat:
+    post:
+      tags:
+        - Conversation
+      summary: "create conversation between two people"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                data:
+                  type: object
+                  example:
+                    user1_id: 1
+                    user2_id: 2
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              example: "1"
+
+        "400":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "missing data"
+                  description: "Enter the complete data field."
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+
+  /conversation/request-join-group/{group_id}:
+    post:
+      tags:
+        - Conversation
+      summary: "request to join a group"
+      
+      responses:
+        "200":
+          description: "request has been sent"
+          content:
+            application/json:
+              example: "1"
+
+        "400":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "missing data"
+                  description: "Enter the complete data field."
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+
+
+  /conversation/accept-join-group:
+    put:
+      tags:
+        - Conversation
+      summary: "accept other user to join a group"
+      
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                data:
+                  type: object
+                  example:
+                    data:
+                      group_id: 10,
+                      user_id: 5
+      responses:
+        "200":
+          description: "successfully"
+          content:
+            application/json:
+              example: "1"
+
+        "400":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "missing data"
+                  description: "Enter the complete data field."
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+
+  /conversation/group-chat:
+    post:
+      tags:
+        - Conversation
+      summary: "create a group conversation"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                data:
+                  type: object
+                  example:
+                    name: "CNTT - DH CNTT An Giang"
+                    shcool_id: 2
+                    address_id: 2
+
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              example: "1"
+
+        "400":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "missing data"
+                  description: "Enter the complete data field."
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+  /conversation/private-chat-from-user/{user_id}:
+    get:
+      tags:
+        - Conversation
+      summary: "Get conversation between two users"
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              example: "1"
+
+        "400":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "missing data"
+                  description: "Enter the complete data field."
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+
+  /conversation/get-user/{conversation_id}:
+    get:
+      tags:
+        - Conversation
+      summary: "Get list user from conversation_id"
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  "id": 10
+                  "name": "CNTT"
+                  "avatar": "/img/avatar_default/gr-avatar-1.svg"
+                  "type": "room"
+                  "status": "pending"
+                  "createdAt": "2024-01-14T10:16:06.000Z"
+                  "updatedAt": "2024-01-14T10:16:06.000Z"
+                  "school_id": null
+                  "users":
+                    - "id": 1,
+                      "user_name": "Trang"
+                      "phone": "0386640397"
+                      "pass": "$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy"
+                      "avatar": "/img/avatar_default/avatar_24.jpg"
+                      "role": 0
+                      "createdAt": "2023-12-29T01:31:57.000Z"
+                      "updatedAt": "2023-12-29T01:31:57.000Z"
+                      "user_conversations":
+                        "id": 12
+                        "is_admin": true
+                        "createdAt": "2024-01-14T10:16:06.000Z"
+                        "updatedAt": "2024-01-14T10:16:06.000Z"
+                        "user_id": 1
+                        "conversation_id": 10
+                    - "id": 2,
+                      "user_name": "Giàng Seo Chua"
+                      "phone": "0386640398"
+                      "pass": "$2a$10$9l.b8xf.WpButCLALvhbReqeDrXSlmNs/ofr0YSdNfN1NV2orBzsG"
+                      "avatar": "/img/avatar_default/avatar_3.jpg"
+                      "role": 0
+                      "createdAt": "2023-12-29T01:51:38.000Z"
+                      "updatedAt": "2023-12-29T01:51:38.000Z"
+                      "user_conversations":
+                        "id": 13,
+                        "is_admin": false
+                        "createdAt": "2024-01-14T11:23:34.000Z"
+                        "updatedAt": "2024-01-14T11:23:34.000Z"
+                        "user_id": 2
+                        "conversation_id": 10
+        "400":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "missing data"
+                  description: "Enter the complete data field."
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+
+  /conversation/get-user-pending/{conversation_id}:
+    get:
+      tags:
+        - Conversation
+      summary: "Get list user from conversation_id"
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  "id": 10
+                  "name": "CNTT"
+                  "avatar": "/img/avatar_default/gr-avatar-1.svg"
+                  "type": "room"
+                  "status": "pending"
+                  "createdAt": "2024-01-14T10:16:06.000Z"
+                  "updatedAt": "2024-01-14T10:16:06.000Z"
+                  "school_id": null
+                  "users":
+                    - "id": 1,
+                      "user_name": "Trang"
+                      "phone": "0386640397"
+                      "pass": "$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy"
+                      "avatar": "/img/avatar_default/avatar_24.jpg"
+                      "role": 0
+                      "createdAt": "2023-12-29T01:31:57.000Z"
+                      "updatedAt": "2023-12-29T01:31:57.000Z"
+                      "user_conversations":
+                        "id": 12
+                        "is_admin": true
+                        "createdAt": "2024-01-14T10:16:06.000Z"
+                        "updatedAt": "2024-01-14T10:16:06.000Z"
+                        "user_id": 1
+                        "conversation_id": 10
+                    - "id": 2,
+                      "user_name": "Giàng Seo Chua"
+                      "phone": "0386640398"
+                      "pass": "$2a$10$9l.b8xf.WpButCLALvhbReqeDrXSlmNs/ofr0YSdNfN1NV2orBzsG"
+                      "avatar": "/img/avatar_default/avatar_3.jpg"
+                      "role": 0
+                      "createdAt": "2023-12-29T01:51:38.000Z"
+                      "updatedAt": "2023-12-29T01:51:38.000Z"
+                      "user_conversations":
+                        "id": 13,
+                        "is_admin": false
+                        "createdAt": "2024-01-14T11:23:34.000Z"
+                        "updatedAt": "2024-01-14T11:23:34.000Z"
+                        "user_id": 2
+                        "conversation_id": 10
+        "400":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "missing data"
+                  description: "Enter the complete data field."
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+  /conversation/get-all-conversation:
+    get:
+      tags:
+        - Conversation
+      summary: "get all conversation from user"
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                type: array
+                example:
+                  - "conversation_id": 10
+                    "name": "CNTT"
+                    "avatar": "/img/avatar_default/gr-avatar-1.svg"
+                    "type": "room"
+                    "status": "pending"
+                    "createdAt": "2024-01-14T10:16:06.000Z"
+                    "updatedAt": "2024-01-14T10:16:06.000Z"
+                    "school_id": null
+                    "users":
+                      - "id": 1
+                        "user_name": "Trang"
+                        "phone": "0386640397"
+                        "pass": "$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy"
+                        "avatar": "/img/avatar_default/avatar_24.jpg"
+                        "role": 0
+                        "createdAt": "2023-12-29T01:31:57.000Z"
+                        "updatedAt": "2023-12-29T01:31:57.000Z"
+                        "user_conversations":
+                          "id": 12
+                          "is_admin": true
+                          "createdAt": "2024-01-14T10:16:06.000Z"
+                          "updatedAt": "2024-01-14T10:16:06.000Z"
+                          "user_id": 1
+                          "conversation_id": 10
+                      - "id": 4
+                        "user_name": "Giàng Seo Chua"
+                        "phone": "0386640398"
+                        "pass": "$2a$10$9l.b8xf.WpButCLALvhbReqeDrXSlmNs/ofr0YSdNfN1NV2orBzsG"
+                        "avatar": "/img/avatar_default/avatar_3.jpg"
+                        "role": 0
+                        "createdAt": "2023-12-29T01:51:38.000Z"
+                        "updatedAt": "2023-12-29T01:51:38.000Z"
+                        "user_conversations":
+                          "id": 13
+                          "is_admin": false
+                          "createdAt": "2024-01-14T11:23:34.000Z"
+                          "updatedAt": "2024-01-14T11:23:34.000Z"
+                          "user_id": 2
+                          "conversation_id": 10
+                    "latestMessage":
+                      "id": 189
+                      "reply_to": null
+                      "type": "text"
+                      "createdAt": "2024-01-14T10:27:37.000Z"
+                      "updatedAt": "2024-01-14T10:27:37.000Z"
+                      "user_id": 2
+                      "conversation_id": 10
+                      "content_messages":
+                        - "id": 189
+                          "content": "off rồi"
+                  - "id": 4
+                    "name": null
+                    "avatar": null
+                    "type": "user"
+                    "status": "accept"
+                    "createdAt": "2024-01-14T10:16:06.000Z"
+                    "updatedAt": "2024-01-14T10:16:06.000Z"
+                    "school_id": null
+                    "users":
+                      - "id": 1,
+                        "user_name": "Trang"
+                        "phone": "0386640397"
+                        "pass": "$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy"
+                        "avatar": "/img/avatar_default/avatar_24.jpg"
+                        "role": 0
+                        "createdAt": "2023-12-29T01:31:57.000Z"
+                        "updatedAt": "2023-12-29T01:31:57.000Z"
+                        "user_conversations":
+                          "id": 12
+                          "is_admin": true
+                          "createdAt": "2024-01-14T10:16:06.000Z"
+                          "updatedAt": "2024-01-14T10:16:06.000Z"
+                          "user_id": 1
+                          "conversation_id": 10
+                      - "id": 2,
+                        "user_name": "Giàng Seo Chua"
+                        "phone": "0386640398"
+                        "pass": "$2a$10$9l.b8xf.WpButCLALvhbReqeDrXSlmNs/ofr0YSdNfN1NV2orBzsG"
+                        "avatar": "/img/avatar_default/avatar_3.jpg"
+                        "role": 0
+                        "createdAt": "2023-12-29T01:51:38.000Z"
+                        "updatedAt": "2023-12-29T01:51:38.000Z"
+                        "user_conversations":
+                          "id": 13,
+                          "is_admin": false
+                          "createdAt": "2024-01-14T11:23:34.000Z"
+                          "updatedAt": "2024-01-14T11:23:34.000Z"
+                          "user_id": 2
+                          "conversation_id": 10
+                    "latestMessage":
+                      "id": 189
+                      "reply_to": null
+                      "type": "text"
+                      "createdAt": "2024-01-14T10:27:37.000Z"
+                      "updatedAt": "2024-01-14T10:27:37.000Z"
+                      "user_id": 2
+                      "conversation_id": 10
+                      "content_messages":
+                        - "id": 189
+                          "content": "off rồi"
+        "400":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "missing data"
+                  description: "Enter the complete data field."
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+  /conversation/get-all-conversation-group:
+    get:
+      tags:
+        - Conversation
+      summary: "get all conversation group from user"
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                type: array
+                example:
+                  - "id": 10
+                    "name": "CNTT"
+                    "avatar": "/img/avatar_default/gr-avatar-1.svg"
+                    "type": "room"
+                    "status": "pending"
+                    "createdAt": "2024-01-14T10:16:06.000Z"
+                    "updatedAt": "2024-01-14T10:16:06.000Z"
+                    "school_id": null
+                    "users":
+                      - "id": 1
+                        "user_name": "Trang"
+                        "phone": "0386640397"
+                        "pass": "$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy"
+                        "avatar": "/img/avatar_default/avatar_24.jpg"
+                        "role": 0
+                        "createdAt": "2023-12-29T01:31:57.000Z"
+                        "updatedAt": "2023-12-29T01:31:57.000Z"
+                        "user_conversations":
+                          "id": 12
+                          "is_admin": true
+                          "createdAt": "2024-01-14T10:16:06.000Z"
+                          "updatedAt": "2024-01-14T10:16:06.000Z"
+                          "user_id": 1
+                          "conversation_id": 10
+                      - "id": 4
+                        "user_name": "Giàng Seo Chua"
+                        "phone": "0386640398"
+                        "pass": "$2a$10$9l.b8xf.WpButCLALvhbReqeDrXSlmNs/ofr0YSdNfN1NV2orBzsG"
+                        "avatar": "/img/avatar_default/avatar_3.jpg"
+                        "role": 0
+                        "createdAt": "2023-12-29T01:51:38.000Z"
+                        "updatedAt": "2023-12-29T01:51:38.000Z"
+                        "user_conversations":
+                          "id": 13
+                          "is_admin": false
+                          "createdAt": "2024-01-14T11:23:34.000Z"
+                          "updatedAt": "2024-01-14T11:23:34.000Z"
+                          "user_id": 2
+                          "conversation_id": 10
+                    "latestMessage":
+                      "id": 189
+                      "reply_to": null
+                      "type": "text"
+                      "createdAt": "2024-01-14T10:27:37.000Z"
+                      "updatedAt": "2024-01-14T10:27:37.000Z"
+                      "user_id": 2
+                      "conversation_id": 10
+                      "content_messages":
+                        - "id": 189
+                          "content": "off rồi"
+                  - "id": 4
+                    "name": "TKDH"
+                    "avatar": null
+                    "type": "room"
+                    "status": "accept"
+                    "createdAt": "2024-01-14T10:16:06.000Z"
+                    "updatedAt": "2024-01-14T10:16:06.000Z"
+                    "school_id": null
+                    "users":
+                      - "id": 1
+                        "user_name": "Trang"
+                        "phone": "0386640397"
+                        "pass": "$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy"
+                        "avatar": "/img/avatar_default/avatar_24.jpg"
+                        "role": 0
+                        "createdAt": "2023-12-29T01:31:57.000Z"
+                        "updatedAt": "2023-12-29T01:31:57.000Z"
+                        "user_conversations":
+                          "id": 12
+                          "is_admin": true
+                          "createdAt": "2024-01-14T10:16:06.000Z"
+                          "updatedAt": "2024-01-14T10:16:06.000Z"
+                          "user_id": 1
+                          "conversation_id": 10
+                      - "id": 2,
+                        "user_name": "Giàng Seo Chua"
+                        "phone": "0386640398"
+                        "pass": "$2a$10$9l.b8xf.WpButCLALvhbReqeDrXSlmNs/ofr0YSdNfN1NV2orBzsG"
+                        "avatar": "/img/avatar_default/avatar_3.jpg"
+                        "role": 0
+                        "createdAt": "2023-12-29T01:51:38.000Z"
+                        "updatedAt": "2023-12-29T01:51:38.000Z"
+                        "user_conversations":
+                          "id": 13,
+                          "is_admin": false
+                          "createdAt": "2024-01-14T11:23:34.000Z"
+                          "updatedAt": "2024-01-14T11:23:34.000Z"
+                          "user_id": 2
+                          "conversation_id": 10
+                    "latestMessage":
+                      "id": 189
+                      "reply_to": null
+                      "type": "text"
+                      "createdAt": "2024-01-14T10:27:37.000Z"
+                      "updatedAt": "2024-01-14T10:27:37.000Z"
+                      "user_id": 2
+                      "conversation_id": 10
+                      "content_messages":
+                        - "id": 189
+                          "content": "off rồi"
+        "400":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "missing data"
+                  description: "Enter the complete data field."
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+  /conversation/search-all-conversation?name={nameSearch}:
+    get:
+      tags:
+        - Conversation
+      summary: "search all conversation or friend of user"
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                type: array
+                example:
+                  - "id": 2
+                    "user_name": "Giàng Seo Chua"
+                    "phone": "0386640398"
+                    "pass": "$2a$10$9l.b8xf.WpButCLALvhbReqeDrXSlmNs/ofr0YSdNfN1NV2orBzsG"
+                    "avatar": "/img/avatar_default/avatar_3.jpg"
+                    "createdAt": "2023-12-29T01:51:38.000Z"
+                    "updatedAt": "2023-12-29T01:51:38.000Z"
+                    "role": 0
+        "400":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "missing data"
+                  description: "Enter the complete data field."
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "404":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "not found"
+
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+  /conversation/search-all-conversation-group?name={conversation_name}&address={address_id}&school={school_id}:
+    get:
+      tags:
+        - Conversation
+      summary: "search all conversation group"
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                type: array
+                example:
+                  - "id": 10,
+                    "name": "CNTT"
+                    "avatar": "/img/avatar_default/gr-avatar-1.svg"
+                    "type": "room"
+                    "status": "pending"
+                    "createdAt": "2024-01-14T10:16:06.000Z"
+                    "updatedAt": "2024-01-14T10:16:06.000Z"
+                    "school_id": 1
+                    "address_id": 1
+                  - "id": 13
+                    "name": "CNOTO"
+                    "avatar": "/img/avatar_default/gr-avatar-6.svg"
+                    "type": "room"
+                    "status": "pending"
+                    "createdAt": "2024-01-16T08:32:25.000Z"
+                    "updatedAt": "2024-01-16T08:32:25.000Z"
+                    "school_id": 1
+                    "address_id": 1
+        "400":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "missing data"
+                  description: "Enter the complete data field."
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "404":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "not found"
+
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+  # -------------------------messages---------------------------------
+  /message/create:
+    post:
+      tags:
+        - Message
+      summary: "create a group conversation (No need to use)"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                data:
+                  type: object
+                  example:
+                    conversation_id: 1
+                    reply_to: null
+                    type: "text"
+                    content:
+                      - "hello world"
+
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              example: "success"
+
+        "400":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "missing data"
+                  description: "Enter the complete data field."
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+  /message/{message_id}:
+    delete:
+      tags:
+        - Message
+      summary: "delete message"
+
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              example: "success"
+
+        "400":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "missing data"
+                  description: "Enter the complete data field."
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+  /message/get-messages/{conversation_id}:
+    get:
+      tags:
+        - Message
+      summary: "get messages from conversation_id"
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                type: array
+                example:
+                  - "id": 139
+                    "reply_to": null
+                    "type": "text"
+                    "createdAt": "2024-01-10T09:00:28.000Z"
+                    "updatedAt": "2024-01-10T09:00:28.000Z"
+                    "user_id": 1
+                    "conversation_id": 5
+                    "user":
+                      "id": 1
+                      "user_name": "Trang"
+                      "phone": "0386640397"
+                      "pass": "$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy"
+                      "avatar": "/img/avatar_default/avatar_24.jpg"
+                      "role": 0
+                      "createdAt": "2023-12-29T01:31:57.000Z"
+                      "updatedAt": "2023-12-29T01:31:57.000Z"
+                    "content_messages":
+                      - "id": 139
+                        "content": "hallu 123"
+                        "createdAt": "2024-01-10T09:00:28.000Z"
+                        "updatedAt": "2024-01-10T09:00:28.000Z"
+                        "message_id": 139
+                  - "id": 140
+                    "reply_to": null
+                    "type": "text"
+                    "createdAt": "2024-01-10T09:34:39.000Z"
+                    "updatedAt": "2024-01-10T09:34:39.000Z"
+                    "user_id": 1
+                    "conversation_id": 5
+                    "user":
+                      "id": 1
+                      "user_name": "Trang"
+                      "phone": "0386640397"
+                      "pass": "$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy"
+                      "avatar": "/img/avatar_default/avatar_24.jpg"
+                      "role": 0
+                      "createdAt": "2023-12-29T01:31:57.000Z"
+                      "updatedAt": "2023-12-29T01:31:57.000Z"
+                    "content_messages":
+                      - "id": 140
+                        "content": "hehe"
+                        "createdAt": "2024-01-10T09:34:39.000Z"
+                        "updatedAt": "2024-01-10T09:34:39.000Z"
+                        "message_id": 140
+        "400":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "missing data"
+                  description: "Enter the complete data field."
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+  /message/get-messages-reverse/{conversation_id}:
+    get:
+      tags:
+        - Message
+      summary: "get messages reverse from conversation_id"
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                type: array
+                example:
+                  - "id": 140
+                    "reply_to": null
+                    "type": "text"
+                    "createdAt": "2024-01-10T09:34:39.000Z"
+                    "updatedAt": "2024-01-10T09:34:39.000Z"
+                    "user_id": 1
+                    "conversation_id": 5
+                    "user":
+                      "id": 1
+                      "user_name": "Trang"
+                      "phone": "0386640397"
+                      "pass": "$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy"
+                      "avatar": "/img/avatar_default/avatar_24.jpg"
+                      "role": 0
+                      "createdAt": "2023-12-29T01:31:57.000Z"
+                      "updatedAt": "2023-12-29T01:31:57.000Z"
+                    "content_messages":
+                      - "id": 140
+                        "content": "hehe"
+                        "createdAt": "2024-01-10T09:34:39.000Z"
+                        "updatedAt": "2024-01-10T09:34:39.000Z"
+                        "message_id": 140
+                  - "id": 139
+                    "reply_to": null
+                    "type": "text"
+                    "createdAt": "2024-01-10T09:00:28.000Z"
+                    "updatedAt": "2024-01-10T09:00:28.000Z"
+                    "user_id": 1
+                    "conversation_id": 5
+                    "user":
+                      "id": 1
+                      "user_name": "Trang"
+                      "phone": "0386640397"
+                      "pass": "$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy"
+                      "avatar": "/img/avatar_default/avatar_24.jpg"
+                      "role": 0
+                      "createdAt": "2023-12-29T01:31:57.000Z"
+                      "updatedAt": "2023-12-29T01:31:57.000Z"
+                    "content_messages":
+                      - "id": 139
+                        "content": "hallu 123"
+                        "createdAt": "2024-01-10T09:00:28.000Z"
+                        "updatedAt": "2024-01-10T09:00:28.000Z"
+                        "message_id": 139
+
+        "400":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "missing data"
+                  description: "Enter the complete data field."
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+  # ------------------------------------post -----------------------------
+  /post/create:
+    post:
+      tags:
+        - Post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                data:
+                  type: object
+                  example:
+                    "caption": "Hom nay troi dep !"
+                    "user_tag_id": [2, 3]
+                    "content":
+                      - "url": "/uploadss/t-31.jpg"
+                        "type": "img"
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              example: "success"
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+
+  /post/{post_id}:
+    delete:
+      tags:
+        - Post
+      responses:
+        "200":
+          description: "Successful"
+          content:
+            application/json:
+              example: "success"
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+
+  /post/reaction:
+    post:
+      tags:
+        - Post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                data:
+                  type: object
+                  example:
+                    "post_id": 3
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              example: "success"
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+
+  /post/feed:
+    get:
+      tags:
+        - Post
+      summary: "get feed of user"
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                type: array
+                example:
+                  - "id": 3,
+                    "caption": "Hom nay troi dep !"
+                    "createdAt": "2024-01-17T07:56:32.000Z"
+                    "updatedAt": "2024-01-17T07:56:32.000Z"
+                    "user_id": 1
+                    "user":
+                      "id": 1,
+                      "user_name": "Trang"
+                      "phone": "0386640397"
+                      "pass": "$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy"
+                      "avatar": "/img/avatar_default/avatar_24.jpg"
+                      "role": 0
+                      "createdAt": "2023-12-29T01:31:57.000Z"
+                      "updatedAt": "2023-12-29T01:31:57.000Z"
+                    "usersTags":
+                      - "id": 2
+                        "user_name": "Giàng Seo Chua"
+                        "phone": "0386640398"
+                        "pass": "$2a$10$9l.b8xf.WpButCLALvhbReqeDrXSlmNs/ofr0YSdNfN1NV2orBzsG"
+                        "avatar": "/img/avatar_default/avatar_3.jpg"
+                        "role": 0
+                        "createdAt": "2023-12-29T01:51:38.000Z"
+                        "updatedAt": "2023-12-29T01:51:38.000Z"
+                      - "id": 3
+                        "user_name": "Ma Deo Dế"
+                        "phone": "0386640399"
+                        "pass": "$2a$10$a4mWUg6pqo7eNt4xIBjEReH0BKwiXaNbk0j8ikM.JxCwtSm7bJF1G"
+                        "avatar": "/img/avatar_default/avatar_14.jpg"
+                        "role": 0
+                        "createdAt": "2023-12-29T01:52:16.000Z"
+                        "updatedAt": "2023-12-29T01:52:16.000Z"
+                    "contents":
+                      - "id": 3
+                        "content": "/uploadss/t-31.jpg"
+                        "type": "img"
+                        "createdAt": "2024-01-17T07:56:32.000Z"
+                        "updatedAt": "2024-01-17T07:56:32.000Z"
+                        "post_id": 3
+                    "reactions":
+                      - "id": 1
+                        "createdAt": "2024-01-18T03:46:41.000Z"
+                        "updatedAt": "2024-01-18T03:46:41.000Z"
+                        "post_id": 3
+                        "user_id": 2
+                      - "id": 2
+                        "createdAt": "2024-01-18T03:47:13.000Z"
+                        "updatedAt": "2024-01-18T03:47:13.000Z"
+                        "post_id": 3
+                        "user_id": 3
+                    "lengthComment": 3
+                  - "id": 4
+                    "caption": "Nay di dau choi k !"
+                    "createdAt": "2024-01-17T08:11:54.000Z"
+                    "updatedAt": "2024-01-17T08:11:54.000Z"
+                    "user_id": 1
+                    "user":
+                      "id": 1,
+                      "user_name": "Trang"
+                      "phone": "0386640397"
+                      "pass": "$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy"
+                      "avatar": "/img/avatar_default/avatar_24.jpg"
+                      "role": 0
+                      "createdAt": "2023-12-29T01:31:57.000Z"
+                      "updatedAt": "2023-12-29T01:31:57.000Z"
+                    "usersTags":
+                      -
+                    "contents":
+                      -
+                    "reactions":
+                      -
+                    "lengthComment": 0
+        "400":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "missing data"
+                  description: "Enter the complete data field."
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "404":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "not found"
+
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+  
+  /post/feed2:
+    get:
+      tags:
+        - Post
+      summary: "get feed of user"
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                type: array
+                example:
+                  - "id": 3,
+                    "caption": "Hom nay troi dep !"
+                    "createdAt": "2024-01-17T07:56:32.000Z"
+                    "updatedAt": "2024-01-17T07:56:32.000Z"
+                    "user_id": 1
+                    "user":
+                      "id": 1,
+                      "user_name": "Trang"
+                      "phone": "0386640397"
+                      "pass": "$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy"
+                      "avatar": "/img/avatar_default/avatar_24.jpg"
+                      "role": 0
+                      "createdAt": "2023-12-29T01:31:57.000Z"
+                      "updatedAt": "2023-12-29T01:31:57.000Z"
+                    "usersTags":
+                      - "id": 2
+                        "user_name": "Giàng Seo Chua"
+                        "phone": "0386640398"
+                        "pass": "$2a$10$9l.b8xf.WpButCLALvhbReqeDrXSlmNs/ofr0YSdNfN1NV2orBzsG"
+                        "avatar": "/img/avatar_default/avatar_3.jpg"
+                        "role": 0
+                        "createdAt": "2023-12-29T01:51:38.000Z"
+                        "updatedAt": "2023-12-29T01:51:38.000Z"
+                      - "id": 3
+                        "user_name": "Ma Deo Dế"
+                        "phone": "0386640399"
+                        "pass": "$2a$10$a4mWUg6pqo7eNt4xIBjEReH0BKwiXaNbk0j8ikM.JxCwtSm7bJF1G"
+                        "avatar": "/img/avatar_default/avatar_14.jpg"
+                        "role": 0
+                        "createdAt": "2023-12-29T01:52:16.000Z"
+                        "updatedAt": "2023-12-29T01:52:16.000Z"
+                    "contents":
+                      - "id": 3
+                        "content": "/uploadss/t-31.jpg"
+                        "type": "img"
+                        "createdAt": "2024-01-17T07:56:32.000Z"
+                        "updatedAt": "2024-01-17T07:56:32.000Z"
+                        "post_id": 3
+                    "reactions":
+                      - "id": 1
+                        "createdAt": "2024-01-18T03:46:41.000Z"
+                        "updatedAt": "2024-01-18T03:46:41.000Z"
+                        "post_id": 3
+                        "user_id": 2
+                      - "id": 2
+                        "createdAt": "2024-01-18T03:47:13.000Z"
+                        "updatedAt": "2024-01-18T03:47:13.000Z"
+                        "post_id": 3
+                        "user_id": 3
+                    "lengthComment": 3
+                  - "id": 4
+                    "caption": "Nay di dau choi k !"
+                    "createdAt": "2024-01-17T08:11:54.000Z"
+                    "updatedAt": "2024-01-17T08:11:54.000Z"
+                    "user_id": 1
+                    "user":
+                      "id": 1,
+                      "user_name": "Trang"
+                      "phone": "0386640397"
+                      "pass": "$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy"
+                      "avatar": "/img/avatar_default/avatar_24.jpg"
+                      "role": 0
+                      "createdAt": "2023-12-29T01:31:57.000Z"
+                      "updatedAt": "2023-12-29T01:31:57.000Z"
+                    "usersTags":
+                      -
+                    "contents":
+                      -
+                    "reactions":
+                      -
+                    "comments": []
+        "400":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "missing data"
+                  description: "Enter the complete data field."
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "404":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "not found"
+
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+  
+  /post/get-post-by-user/{user_id}:
+    get:
+      tags:
+        - Post
+      summary: "get post of user"
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                type: array
+                example:
+                  - "id": 3,
+                    "caption": "Hom nay troi dep !"
+                    "createdAt": "2024-01-17T07:56:32.000Z"
+                    "updatedAt": "2024-01-17T07:56:32.000Z"
+                    "user_id": 1
+                    "user":
+                      "id": 1,
+                      "user_name": "Trang"
+                      "phone": "0386640397"
+                      "pass": "$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy"
+                      "avatar": "/img/avatar_default/avatar_24.jpg"
+                      "role": 0
+                      "createdAt": "2023-12-29T01:31:57.000Z"
+                      "updatedAt": "2023-12-29T01:31:57.000Z"
+                    "usersTags":
+                      - "id": 2
+                        "user_name": "Giàng Seo Chua"
+                        "phone": "0386640398"
+                        "pass": "$2a$10$9l.b8xf.WpButCLALvhbReqeDrXSlmNs/ofr0YSdNfN1NV2orBzsG"
+                        "avatar": "/img/avatar_default/avatar_3.jpg"
+                        "role": 0
+                        "createdAt": "2023-12-29T01:51:38.000Z"
+                        "updatedAt": "2023-12-29T01:51:38.000Z"
+                      - "id": 3
+                        "user_name": "Ma Deo Dế"
+                        "phone": "0386640399"
+                        "pass": "$2a$10$a4mWUg6pqo7eNt4xIBjEReH0BKwiXaNbk0j8ikM.JxCwtSm7bJF1G"
+                        "avatar": "/img/avatar_default/avatar_14.jpg"
+                        "role": 0
+                        "createdAt": "2023-12-29T01:52:16.000Z"
+                        "updatedAt": "2023-12-29T01:52:16.000Z"
+                    "contents":
+                      - "id": 3
+                        "content": "/uploadss/t-31.jpg"
+                        "type": "img"
+                        "createdAt": "2024-01-17T07:56:32.000Z"
+                        "updatedAt": "2024-01-17T07:56:32.000Z"
+                        "post_id": 3
+                    "reactions":
+                      - "id": 1
+                        "createdAt": "2024-01-18T03:46:41.000Z"
+                        "updatedAt": "2024-01-18T03:46:41.000Z"
+                        "post_id": 3
+                        "user_id": 2
+                      - "id": 2
+                        "createdAt": "2024-01-18T03:47:13.000Z"
+                        "updatedAt": "2024-01-18T03:47:13.000Z"
+                        "post_id": 3
+                        "user_id": 3
+                    "lengthComment": 3
+                  - "id": 4
+                    "caption": "Nay di dau choi k !"
+                    "createdAt": "2024-01-17T08:11:54.000Z"
+                    "updatedAt": "2024-01-17T08:11:54.000Z"
+                    "user_id": 1
+                    "user":
+                      "id": 1,
+                      "user_name": "Trang"
+                      "phone": "0386640397"
+                      "pass": "$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy"
+                      "avatar": "/img/avatar_default/avatar_24.jpg"
+                      "role": 0
+                      "createdAt": "2023-12-29T01:31:57.000Z"
+                      "updatedAt": "2023-12-29T01:31:57.000Z"
+                    "usersTags":
+                      -
+                    "contents":
+                      -
+                    "reactions":
+                      -
+                    "lengthComment": 0
+        "400":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "missing data"
+                  description: "Enter the complete data field."
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "404":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "not found"
+
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+
+  /post/reacion-by-post/{post_id}:
+    get:
+      tags:
+        - Post
+      summary: "get reaction by post"
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                type: array
+                example:
+                  - "id": 1,
+                    "createdAt": "2024-01-18T03:46:41.000Z"
+                    "updatedAt": "2024-01-18T03:46:41.000Z"
+                    "post_id": 3
+                    "user_id": 2
+                    "user":
+                      - "id": 2
+                        "user_name": "Giàng Seo Chua"
+                        "phone": "0386640398"
+                        "pass": "$2a$10$9l.b8xf.WpButCLALvhbReqeDrXSlmNs/ofr0YSdNfN1NV2orBzsG"
+                        "avatar": "/img/avatar_default/avatar_3.jpg"
+                        "role": 0
+                        "createdAt": "2023-12-29T01:51:38.000Z"
+                        "updatedAt": "2023-12-29T01:51:38.000Z"
+                      - "id": 2
+                        "createdAt": "2024-01-18T03:47:13.000Z"
+                        "updatedAt": "2024-01-18T03:47:13.000Z"
+                        "post_id": 3
+                        "user_id": 3
+                        "user":
+                          "id": 3
+                          "user_name": "Ma Deo Dế"
+                          "phone": "0386640399"
+                          "pass": "$2a$10$a4mWUg6pqo7eNt4xIBjEReH0BKwiXaNbk0j8ikM.JxCwtSm7bJF1G"
+                          "avatar": "/img/avatar_default/avatar_14.jpg"
+                          "role": 0
+                          "createdAt": "2023-12-29T01:52:16.000Z"
+                          "updatedAt": "2023-12-29T01:52:16.000Z"
+                      - "id": 10
+                        "createdAt": "2024-01-24T07:47:24.000Z"
+                        "updatedAt": "2024-01-24T07:47:24.000Z"
+                        "post_id": 3
+                        "user_id": 1
+                        "user":
+                          "id": 1
+                          "user_name": "Trang"
+                          "phone": "0386640397"
+                          "pass": "$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy"
+                          "avatar": "/img/avatar_default/avatar_24.jpg"
+                          "role": 0
+                          "createdAt": "2023-12-29T01:31:57.000Z"
+                          "updatedAt": "2023-12-29T01:31:57.000Z"
+
+        "400":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "missing data"
+                  description: "Enter the complete data field."
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "404":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "not found"
+
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+  /post/delete-reaction/{post_id}:
+    delete:
+      tags:
+        - Post
+      summary: "delete reaction by post"
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              example: success
+
+        "400":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "missing data"
+                  description: "Enter the complete data field."
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "404":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "not found"
+
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+  # --------------------------------------comment------
+  /comment/create:
+    post:
+      tags:
+        - Comment
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                data:
+                  type: object
+                  example:
+                    "post_id": 3
+                    "parent_id": 1
+                    "comment": "dep the ma bao xau"
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              example: "success"
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+  /comment/delete/{comment_id}:
+    delete:
+      tags:
+        - Comment
+      security:
+        - JWT: []
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              example: "success"
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+  # --------------------------------------comment------
+  /user/all-users:
+    get:
+      tags:
+        - User
+      security:
+        - JWT: []
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  - "id": 1
+                    "user_name": "Trang"
+                    "phone": "0386640397"
+                    "pass": "$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy"
+                    "avatar": "/img/avatar_default/avatar_24.jpg"
+                    "role": 0
+                    "createdAt": "2023-12-29T01:31:57.000Z"
+                    "updatedAt": "2023-12-29T01:31:57.000Z"
+                  - "id": 2
+                    "user_name": "Giàng Seo Chua"
+                    "phone": "0386640398"
+                    "pass": "$2a$10$9l.b8xf.WpButCLALvhbReqeDrXSlmNs/ofr0YSdNfN1NV2orBzsG"
+                    "avatar": "/img/avatar_default/avatar_3.jpg"
+                    "role": 0
+                    "createdAt": "2023-12-29T01:51:38.000Z"
+                    "updatedAt": "2023-12-29T01:51:38.000Z"
+                  - "id": 3
+                    "user_name": "Ma Deo Dế"
+                    "phone": "0386640399"
+                    "pass": "$2a$10$a4mWUg6pqo7eNt4xIBjEReH0BKwiXaNbk0j8ikM.JxCwtSm7bJF1G"
+                    "avatar": "/img/avatar_default/avatar_14.jpg"
+                    "role": 0
+                    "createdAt": "2023-12-29T01:52:16.000Z"
+                    "updatedAt": "2023-12-29T01:52:16.000Z"
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+
+  /user:
+    security:
+        - JWT: []
+    put:
+      tags:
+        - User
+      security:
+        - JWT: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                data:
+                  type: object
+                  example:
+                    "address": "Lào cai"
+                    "gender": "Nam"
+                    "email": "seotrangbh24@gmail.com"
+                    "date_of_birth": "10/12/2001"
+      responses:
+        "200":
+          description: "updated successfully"
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+
+  /user/{user_id}:
+    get:
+      tags:
+        - User
+      security:
+        - JWT: []
+      responses:
+        "200":
+          description: "updated successfully"
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  "id": 2
+                  "user_name": "Giàng Seo Chua"
+                  "phone": "0386640398"
+                  "pass": "$2a$10$9l.b8xf.WpButCLALvhbReqeDrXSlmNs/ofr0YSdNfN1NV2orBzsG"
+                  "avatar": "/img/avatar_default/avatar_3.jpg"
+                  "role": 0
+                  "address": "Lào cai"
+                  "gender": "Nam"
+                  "email": "seotrangbh24@gmail.com"
+                  "date_of_birth": "10/12/2001"
+                  "background": null
+                  "createdAt": "2023-12-29T01:51:38.000Z"
+                  "updatedAt": "2024-03-27T09:04:23.000Z"
+                  "school_id": null
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+
+  /get-all-data:
+    get:
+      tags:
+        - Common Data
+      security:
+        - JWT: []
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  users:
+                    - "id": 1
+                      "user_name": "Trang"
+                      "phone": "0386640397"
+                      "pass": "$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy"
+                      "avatar": "/img/avatar_default/avatar_24.jpg"
+                      "role": 0
+                      "createdAt": "2023-12-29T01:31:57.000Z"
+                      "updatedAt": "2023-12-29T01:31:57.000Z"
+                  posts:
+                    - "id": 19
+                      "caption": "aaaaaaaaaaaa"
+                      "createdAt": "2024-03-05T02:57:22.000Z"
+                      "updatedAt": "2024-03-05T02:57:22.000Z"
+                      "user_id": 2
+                      user:
+                        - "id": 2
+                          "user_name": "Giàng Seo Chua"
+                          "phone": "0386640398"
+                          "avatar": "/img/avatar_default/avatar_3.jpg"
+                          "role": 0
+                          "createdAt": "2023-12-29T01:51:38.000Z"
+                          "updatedAt": "2023-12-29T01:51:38.000Z"
+                      usersTags:
+                        - "id": 1,
+                          "user_name": "Trang"
+                          "phone": "0386640397"
+                          "pass": "$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy"
+                          "avatar": "/img/avatar_default/avatar_24.jpg"
+                          "role": 0
+                          "createdAt": "2023-12-29T01:31:57.000Z"
+                          "updatedAt": "2023-12-29T01:31:57.000Z"
+                      contents:
+                        - "id": 32
+                          "content": "/uploads/1709607432449000_0.png"
+                          "type": "img"
+                          "createdAt": "2024-03-05T02:57:23.000Z"
+                          "updatedAt": "2024-03-05T02:57:23.000Z"
+                          "post_id": 19
+                      reactions:
+                        - "id": 30
+                          "createdAt": "2024-03-05T02:57:33.000Z"
+                          "updatedAt": "2024-03-05T02:57:33.000Z"
+                          "post_id": 19
+                          "user_id": 2
+                          user:
+                            "id": 2
+                            "user_name": "Giàng Seo Chua"
+                            "phone": "0386640398"
+                            "pass": "$2a$10$9l.b8xf.WpButCLALvhbReqeDrXSlmNs/ofr0YSdNfN1NV2orBzsG"
+                            "avatar": "/img/avatar_default/avatar_3.jpg"
+                            "role": 0
+                            "createdAt": "2023-12-29T01:51:38.000Z"
+                            "updatedAt": "2023-12-29T01:51:38.000Z"
+                      lengthComment: 0
+                  profile:
+                    "id": 2
+                    "user_name": "Giàng Seo Chua"
+                    "phone": "0386640398"
+                    "avatar": "/img/avatar_default/avatar_3.jpg"
+                    "role": 0
+                    "createdAt": "2023-12-29T01:51:38.000Z"
+                    "updatedAt": "2023-12-29T01:51:38.000Z"
+                  conversations:
+                    - "conversation_id": 10
+                      "conversation_name": "CNTT"
+                      "type": "room"
+                      "avatar": "/img/avatar_default/gr-avatar-1.svg"
+                      "latest_message_time": "2024-03-01T08:46:42.000Z"
+                  address:
+                    - "id": 1,
+                      "name": "An Giang"
+                      "createdAt": "2023-12-29T04:00:23.000Z"
+                      "updatedAt": "2023-12-29T04:00:23.000Z"
+                  list_friends:
+                    - "id": 1
+                      "user_name": "Trang"
+                      "phone": "0386640397"
+                      "avatar": "/img/avatar_default/avatar_24.jpg"
+                      "role": 0
+                      "address": null
+                      "gender": null
+                      "email": null
+                      "date_of_birth": null
+                      "createdAt": "2023-12-29T01:31:57.000Z"
+                      "updatedAt": "2023-12-29T01:31:57.000Z"
+                      "school_id": null
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+  
+
+  /notifications:
+    get:
+      tags:
+        - Notifications
+      security:
+        - JWT: []
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  - "notification_id": 8
+                    "notification_status": "unread"
+                    "notification_object_id": 5
+                    "entity_type_id": 1
+                    "entity_table": "posts"
+                    "notification_type": "đã thêm một bài viết mới"
+                    "user_receiver_name": "Giàng Seo Chua"
+                    "actor_email": "seotrangbh24@gmail.com"
+                    "receiver_id": 2
+                    "actor_id": 1
+                    "actor_name": "Tráng"
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+  
+  /notifications/{notification_id}:
+    delete:
+      tags:
+        - Notifications
+      security:
+        - JWT: []
+      responses:
+        "200":
+          description: "Successful operation"
+          
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+  
+  /notifications/update/{notification_id}:
+    put:
+      tags:
+        - Notifications
+      security:
+        - JWT: []
+      responses:
+        "200":
+          description: "Successful operation"
+          
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+  
+  /notifications/update:
+    put:
+      tags:
+        - Notifications
+      security:
+        - JWT: []
+      responses:
+        "200":
+          description: "Successful operation"
+          
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+  
+  # /rooms:
+  #   get:
+  #     tags:
+  #       - Room
+  #     summary: 'Get all rooms'
+  #     responses:
+  #       '200':
+  #         description: 'Successful operation'
+  #         content:
+  #           application/json:
+  #             schema:
+  #               type: array
+  #               items:
+  #                 $ref: '#/components/schemas/Room'
+  # /user/{id}:
+  #   get:
+  #     summary: 'Get user by ID'
+  #     parameters:
+  #       - name: 'id'
+  #         in: 'path'
+  #         required: true
+  #         schema:
+  #           type: integer
+  #           format: int64
+  #     responses:
+  #       '200':
+  #         description: 'Successful operation'
+  #         content:
+  #           application/json:
+  #             schema:
+  #               $ref: '#/components/schemas/UserWithRooms'
+components:
+  # schemas:
+  #   User:
+  #     type: object
+  #     properties:
+  #       id:
+  #         type: integer
+  #       user_name:
+  #         type: string
+  #       phone:
+  #         type: string
+  #       pass:
+  #         type: string
+  #       avatar:
+  #         type: string
+  #       role:
+  #         type: integer
+  #     required:
+  #       - id
+  #       - user_name
+  #       - phone
+  #       - pass
+  #   Room:
+  #     type: object
+  #     properties:
+  #       id:
+  #         type: integer
+  #       name:
+  #         type: string
+  #   UserWithRooms:
+  #     type: object
+  #     properties:
+  #       id:
+  #         type: integer
+  #       user_name:
+  #         type: string
+  #       phone:
+  #         type: string
+  #       pass:
+  #         type: string
+  #       avatar:
+  #         type: string
+  #       role:
+  #         type: integer
+  #       rooms:
+  #         type: array
+  #         items:
+  #           $ref: '#/components/schemas/Room'
+
+  parameters:
+    
+    AuthorizationHeader:
+      name: Authorization
+      in: header
+      description: Bearer token for authentication
+      example: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiYWRtaW4iOjAsImlhdCI6MTcwNDcwMzY2OCwiZXhwIjoxNzA0NzA1NDY4fQ.iwpVisZKVHLRlP5M7lVznbBuVJ22S8YZ_uPGZW1iF8E
+      required: true
+      schema:
+        type: string
+      securityDefinitions:
+      JWT:
+        type: apiKey
+        name: Authorization
+        in: header
