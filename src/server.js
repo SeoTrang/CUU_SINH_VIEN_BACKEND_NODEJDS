@@ -24,8 +24,8 @@ const socketModule = require("./sockets/socketModule");
 require("./db/configDB");
 
 const app = express();
-
 // create "middleware"
+// console.log('hello');
 // app.use(morgan("dev"));
 app.use(express.static(__dirname + "/public"));
 app.use(bodyParser.json());
