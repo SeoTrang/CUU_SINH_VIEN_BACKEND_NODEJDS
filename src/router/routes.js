@@ -75,7 +75,7 @@ router.get('/conversation/get-all-conversation-group',checkLogin,conversationCon
 // search all conversation 
 router.get('/conversation/search-all-conversation',checkLogin,conversationController.searchAllConversation);
 // search all conversation groups
-router.get('/conversation/search-all-conversation-group',checkLogin,conversationController.searchAllConversationGroups);
+router.get('/conversation/search-all-conversation-group',conversationController.searchAllConversationGroups);
 
 
 

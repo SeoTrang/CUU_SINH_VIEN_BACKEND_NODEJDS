@@ -32,7 +32,7 @@ class NodeMailService {
                 to: email, // Địa chỉ email người nhận
                 subject: "Xác minh tài khoản", // Tiêu đề email
                 text: "Hello world?", // Nội dung văn bản thông thường
-                html: `<div>Mã xác thực OTP của bạn là : <span>${otp}</span></div>`, // Nội dung HTML
+                html: `<div>Mã xác thực OTP của bạn là : <b>${otp}</b> <em>(Hiệu lực trong 20 phút)</em></div>`, // Nội dung HTML
             });
 
             console.log("Message sent: %s", info.messageId);

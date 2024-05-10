@@ -191,13 +191,13 @@ const conversationRepository = {
 
             //case 1:  full field search (name,school_id, address_id)
             let queryString = null;
-            if(school_id && address_id){
                 queryString =  ` SELECT conversations.*, addresses.name AS addresse_name, schools.name AS school_name 
                                 FROM conversations 
                                 JOIN addresses ON conversations.address_id = addresses.id
                                 JOIN schools ON conversations.school_id = schools.id
-                                WHERE conversations.name LIKE '%${name}%' AND addresses.name LIKE '%${address_name}%' AND schools.name LIKE '%${address}%';`
-            }
+                                WHERE conversations.name LIKE '%${name}%' AND addresses.name LIKE '%${address_name}%' AND schools.name LIKE '%${school_name}%';`
+            
+            console.log(queryString);
         //     else
         //     // case 2: only field name and address_id
         //     if(!school_id && address_id){

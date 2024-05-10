@@ -239,10 +239,8 @@ const conversationController = {
     searchAllConversationGroups: async (req,res) => {
         try {
             const {name, address, school } = req.query;
-            const user_id = req.body.decode.id;
-            // console.log(name, address, school);
-            if(!name || !user_id) return res.status(400).json('missing data');
-            let result = await conversationService.searchAllConversationGroups(name,address,school);
+            console.log(name, address, school);
+            let result = await conversationService.searchAllConversationGroups2(name,address,school);
             if(result == null) return res.status(404).json('not found');
             if(result.success) return res.status(200).json(result.success);
             throw new Error(result.error);
