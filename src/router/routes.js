@@ -29,6 +29,7 @@ router.post('/faculty/create',facultyController.create);
 router.get('/faculty/all-by-school-name/:school_name',facultyController.getAllBySchoolName);
 
 
+
 // search
 router.get('/search/:search',userController.search)
 

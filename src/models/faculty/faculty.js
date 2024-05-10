@@ -22,6 +22,12 @@ School.hasMany(Faculty,{
     foreignKey: 'school_id'
 })
 
+sequelize.sync().then(() => {
+    console.log('faculties table created successfully!');
+}).catch((error) => {
+    console.error('Unable to create table faculties : ', error);
+});
+
 
 
 module.exports = Faculty;
