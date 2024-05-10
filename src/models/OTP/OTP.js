@@ -30,10 +30,10 @@ const OTPModel = sequelize.define('otps',{
 })
 
 
-sequelize.sync().then(() => {
-    console.log('opts table created successfully!');
-}).catch((error) => {
-    console.error('Unable to create table opts : ', error);
-});
+// sequelize.sync().then(() => {
+//     console.log('opts table created successfully!');
+// }).catch((error) => {
+//     console.error('Unable to create table opts : ', error);
+// });
 
 module.exports = OTPModel;

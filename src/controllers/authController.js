@@ -5,6 +5,7 @@ const bcrypt = require('../util/bcrypt');
 const addressService = require('../services/addressService');
 const nodeMailService = require('../services/NodeMailService');
 const OTPService = require('../services/OTPService');
+
 const autController = {
     register: async (req,res) => {
         try {
@@ -68,8 +69,10 @@ const autController = {
     login: async (req, res) => {
         try {
             const data = req.body.data;
+            console.log(data);
             const user = await userService.findByEmail(data.email);
             console.log(user);
+            
             if(!user) {
                 return res.status(404).json("not found");
             }
