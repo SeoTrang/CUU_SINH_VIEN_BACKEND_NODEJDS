@@ -5,6 +5,7 @@ const autController = require('../controllers/authController');
 const commentController = require('../controllers/commentController');
 const commonController = require('../controllers/commonController');
 const conversationController = require('../controllers/conversationController');
+const facultyController = require('../controllers/facultyController');
 const messageController = require('../controllers/messageController');
 const Notificationcontroller = require('../controllers/notificationController');
 const postController = require('../controllers/postController');
@@ -22,6 +23,9 @@ router.get('/school/all-school',schoolController.getByAddress)
 router.get('/school/all-school-by-name',schoolController.getByAddressName)
 router.post('/school',schoolController.create)
 
+
+// ---------------------------------faculty --------------------------------
+router.post('/faculty/create',facultyController.create);
 
 
 // search

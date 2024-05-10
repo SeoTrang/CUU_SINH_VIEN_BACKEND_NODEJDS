@@ -18,6 +18,9 @@ const conversationRepository = {
     createGroup: async (data) => {
         try {
             let data2 = {...data,type: 'room', status: 'pending'}
+            const modifiedName = data2.name.replace(/\s+/g, ' ');
+            console.log(data2.name);
+            data2.name = modifiedName;
             const result = await Conversation.create(data2);
             if(result) return {success: result.id};
         } catch (error) {
@@ -186,40 +189,19 @@ const conversationRepository = {
         }
     },
 
-    searchAllConversationGroups2: async (name,address_name,school_name) => {
+    searchAllConversationGroups2: async (name,address_name,school_name,faculty_name) => {
         try {
-
-            //case 1:  full field search (name,school_id, address_id)
             let queryString = null;
-                queryString =  ` SELECT conversations.*, addresses.name AS addresse_name, schools.name AS school_name 
+                const modifiedName = name.replace(/\s+/g, ' ');
+                queryString =  ` SELECT conversations.*, addresses.name AS address_name, schools.name AS school_name, faculties.name AS faculty_name 
                                 FROM conversations 
                                 JOIN addresses ON conversations.address_id = addresses.id
                                 JOIN schools ON conversations.school_id = schools.id
-                                WHERE conversations.name LIKE '%${name}%' AND addresses.name LIKE '%${address_name}%' AND schools.name LIKE '%${school_name}%';`
+                                JOIN faculties ON conversations.faculty_id = faculties.id
+                                WHERE conversations.name LIKE '%${modifiedName}%' AND addresses.name LIKE '%${address_name}%' AND schools.name LIKE '%${school_name}%' AND faculties.name LIKE '%${faculty_name}%';`
             
             console.log(queryString);
-        //     else
-        //     // case 2: only field name and address_id
-        //     if(!school_id && address_id){
-        //             queryString =  `SELECT conversations.*, addresses.name AS addresse_name, schools.name AS school_name 
-        //             FROM conversations 
-        //             JOIN addresses ON conversations.address_id = addresses.id
-        //             JOIN schools ON conversations.school_id = schools.id
-        //             WHERE conversations.name LIKE '%CNOTO%' AND addresses.name LIKE '%An Giang%';`
-        //     }
-        //     // case 3: only field address and school
-        //     if(!school_id && address_id){
-        //         queryString =  `SELECT conversations.*, addresses.name AS addresse_name, schools.name AS school_name 
-        //         FROM conversations 
-        //         JOIN addresses ON conversations.address_id = addresses.id
-        //         JOIN schools ON conversations.school_id = schools.id
-        //         WHERE conversations.name LIKE '%CNOTO%' AND addresses.name LIKE '%An Giang%';`
-        // }
-        //     else
-        //     // case 4: only field name 
-        //         queryString =  ` SELECT conversations.* from conversations 
-        //                         WHERE conversations.name LIKE '%${name}%';`
-            
+       
             
             let result = await sequelize.query(queryString, { type: sequelize.QueryTypes.SELECT });
             

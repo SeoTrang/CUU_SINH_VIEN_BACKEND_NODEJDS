@@ -2,6 +2,7 @@ const { DataTypes } = require('sequelize');
 const sequelize = require('../../db/configDB');
 const Address = require('../address/address');
 const School = require('../school/school');
+const Faculty = require('../faculty/faculty');
 
 const Conversation = sequelize.define('conversations',{
     id:{
@@ -38,6 +39,22 @@ Conversation.belongsTo(School,{
 
 School.hasMany(Conversation,{
     foreignKey: 'school_id'
+})
+
+Conversation.belongsTo(Address,{
+    foreignKey: 'address_id'
+})
+
+Address.hasMany(Conversation,{
+    foreignKey: 'address_id'
+})
+
+Conversation.belongsTo(Faculty,{
+    foreignKey: 'faculty_id'
+})
+
+Faculty.hasMany(Conversation,{
+    foreignKey: 'faculty_id'
 })
 
 // sequelize.sync().then(() => {

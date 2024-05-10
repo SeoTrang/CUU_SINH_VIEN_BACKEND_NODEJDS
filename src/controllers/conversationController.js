@@ -34,6 +34,7 @@ const conversationController = {
         try {
             const school_id = req.body.data.school_id;
             const address_id = req.body.data.address_id;
+            const faculty_id = req.body.data.faculty_id;
             const name = req.body.data.name;
             const creater_id = req.body.decode.id;
 
@@ -59,6 +60,7 @@ const conversationController = {
             const dataConversation = {
                 school_id: school_id,
                 address_id: address_id,
+                faculty_id: faculty_id,
                 name: name,
                 avatar: randomAvatar
             }
@@ -238,9 +240,9 @@ const conversationController = {
 
     searchAllConversationGroups: async (req,res) => {
         try {
-            const {name, address, school } = req.query;
+            const {name, address, school, faculty } = req.query;
             console.log(name, address, school);
-            let result = await conversationService.searchAllConversationGroups2(name,address,school);
+            let result = await conversationService.searchAllConversationGroups2(name,address,school,faculty);
             if(result == null) return res.status(404).json('not found');
             if(result.success) return res.status(200).json(result.success);
             throw new Error(result.error);

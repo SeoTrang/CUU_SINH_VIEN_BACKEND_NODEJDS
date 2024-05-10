@@ -34,8 +34,8 @@ const conversationService = {
     searchAllConversationGroups: async (name,address_id,school_id) => {
         return await conversationRepository.searchAllConversationGroups(name,address_id,school_id);
     },
-    searchAllConversationGroups2: async (name,address_name,school_name) => {
-        return await conversationRepository.searchAllConversationGroups2(name,address_name,school_name);
+    searchAllConversationGroups2: async (name,address_name,school_name,faculty_name) => {
+        return await conversationRepository.searchAllConversationGroups2(name,address_name,school_name,faculty_name);
     },
 }
 
