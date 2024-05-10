@@ -2895,6 +2895,7 @@ paths:
       parameters:
         - $ref: "#/components/parameters/AuthorizationHeader"
   
+
   # /rooms:
   #   get:
   #     tags:

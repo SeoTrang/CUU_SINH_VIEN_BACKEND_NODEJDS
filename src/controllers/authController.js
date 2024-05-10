@@ -98,6 +98,41 @@ const autController = {
             return res.status(500).json('server error');
         }
     },
+
+    adminLogin: async (req, res) => {
+        try {
+            const data = req.body.data;
+            const user = await userService.findByEmail(data.email);
+            console.log(user);
+            if(!user) {
+                return res.status(404).json("not found");
+            }
+            if(user.role !== 1) return res.status(403).json('forbidden');
+            if(!user.verifyEmail) return res.status(200).json('email is not verify');
+            if(!await bcrypt.compare(data.pass,user.pass)) return res.status(404).json('email or pass invalid');
+            let accessToken;
+            let refreshToken;
+            if (user) {
+                accessToken = await generateAccesstoken(user);
+                refreshToken = await generateRefreshtoken(user);
+            }
+            if(refreshToken && accessToken){
+                const data = {
+                    refreshToken: refreshToken,
+                    user_id: user.id
+                }
+                const resultAddRefreshToken = refreshTokenService.create(data);
+                if(resultAddRefreshToken) return res.status(200).json({
+                    refreshToken:refreshToken,
+                    accessToken:accessToken
+                })
+            }
+            return res.status(500).json('server error');
+        } catch (error) {
+            console.log(error);
+            return res.status(500).json('server error');
+        }
+    },
     logout: async (req,res) => {
         try {
             const refreshToken = req.headers.authorization.split(' ')[1];

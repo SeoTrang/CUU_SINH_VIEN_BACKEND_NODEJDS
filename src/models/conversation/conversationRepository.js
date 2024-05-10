@@ -200,7 +200,7 @@ const conversationRepository = {
                                 JOIN faculties ON conversations.faculty_id = faculties.id
                                 WHERE conversations.name LIKE '%${modifiedName}%' AND addresses.name LIKE '%${address_name}%' AND schools.name LIKE '%${school_name}%' AND faculties.name LIKE '%${faculty_name}%';`
             
-            console.log(queryString);
+            // console.log(queryString);
        
             
             let result = await sequelize.query(queryString, { type: sequelize.QueryTypes.SELECT });

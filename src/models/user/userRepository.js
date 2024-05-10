@@ -1,6 +1,8 @@
 const { Op } = require("sequelize");
 const User = require("./user");
 const sequelize = require("../../db/configDB");
+const School = require("../school/school");
+const Faculty = require("../faculty/faculty");
 const userRepository = {
   create: async (data) => {
     try {
@@ -45,7 +47,16 @@ const userRepository = {
   },
   findById: async (id) => {
     try {
-      const user = await User.findByPk(id);
+      const user = await User.findByPk(id,{
+        include: [
+          {
+            model: School
+          },
+          {
+            model: Faculty
+          }
+        ]
+      });
 
       if (user) return user;
       return false;
