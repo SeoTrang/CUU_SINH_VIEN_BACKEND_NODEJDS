@@ -15,11 +15,7 @@ externalDocs:
   url: http://swagger.io
 servers:
   - url: https://trang-dev.ictu.vn:10093/api
-securityDefinitions:
-  JWT:
-    type: apiKey
-    name: Authorization
-    in: header
+
 paths:
   /auth/register:
     post:
@@ -34,7 +30,7 @@ paths:
               example:
                 data:
                   "user_name": "Trang1"
-                  "phone": "0386640397"
+                  "email": "seotrangbh24@gmail.com"
                   "pass": "trang789"
       responses:
         "200":
@@ -71,7 +67,7 @@ paths:
               type: object
               example:
                 data:
-                  "phone": "0386640397"
+                  "email": "seotrangbh24@gmail.com"
                   "pass": "trang789"
       responses:
         "200":
@@ -95,7 +91,116 @@ paths:
               examples:
                 error:
                   value: "server error"
-
+  /auth/forgot-password:
+    post:
+      tags:
+        - Auth
+      summary: "save new password"
+      
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                data:
+                  "user_id": "1"
+                  "pass": "123"
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              example:
+                refreshToken: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzA1Mjg1NTE2LCJleHAiOjE3MDUyODkxMTZ9.1FEGKlxtkmEhVWPhjlxFQtOyikWGE_7xNIxN1MYolDk"
+                accessToken: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiYWRtaW4iOjAsImlhdCI6MTcwNTI4NTUxNiwiZXhwIjoxNzA1Mjg3MzE2fQ.3Q7X06-Z3YU3UHM-Qq0K4cWCGO73p9etwe-SqBmSXhk"
+        "404":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "not found"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "server error"
+  /auth/send-email:
+    post:
+      tags:
+        - Auth
+      summary: "Send an otp to email"
+      
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                data:
+                  "email": "seotrangbh24@gmail.com"
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              example:
+                refreshToken: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzA1Mjg1NTE2LCJleHAiOjE3MDUyODkxMTZ9.1FEGKlxtkmEhVWPhjlxFQtOyikWGE_7xNIxN1MYolDk"
+                accessToken: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiYWRtaW4iOjAsImlhdCI6MTcwNTI4NTUxNiwiZXhwIjoxNzA1Mjg3MzE2fQ.3Q7X06-Z3YU3UHM-Qq0K4cWCGO73p9etwe-SqBmSXhk"
+        "404":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "not found"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "server error"
+  /auth/verify-email:
+    post:
+      tags:
+        - Auth
+      summary: "Login with account"
+      
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                data:
+                  "email": "seotrangbh24@gmail.com"
+                  "otp": 5880
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              example:
+                refreshToken: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzA1Mjg1NTE2LCJleHAiOjE3MDUyODkxMTZ9.1FEGKlxtkmEhVWPhjlxFQtOyikWGE_7xNIxN1MYolDk"
+                accessToken: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiYWRtaW4iOjAsImlhdCI6MTcwNTI4NTUxNiwiZXhwIjoxNzA1Mjg3MzE2fQ.3Q7X06-Z3YU3UHM-Qq0K4cWCGO73p9etwe-SqBmSXhk"
+        "404":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "not found"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value: "server error"
   /file/img:
     post:
       tags:
@@ -1368,7 +1473,7 @@ paths:
                     error: "Internal Server Error"
       parameters:
         - $ref: "#/components/parameters/AuthorizationHeader"
-  /conversation/search-all-conversation-group?name={conversation_name}&address={address_id}&school={school_id}:
+  /conversation/search-all-conversation-group?name={conversation_name}&address={address_name}&school={school_name}&faculties_name={faculties_name}:
     get:
       tags:
         - Conversation
@@ -2444,8 +2549,6 @@ paths:
         - $ref: "#/components/parameters/AuthorizationHeader"
 
   /user:
-    security:
-        - JWT: []
     put:
       tags:
         - User
@@ -2882,8 +2985,3 @@ components:
       required: true
       schema:
         type: string
-      securityDefinitions:
-      JWT:
-        type: apiKey
-        name: Authorization
-        in: header

@@ -1,8 +1,10 @@
 
 const friendService = require("../services/friendService");
+
 const userService = require("../services/userService");
 
 const userController = {
+    
     search: async(req,res)=> {
         try {
             const search = req.params.search;

@@ -1,5 +1,6 @@
 const express = require("express");
 const https = require("https"); // Import https module
+const http = require("http"); // Import http module
 const fs = require("fs"); // Import file system module
 const cors = require("cors");
 const bodyParser = require("body-parser");
@@ -24,9 +25,6 @@ const socketModule = require("./sockets/socketModule");
 require("./db/configDB");
 
 const app = express();
-// create "middleware"
-// console.log('hello');
-// app.use(morgan("dev"));
 app.use(express.static(__dirname + "/public"));
 app.use(bodyParser.json());
 
@@ -44,41 +42,28 @@ const ioCorsOptions = {
   methods: ["GET", "POST"],
   credentials: true,
 };
-// Create Socket.IO server with CORS options
 
-// const keyPath = path.join(__dirname, '../cert/key.pem');
-// const certPath = path.join(__dirname, '../cert/cert.pem');
+const server = process.env.NODE_ENV == 'production' ? (
+            https.createServer({
+                key : fs.readFileSync(path.join(__dirname, '../../../../conf/web/trang-dev.ictu.vn/ssl/trang-dev.ictu.vn.key')),
+                cert: fs.readFileSync(path.join(__dirname, '../../../../conf/web/trang-dev.ictu.vn/ssl/trang-dev.ictu.vn.crt')),
+                ca  : fs.readFileSync(path.join(__dirname, '../../../../conf/web/trang-dev.ictu.vn/ssl/trang-dev.ictu.vn.ca')),
+            }, app)
+        )
+        :
+        http.createServer(app)
 
-const server = https.createServer({
-  key : fs.readFileSync(path.join(__dirname, '../../../../conf/web/trang-dev.ictu.vn/ssl/trang-dev.ictu.vn.key')),
-  cert: fs.readFileSync(path.join(__dirname, '../../../../conf/web/trang-dev.ictu.vn/ssl/trang-dev.ictu.vn.crt')),
-  ca  : fs.readFileSync(path.join(__dirname, '../../../../conf/web/trang-dev.ictu.vn/ssl/trang-dev.ictu.vn.ca')),
-}, app);
-
-
-
-// const server = https.createServer({
-//   key : fs.readFileSync(path.join(__dirname, '../ssl2/ssl.trang-dev.ictu.vn.key')),
-//   cert: fs.readFileSync(path.join(__dirname, '../ssl2/ssl.trang-dev.ictu.vn.crt')),
-//   ca  : fs.readFileSync(path.join(__dirname, '../ssl2/ssl.trang-dev.ictu.vn.ca')),
-// }, app);
-
-
-// const server = https.createServer({
-//   key : fs.readFileSync(path.join(__dirname, '../ssl/key.pem')),
-//   cert: fs.readFileSync(path.join(__dirname, '../ssl/cert.pem')),
-//   passphrase: 'trang'
-// }, app);
-
-const serverIo = https.createServer({
-  key : fs.readFileSync(path.join(__dirname, '../../../../conf/web/trang-dev.ictu.vn/ssl/trang-dev.ictu.vn.key')),
-  cert: fs.readFileSync(path.join(__dirname, '../../../../conf/web/trang-dev.ictu.vn/ssl/trang-dev.ictu.vn.crt')),
-  ca  : fs.readFileSync(path.join(__dirname, '../../../../conf/web/trang-dev.ictu.vn/ssl/trang-dev.ictu.vn.ca')),
-}, app);
-
-// ../../../../conf/web/trang-dev.ictu.vn/ssl/trang-dev.ictu.vn.key
-// ../../../../conf/web/trang-dev.ictu.vn/ssl/trang-dev.ictu.vn.ca
-// ../../../../conf/web/trang-dev.ictu.vn/ssl/trang-dev.ictu.vn.crt
+const serverIo =  process.env.NODE_ENV == 'production' ? 
+        (
+            https.createServer({
+                key : fs.readFileSync(path.join(__dirname, '../../../../conf/web/trang-dev.ictu.vn/ssl/trang-dev.ictu.vn.key')),
+                cert: fs.readFileSync(path.join(__dirname, '../../../../conf/web/trang-dev.ictu.vn/ssl/trang-dev.ictu.vn.crt')),
+                ca  : fs.readFileSync(path.join(__dirname, '../../../../conf/web/trang-dev.ictu.vn/ssl/trang-dev.ictu.vn.ca')),
+              }, app)
+        ):
+        (
+            http.createServer(app)
+        )
 
 
 const ioServer         = new Server(serverIo, {
@@ -105,7 +90,7 @@ socketManager(ioServer);
 
 // socket io start 
 serverIo.listen(port_socket, () => {
-  console.log('Socket.IO server is running on port ',port_socket);
+  console.log(`Socket.IO server is running on ${process.env.NODE_ENV == 'production' ? 'wss' : 'ws'}://localhost:${port_socket}`);
 });
 
 // swagger 123
@@ -114,7 +99,8 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 
 
+
 server.listen(port, () => {
-  console.log(`app running on https://localhost:${port}`);
+  console.log(`app running on ${process.env.NODE_ENV == 'production' ? 'https' : 'http'}://localhost:${port}`);
 });
 

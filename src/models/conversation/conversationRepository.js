@@ -186,6 +186,51 @@ const conversationRepository = {
         }
     },
 
+    searchAllConversationGroups2: async (name,address_name,school_name) => {
+        try {
+
+            //case 1:  full field search (name,school_id, address_id)
+            let queryString = null;
+            if(school_id && address_id){
+                queryString =  ` SELECT conversations.*, addresses.name AS addresse_name, schools.name AS school_name 
+                                FROM conversations 
+                                JOIN addresses ON conversations.address_id = addresses.id
+                                JOIN schools ON conversations.school_id = schools.id
+                                WHERE conversations.name LIKE '%${name}%' AND addresses.name LIKE '%${address_name}%' AND schools.name LIKE '%${address}%';`
+            }
+        //     else
+        //     // case 2: only field name and address_id
+        //     if(!school_id && address_id){
+        //             queryString =  `SELECT conversations.*, addresses.name AS addresse_name, schools.name AS school_name 
+        //             FROM conversations 
+        //             JOIN addresses ON conversations.address_id = addresses.id
+        //             JOIN schools ON conversations.school_id = schools.id
+        //             WHERE conversations.name LIKE '%CNOTO%' AND addresses.name LIKE '%An Giang%';`
+        //     }
+        //     // case 3: only field address and school
+        //     if(!school_id && address_id){
+        //         queryString =  `SELECT conversations.*, addresses.name AS addresse_name, schools.name AS school_name 
+        //         FROM conversations 
+        //         JOIN addresses ON conversations.address_id = addresses.id
+        //         JOIN schools ON conversations.school_id = schools.id
+        //         WHERE conversations.name LIKE '%CNOTO%' AND addresses.name LIKE '%An Giang%';`
+        // }
+        //     else
+        //     // case 4: only field name 
+        //         queryString =  ` SELECT conversations.* from conversations 
+        //                         WHERE conversations.name LIKE '%${name}%';`
+            
+            
+            let result = await sequelize.query(queryString, { type: sequelize.QueryTypes.SELECT });
+            
+            if(result.length > 0) return {success: result}
+            return null;
+        } catch (error) {
+            console.log(error);
+            return {error: error}
+        }
+    },
+
     // get all converstation from user
     getAllConversationFromUser: async(user_id) => {
         try {

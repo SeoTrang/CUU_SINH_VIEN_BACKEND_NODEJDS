@@ -27,11 +27,12 @@ const userRepository = {
       return false; // Trả về false nếu có lỗi xảy ra
     }
   },
-  findByPhone: async (data) => {
+  findByEmail: async (data) => {
     try {
+      console.log(data);
       const user = await User.findOne({
         where: {
-          phone: data,
+          email: data,
         },
       });
 
@@ -131,6 +132,37 @@ const userRepository = {
       return { error: error.message };
     }
   },
+
+  verifyEmail: async (user_id) => {
+    try {
+      const user = await User.findByPk(user_id);
+      if(!user) return { error: 'User not found' };
+      user.verifyEmail = true;
+      await user.save(); // Sử dụng await để đợi phương thức save() hoàn thành
+
+      return { success: 'Email verified successfully' };
+
+    } catch (error) {
+      console.error("Lỗi khi cập nhật người dùng:", error);
+      return false; // Trả về false nếu có lỗi xảy ra
+    }
+  },
+
+  saveNewPass: async (data) => {
+    try {
+      const {user_id, pass} = data;
+      const user = await User.findByPk(user_id);
+      if(!user) return { error: 'User not found' };
+      user.pass = pass;
+      await user.save(); // Sử dụng await để đợi phương thức save() hoàn thành
+
+      return { success: 'success' };
+
+    } catch (error) {
+      console.error("Lỗi khi cập nhật người dùng:", error);
+      return false; // Trả về false nếu có lỗi xảy ra
+    }
+  }
 };
 
 module.exports = userRepository;

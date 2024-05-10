@@ -3,17 +3,19 @@ const { generateAccesstoken, generateRefreshtoken } = require("../auth/auth");
 const refreshTokenService = require("../services/refreshTokenService");
 const bcrypt = require('../util/bcrypt');
 const addressService = require('../services/addressService');
+const nodeMailService = require('../services/nodeMailService');
+const OTPService = require('../services/OTPService');
 const autController = {
     register: async (req,res) => {
         try {
-            addressService.getAll();
+            // addressService.getAll();
             // console.log(req.body);
             let user = req.body.data;
             if(!user) return res.status(400).json('missing data')
-            if(user.phone){
-                let user_temp = await userService.findByPhone(user.phone);
+            if(user.email){
+                let user_temp = await userService.findByEmail(user.email);
                 // console.log(user_temp);
-                if(user_temp) return res.status(409).json("Phone đã tồn tại")
+                if(user_temp) return res.status(409).json("Email đã tồn tại")
             }
 
             // console.log("test 123");
@@ -66,11 +68,13 @@ const autController = {
     login: async (req, res) => {
         try {
             const data = req.body.data;
-            const user = await userService.findByPhone(data.phone);
+            const user = await userService.findByEmail(data.email);
+            console.log(user);
             if(!user) {
                 return res.status(404).json("not found");
             }
-            if(!await bcrypt.compare(data.pass,user.pass)) return res.status(404).json('phone or pass invalid');
+            if(!user.verifyEmail) return res.status(200).json('email is not verify');
+            if(!await bcrypt.compare(data.pass,user.pass)) return res.status(404).json('email or pass invalid');
             let accessToken;
             let refreshToken;
             if (user) {
@@ -105,6 +109,62 @@ const autController = {
         } catch (error) {
             console.log(error);
             return res.status(500).json('server error');
+        }
+    },
+
+    sendEmail: async(req,res) => {
+        try {
+            const otp = Math.floor(1000 + Math.random() * 9000);
+            const email = req.body.data.email;
+            const result_send_email = await nodeMailService.sendMail(email,otp);
+            if(result_send_email){
+                await OTPService.create({
+                    email: email,
+                    otp: otp
+                })
+            }
+            return res.status(200).json('success');
+        } catch (error) {
+            console.log(error);
+            return res.status(500).json({error: error.message});
+        }
+    },
+
+    verifyEmail: async(req,res) => {
+        try {
+            const email = req.body.data.email;
+            const otp = req.body.data.otp;
+            const result = await OTPService.getByEmailAndNotExpired({email: email, otp: otp});
+            console.log(result);
+            if(result) {
+                OTPService.deleteOpt({email: email, otp: otp})
+                const user = await userService.findByEmail(email);  
+                if(!user) return res.status(404).json({error:'user not found'});
+                await userService.verifyEmail(user.id);
+                return res.status(200).json(result.success);
+            }
+                
+            
+        } catch (error) {
+            console.log(error);
+            return res.status(500).json({error: error});
+        }
+    },
+
+    forgotPassword: async (req,res) => {
+        try {
+            const {user_id, pass} = req.body.data;
+            const encodePass = await bcrypt.hash(pass);
+            const data = {
+                user_id: user_id,
+                pass: encodePass
+            }
+
+            const result = await userService.saveNewPass(data);
+            if(result.success) return res.status(200).json(result.success);
+        } catch (error) {
+            console.log(error);
+            return res.status(500).json({error: error.message});
         }
     }
 }
