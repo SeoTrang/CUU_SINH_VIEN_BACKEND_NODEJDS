@@ -2,6 +2,7 @@ const { DataTypes, QueryTypes } = require('sequelize');
 const sequelize = require('../../db/configDB');
 const School = require('../school/school');
 const Faculty = require('../faculty/faculty');
+const Address = require('../address/address');
 
 
 const User = sequelize.define('users',{
@@ -31,7 +32,7 @@ const User = sequelize.define('users',{
         allowNull: false,
         defaultValue: 0
     },
-    address:{
+    address_detail:{
         type: DataTypes.STRING,
         allowNull: true
     },
@@ -77,6 +78,14 @@ User.belongsTo(Faculty,{
 
 Faculty.hasMany(User,{
     foreignKey: 'faculty_id'
+})
+
+User.belongsTo(Address,{
+    foreignKey: 'address_id'
+})
+
+Address.hasMany(User,{
+    foreignKey: 'address_id'
 })
 // sequelize.sync().then(() => {
 //     console.log('users table created successfully!');

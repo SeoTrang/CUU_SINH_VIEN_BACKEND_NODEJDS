@@ -13,6 +13,15 @@ const facultyController = {
                 error: error.message
             })
         }
+    },
+
+    getAllBySchool: async (req,res ) => {
+        try{
+            // const school_id = req.params.
+        }catch(error){
+            console.log(error);
+            return res.status(500).json({errr: error.message});
+        }
     }
 }
 

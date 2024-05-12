@@ -36,6 +36,14 @@ const userService = {
     },
     saveNewPass: async(data) => {
         return await userRepository.saveNewPass(data);
+    },
+
+    searchByMultipleParam: async (data) => {
+        return await userRepository.searchByMultipleParam(data);
+    },
+
+    recommendFriend: async (user_id) => {
+        return await userRepository.recommendFriend(user_id);
     }
 
     

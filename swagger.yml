@@ -104,7 +104,7 @@ paths:
               type: object
               example:
                 data:
-                  "user_id": "1"
+                  "email": "seotrangbh24@gmail.com"
                   "pass": "123"
       responses:
         "200":
@@ -2548,6 +2548,64 @@ paths:
       parameters:
         - $ref: "#/components/parameters/AuthorizationHeader"
 
+  /user/recommend-friend:
+    get:
+      tags:
+        - User
+      security:
+        - JWT: []
+      responses:
+        "200":
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  - "id": 1
+                    "user_name": "Trang"
+                    "phone": "0386640397"
+                    "pass": "$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy"
+                    "avatar": "/img/avatar_default/avatar_24.jpg"
+                    "role": 0
+                    "createdAt": "2023-12-29T01:31:57.000Z"
+                    "updatedAt": "2023-12-29T01:31:57.000Z"
+                  - "id": 2
+                    "user_name": "Giàng Seo Chua"
+                    "phone": "0386640398"
+                    "pass": "$2a$10$9l.b8xf.WpButCLALvhbReqeDrXSlmNs/ofr0YSdNfN1NV2orBzsG"
+                    "avatar": "/img/avatar_default/avatar_3.jpg"
+                    "role": 0
+                    "createdAt": "2023-12-29T01:51:38.000Z"
+                    "updatedAt": "2023-12-29T01:51:38.000Z"
+                  - "id": 3
+                    "user_name": "Ma Deo Dế"
+                    "phone": "0386640399"
+                    "pass": "$2a$10$a4mWUg6pqo7eNt4xIBjEReH0BKwiXaNbk0j8ikM.JxCwtSm7bJF1G"
+                    "avatar": "/img/avatar_default/avatar_14.jpg"
+                    "role": 0
+                    "createdAt": "2023-12-29T01:52:16.000Z"
+                    "updatedAt": "2023-12-29T01:52:16.000Z"
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+
   /user:
     put:
       tags:
@@ -2637,7 +2695,53 @@ paths:
                     error: "Internal Server Error"
       parameters:
         - $ref: "#/components/parameters/AuthorizationHeader"
-
+  /user/search-multiple-param?address={address_name}&school={school_name}&faculty={faculty_name}&userName={user_name}:
+    get:
+      tags:
+        - User
+      security:
+        - JWT: []
+      responses:
+        "200":
+          description: "updated successfully"
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  "id": 2
+                  "user_name": "Giàng Seo Chua"
+                  "phone": "0386640398"
+                  "pass": "$2a$10$9l.b8xf.WpButCLALvhbReqeDrXSlmNs/ofr0YSdNfN1NV2orBzsG"
+                  "avatar": "/img/avatar_default/avatar_3.jpg"
+                  "role": 0
+                  "address": "Lào cai"
+                  "gender": "Nam"
+                  "email": "seotrangbh24@gmail.com"
+                  "date_of_birth": "10/12/2001"
+                  "background": null
+                  "createdAt": "2023-12-29T01:51:38.000Z"
+                  "updatedAt": "2024-03-27T09:04:23.000Z"
+                  "school_id": null
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
   /get-all-data:
     get:
       tags:

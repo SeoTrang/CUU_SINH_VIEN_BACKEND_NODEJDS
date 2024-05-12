@@ -171,6 +171,7 @@ const friendRepository = {
         }
     },
 
+    
     updateStatusFriend: async (friendShip_id,status,user_id,friend_id) => {
         try {
             const result = await Friend.update({
@@ -238,6 +239,44 @@ const friendRepository = {
         } catch (error) {
             console.log(error);
             return {error: error.message}
+        }
+    },
+    getRecomendFriendIds: async (user_id) => {
+        try{
+            const resultQueryFriend = await sequelize.query(
+                `
+                SELECT 
+                    CASE
+                        WHEN f.user_id = ${user_id} THEN f.friend_id
+                        WHEN f.friend_id = ${user_id} THEN f.user_id
+                    END AS friend_id
+                FROM friends f
+                WHERE (f.user_id = ${user_id} OR f.friend_id = ${user_id});
+                `,
+                {type: sequelize.QueryTypes.SELECT}
+            )
+            // console.log(resultQueryFriend);
+            let array_friend = resultQueryFriend.map((value) => value.friend_id);
+
+            // Tạo danh sách bạn bè
+            let friendList = array_friend.join(',');
+
+            // Lấy danh sách những người không nằm trong danh sách bạn bè
+            const resultQueryNonFriends = await sequelize.query(
+                `
+                SELECT id
+                FROM users
+                WHERE id NOT IN (${friendList}) AND id != ${user_id}
+                `,
+                { type: sequelize.QueryTypes.SELECT }
+            );
+
+            let array_non_friends = resultQueryNonFriends.map((value) => value.id);
+
+            return array_non_friends;
+        }catch(err){
+            console.log(err);
+            return {error: err.message}
         }
     }
 }

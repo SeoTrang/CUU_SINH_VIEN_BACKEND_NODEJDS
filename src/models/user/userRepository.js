@@ -3,6 +3,7 @@ const User = require("./user");
 const sequelize = require("../../db/configDB");
 const School = require("../school/school");
 const Faculty = require("../faculty/faculty");
+const friendRepository = require("../friend/friendRepository");
 const userRepository = {
   create: async (data) => {
     try {
@@ -161,8 +162,12 @@ const userRepository = {
 
   saveNewPass: async (data) => {
     try {
-      const {user_id, pass} = data;
-      const user = await User.findByPk(user_id);
+      const {email, pass} = data;
+      const user = await User.findOne({
+        where: {
+          email: email
+        }
+      });
       if(!user) return { error: 'User not found' };
       user.pass = pass;
       await user.save(); // Sử dụng await để đợi phương thức save() hoàn thành
@@ -172,6 +177,47 @@ const userRepository = {
     } catch (error) {
       console.error("Lỗi khi cập nhật người dùng:", error);
       return false; // Trả về false nếu có lỗi xảy ra
+    }
+  },
+
+  searchByMultipleParam: async (data) => {
+    try{
+      const {address, school, faculty, userName} = data;
+      const modifiedName = userName.replace(/\s+/g, ' ');
+      const queryString = `
+      SELECT users.*, addresses.name AS address_name, schools.name AS school_name, faculties.name AS faculty_name 
+      FROM users 
+      JOIN addresses ON users.address_id = addresses.id
+      JOIN schools ON users.school_id = schools.id
+      JOIN faculties ON users.faculty_id = faculties.id
+      WHERE users.user_name LIKE '%${modifiedName}%' AND addresses.name LIKE '%${address}%' AND schools.name LIKE '%${school}%' AND faculties.name LIKE '%${faculty}%';
+      `;
+      let result = await sequelize.query(queryString, { type: sequelize.QueryTypes.SELECT });
+            
+      if(result.length > 0) return {success: result}
+    }catch(error){
+      console.log(error);
+      return {error: error}
+    }
+  },
+
+
+  recommendFriend: async (user_id) => {
+    try {
+      let array_non_friends = await friendRepository.getRecomendFriendIds(user_id);
+      let user = await User.findByPk(user_id);
+        let queryString = `
+        SELECT users.* 
+        FROM users
+        WHERE users.id IN (${array_non_friends}) AND (users.address_id = ${user.address_id} OR users.school_id = ${user.school_id})
+        `;
+        let friendRecomends = sequelize.query(queryString, { type: sequelize.QueryTypes.SELECT });
+
+      return friendRecomends;
+
+    } catch (error) {
+      console.log(error);
+      return {error: error}
     }
   }
 };

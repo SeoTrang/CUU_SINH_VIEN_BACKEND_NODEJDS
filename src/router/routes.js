@@ -26,6 +26,7 @@ router.post('/school',schoolController.create)
 
 // ---------------------------------faculty --------------------------------
 router.post('/faculty/create',facultyController.create);
+router.post('/faculty/all-by-school-id',facultyController.getAllBySchool);
 
 
 // search
@@ -119,6 +120,8 @@ router.get('/comment/get-by-post/:post_id',checkLogin,commentController.getByPos
 
 // --------------------------------------- user ----------------------------
 router.get('/user/all-users',checkLogin,userController.getAllUsers)
+router.get('/user/search-multiple-param',checkLogin,userController.searchByMultipleParam)
+router.get('/user/recommend-friend',checkLogin,userController.recommendFriend);
 router.get('/user/:user_id',checkLogin,userController.getUserByID)
 router.put('/user',checkLogin,userController.update)
 

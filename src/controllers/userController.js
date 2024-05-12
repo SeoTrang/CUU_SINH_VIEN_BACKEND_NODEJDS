@@ -17,6 +17,29 @@ const userController = {
             return res.status(500).json({error: error});
         }
     },
+    recommendFriend: async (req,res) =>  {
+        try {
+            const user_id = req.body.decode.id;
+            const result = await userService.recommendFriend(user_id);
+            return res.status(200).json(result);
+        } catch (error) {
+            console.log(error);
+            return res.status(500).json({error: error});
+        }
+    },
+    searchByMultipleParam: async (req,res) => {
+        try {
+            const {address, school, faculty, userName} = req.query;
+            const result = await userService.searchByMultipleParam(req.query);
+            if(result.success) return res.status(200).json(result.success);
+            throw new Error(result.error)
+        } catch (error) {
+            console.log(error);
+            return res.status(500).json({
+                error: error.message
+            })
+        }
+    },
     update: async (req,res) => {
         try {
             

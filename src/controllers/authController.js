@@ -188,10 +188,10 @@ const autController = {
 
     forgotPassword: async (req,res) => {
         try {
-            const {user_id, pass} = req.body.data;
+            const {email, pass} = req.body.data;
             const encodePass = await bcrypt.hash(pass);
             const data = {
-                user_id: user_id,
+                email: email,
                 pass: encodePass
             }
 
