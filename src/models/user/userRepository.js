@@ -59,7 +59,6 @@ const userRepository = {
           }
         ]
       });
-
       if (user) return user;
       return false;
     } catch (error) {
