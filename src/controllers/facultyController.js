@@ -15,9 +15,12 @@ const facultyController = {
         }
     },
 
-    getAllBySchool: async (req,res ) => {
+    getAllBySchoolName: async (req,res ) => {
         try{
-            // const school_id = req.params.
+            const school_name = req.params.school_name;
+            if(!school_name) return res.status(400).json('missing data');
+            const dataResult = await facultyService.findBySchoolName(school_name);
+            return res.status(200).json(dataResult);
         }catch(error){
             console.log(error);
             return res.status(500).json({errr: error.message});

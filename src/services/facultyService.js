@@ -7,6 +7,14 @@ const facultyService = {
         } catch (error) {
             throw error;
         }
+    },
+
+    findBySchoolName: async (school_name) => {
+        try {
+            return await facultyRepository.findBySchoolName(school_name);
+        } catch (error) {
+            throw error;
+        }
     }
 }
 

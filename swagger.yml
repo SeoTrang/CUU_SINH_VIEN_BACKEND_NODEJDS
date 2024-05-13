@@ -347,7 +347,7 @@ paths:
                 error:
                   value:
                     error: "Internal Server Error"
-  /school/all-school-by-name?address={address_name}:
+  /school/all-school-by-address?address={address_name}:
     get:
       tags:
         - School
@@ -2742,6 +2742,94 @@ paths:
                     error: "Internal Server Error"
       parameters:
         - $ref: "#/components/parameters/AuthorizationHeader"
+  
+  /faculty/create:
+    post:
+      tags:
+        - Faculty
+      security:
+        - JWT: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                data:
+                  type: object
+                  example:
+                    "school_id": 5
+                    "name" : "Sư phạm mầm non"
+      responses:
+        "200":
+          description: "updated successfully"
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+  
+  /faculty/all-by-school-nam/{school_name}:
+    get:
+      tags:
+        - Faculty
+      security:
+        - JWT: []
+      responses:
+        "200":
+          description: "successfully"
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    example:
+                      - "id": 1
+                        "name": "Công nghệ thông tin"
+                        "createdAt": "2024-05-10T03:25:01.000Z"
+                        "updatedAt": "2024-05-10T03:25:01.000Z"
+                        "school_id": 1
+                      - "id": 2
+                        "name": "Thiết kế đồ họa"
+                        "createdAt": "2024-05-13T02:53:17.000Z"
+                        "updatedAt": "2024-05-13T02:53:17.000Z"
+                        "school_id": 1
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              examples:
+                invalidToken:
+                  value: "invalid access token"
+                expiredToken:
+                  value: "access token expired"
+        "500":
+          description: "Error operation"
+          content:
+            application/json:
+              examples:
+                error:
+                  value:
+                    error: "Internal Server Error"
+      parameters:
+        - $ref: "#/components/parameters/AuthorizationHeader"
+
   /get-all-data:
     get:
       tags:

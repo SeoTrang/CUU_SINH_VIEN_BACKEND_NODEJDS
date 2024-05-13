@@ -37,8 +37,7 @@ const schoolRepository = {
                     name: {
                         [Op.like]: `%${addressName}%`
                     }
-                },
-                logging: true
+                }
             })
 
             // const addressAll = await Address.findAll();

@@ -20,13 +20,13 @@ router.get('/all-address',addressController.getAll);
 
 // ---------------------------------school
 router.get('/school/all-school',schoolController.getByAddress)
-router.get('/school/all-school-by-name',schoolController.getByAddressName)
+router.get('/school/all-school-by-address',schoolController.getByAddressName)
 router.post('/school',schoolController.create)
 
 
 // ---------------------------------faculty --------------------------------
 router.post('/faculty/create',facultyController.create);
-router.post('/faculty/all-by-school-id',facultyController.getAllBySchool);
+router.get('/faculty/all-by-school-name/:school_name',facultyController.getAllBySchoolName);
 
 
 // search
