@@ -109,7 +109,10 @@ const autController = {
             }
             if(user.role !== 1) return res.status(403).json('forbidden');
             if(!user.verifyEmail) return res.status(200).json('email is not verify');
+            console.log('hello');
+            console.log(data.pass);
             if(!await bcrypt.compare(data.pass,user.pass)) return res.status(404).json('email or pass invalid');
+            console.log('haha');
             let accessToken;
             let refreshToken;
             if (user) {
@@ -130,7 +133,7 @@ const autController = {
             return res.status(500).json('server error');
         } catch (error) {
             console.log(error);
-            return res.status(500).json('server error');
+            return res.status(500).json({error: error.message});
         }
     },
     logout: async (req,res) => {

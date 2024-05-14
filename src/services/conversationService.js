@@ -20,6 +20,9 @@ const conversationService = {
     getAllConversationFromUser: async(user_id)=> {
         return await conversationRepository.getAllConversationFromUser(user_id);
     },
+    getAllConversations: async()=> {
+        return await conversationRepository.getAllConversations();
+    },
 
     getAllConversationGroupsByUser: async(user_id)=> {
         return await conversationRepository.getAllConversationGroupsByUser(user_id);

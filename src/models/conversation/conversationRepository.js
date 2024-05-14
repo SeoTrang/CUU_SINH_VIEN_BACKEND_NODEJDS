@@ -90,6 +90,41 @@ const conversationRepository = {
         }
     },
 
+    getAllConversations: async() => {
+        try {
+            let result = await Conversation.findAll({
+                attributes: {
+                    include: [
+                        [sequelize.literal(`(
+                            SELECT COUNT(*)
+                            FROM messages AS messages
+                            WHERE
+                            messages.conversation_id  = conversations.id
+                        )`), 'messageCount']
+                    ]
+                },
+                include: [
+                    {
+                        model: User,
+                        through: {
+                            model: UserConversation,
+                            where: { status: 'accept' } // Lọc theo trạng thái 'pending'
+                        }, // Chú ý thêm thông tin này để Sequelize hiểu quan hệ
+                        as: 'users', // Đặt tên cho quan hệ, sử dụng khi truy vấn
+                        
+                    }
+                ]
+            })
+
+            
+            if(result) return result;
+            return false;
+        } catch (error) {
+            console.log(error);
+            return {error: error}
+        }
+    },
+
     getUserPendingFromConversationID: async(id) => {
         try {
             let result = await Conversation.findByPk(id,{

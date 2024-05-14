@@ -140,7 +140,16 @@ const userController = {
         }
     },
 
-
+    getAllUsersDetail: async (req,res) => {
+        try {
+            let result = await userService.getAllUsersDetail();
+            if(result) return res.status(200).json(result.success);
+            throw new Error(result.error);
+        } catch (error) {
+            console.log(error);
+            return res.status(500).json({error: error.message});
+        }
+    },
     getImgLibrary: async (req, res) => {
         try {
             const user_id = req.body.decode.id;

@@ -25,11 +25,24 @@ module.exports = {
             next();
         } catch (error) {
             console.log(error);
+            return res.status(500).json({error: error.message})
 
         }
     },
-    checkAdmin: (req, res, next) => {
-        return res.json("khong co quyen truy cap")
+    checkAdmin: async (req, res, next) => {
+        try {
+            if(!req.headers.authorization) return res.status(401).json("invalid access token");
+            const token = req.headers.authorization.split(' ')[1]; //get token
+            // console.log("token :",token);
+            // console.log("env access token : ",process.env.ACCESS_TOKEN_SECRET);
+            const decode = await Auth.verifyAccessToken(token);
+            console.log(decode);
+            if(decode.admin !== 1) return res.status(403).json('forbidden');
+            next();
+        } catch (error) {
+            return res.status(500).json({error: error.message})
+        }
+        
     }
 };
   

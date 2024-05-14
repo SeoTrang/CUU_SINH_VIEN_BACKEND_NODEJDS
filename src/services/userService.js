@@ -20,6 +20,9 @@ const userService = {
     getAllUsers: async() => {
         return await userRepository.getAllUsers();
     },
+    getAllUsersDetail: async() => {
+        return await userRepository.getAllUsersDetail();
+    },
 
     update: async(data,user_id) => {
         return await userRepository.update(data,user_id);

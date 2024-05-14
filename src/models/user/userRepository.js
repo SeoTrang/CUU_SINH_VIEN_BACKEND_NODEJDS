@@ -4,6 +4,7 @@ const sequelize = require("../../db/configDB");
 const School = require("../school/school");
 const Faculty = require("../faculty/faculty");
 const friendRepository = require("../friend/friendRepository");
+const Address = require("../address/address");
 const userRepository = {
   create: async (data) => {
     try {
@@ -103,6 +104,24 @@ const userRepository = {
     }
   },
 
+  getAllUsersDetail: async () => {
+    try {
+      let result = await User.findAll({
+        include: [
+          {
+            model: School,
+          },
+          {
+            model: Address
+          }
+        ]
+      });
+      if (result) return { success: result };
+    } catch (error) {
+      console.log(error);
+      return { error: error.message };
+    }
+  },
   getImgLibrary: async (items_per_page,skip_items) => {
     try {
       let result = await sequelize.query(

@@ -177,6 +177,20 @@ const conversationController = {
         }
     },
 
+    getAllConversations: async (req,res) => {
+        try {
+            let result = await conversationService.getAllConversations();
+            console.log(result);
+        
+            let data = result;
+            
+            return res.json(data);
+        } catch (error) {
+            console.log(error);
+            return res.status(500).json({error: error});
+        }
+    },
+
     getByName: async (req,res) => {
         try {
             const userName = req.query.name;
