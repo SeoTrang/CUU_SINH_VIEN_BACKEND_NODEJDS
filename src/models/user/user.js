@@ -61,6 +61,10 @@ const User = sequelize.define('users',{
     verifyEmail: {
         type: DataTypes.BOOLEAN,
         defaultValue: false
+    },
+    address_id_work	: {
+        type: DataTypes.TEXT,
+        allowNull: true
     }
 })
 
