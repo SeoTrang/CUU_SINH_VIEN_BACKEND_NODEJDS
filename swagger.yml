@@ -2747,8 +2747,6 @@ paths:
     post:
       tags:
         - Faculty
-      security:
-        - JWT: []
       requestBody:
         content:
           application/json:
@@ -2780,15 +2778,11 @@ paths:
                 error:
                   value:
                     error: "Internal Server Error"
-      parameters:
-        - $ref: "#/components/parameters/AuthorizationHeader"
   
-  /faculty/all-by-school-nam/{school_name}:
+  /faculty/all-by-school-name/{school_name}:
     get:
       tags:
         - Faculty
-      security:
-        - JWT: []
       responses:
         "200":
           description: "successfully"
@@ -2827,8 +2821,6 @@ paths:
                 error:
                   value:
                     error: "Internal Server Error"
-      parameters:
-        - $ref: "#/components/parameters/AuthorizationHeader"
 
   /get-all-data:
     get:

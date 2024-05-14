@@ -46,16 +46,18 @@ const socketManager = (io) => {
       });
 
       socket.on("delete-message",async (data)=>{
-        const {message_id, room, userId} = data;
+        const {message_id, room, userIds} = data;
         io.to(room+"").emit(`delete-message`, JSON.parse(JSON.stringify({ message_id })));
-
-        const userSocketid = await socketService.getByUserId(userId);
-        const lastestMessageRoom = await messageService.getLatestMessageByConversationId(room);
-        console.log(userSocketid);
-        for (let index = 0; index < userSocketid.length; index++) {
-          io.to(userSocketid[index].socketid).emit(`update-room-message`, { lastestMessageRoom, room: room });
+        const lastestMessage = await messageService.getLatestMessageByConversationId(room);
+        for (let index = 0; index < userIds.length; index++) {
+          const user = await socketService.getByUserId(userIds[index].id);
+          for (let index = 0; index < user.length; index++) {
+            io.to(user[index].socketid).emit(`update-room-message`, { lastestMessage, room: room });
+            
+          }
           
         }
+        
       })
 
       socket.on("room-message",async (data)=>{
