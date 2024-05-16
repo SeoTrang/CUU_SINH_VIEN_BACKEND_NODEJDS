@@ -4,6 +4,9 @@ const sequelize = require("../../db/configDB");
 const User = require("../user/user");
 const UserConversation = require("../userConversation/userConversation");
 const Message = require("../message/message");
+const School = require("../school/school");
+const Address = require("../address/address");
+const Faculty = require("../faculty/faculty");
 
 const conversationRepository = {
     create: async (data) => {
@@ -90,7 +93,7 @@ const conversationRepository = {
         }
     },
 
-    getAllConversations: async() => {
+    getAllConversationsGroup: async() => {
         try {
             let result = await Conversation.findAll({
                 attributes: {
@@ -103,6 +106,9 @@ const conversationRepository = {
                         )`), 'messageCount']
                     ]
                 },
+                where: {
+                    type: 'room'
+                },
                 include: [
                     {
                         model: User,
@@ -112,6 +118,15 @@ const conversationRepository = {
                         }, // Chú ý thêm thông tin này để Sequelize hiểu quan hệ
                         as: 'users', // Đặt tên cho quan hệ, sử dụng khi truy vấn
                         
+                    },
+                    {
+                        model: School
+                    },
+                    {
+                        model: Address
+                    },
+                    {
+                        model: Faculty
                     }
                 ]
             })
@@ -265,7 +280,7 @@ const conversationRepository = {
             LEFT JOIN
                 messages ON conversations.id = messages.conversation_id
             WHERE
-                user_conversations.user_id = ${user_id}
+                user_conversations.user_id = ${user_id} and conversations.status = 'accept'
             GROUP BY
                 conversations.id, conversations.name
             ORDER BY
@@ -301,7 +316,7 @@ const conversationRepository = {
             LEFT JOIN
                 messages ON conversations.id = messages.conversation_id
             WHERE
-                user_conversations.user_id = ${user_id} and conversations.type = 'room'
+                user_conversations.user_id = ${user_id} and conversations.type = 'room' and conversations.status = 'accept'
             GROUP BY
                 conversations.id, conversations.name
             ORDER BY
@@ -335,6 +350,19 @@ const conversationRepository = {
         } catch (error) {
             console.log(error);
             return {error: error}
+        }
+    },
+
+
+    acceptStatus: async (conversation_id) => {
+        try{
+            let conversation = await Conversation.findByPk(conversation_id);
+            conversation.status = 'accept';
+            conversation.save();
+            return true;
+        }catch(error){
+            console.log(error);
+            throw error;
         }
     }
 

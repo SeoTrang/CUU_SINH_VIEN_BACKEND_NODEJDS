@@ -848,9 +848,9 @@ paths:
                 data:
                   type: object
                   example:
-                    data:
-                      group_id: 10,
-                      user_id: 5
+                    group_id: 10,
+                    user_id: 5
+                      
       responses:
         "200":
           description: "successfully"

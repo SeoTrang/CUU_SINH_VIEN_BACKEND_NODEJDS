@@ -20,8 +20,8 @@ const conversationService = {
     getAllConversationFromUser: async(user_id)=> {
         return await conversationRepository.getAllConversationFromUser(user_id);
     },
-    getAllConversations: async()=> {
-        return await conversationRepository.getAllConversations();
+    getAllConversationsGroup: async()=> {
+        return await conversationRepository.getAllConversationsGroup();
     },
 
     getAllConversationGroupsByUser: async(user_id)=> {
@@ -40,6 +40,14 @@ const conversationService = {
     searchAllConversationGroups2: async (name,address_name,school_name,faculty_name) => {
         return await conversationRepository.searchAllConversationGroups2(name,address_name,school_name,faculty_name);
     },
+
+    acceptStatus: async (conversation_id) => {
+        try{
+            return await conversationRepository.acceptStatus(conversation_id);
+        }catch(error){
+            throw error;
+        }
+    }
 }
 
 module.exports = conversationService;

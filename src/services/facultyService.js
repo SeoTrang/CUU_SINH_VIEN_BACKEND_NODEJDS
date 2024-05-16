@@ -15,6 +15,21 @@ const facultyService = {
         } catch (error) {
             throw error;
         }
+    },
+    getAllFaculty: async () => {
+        try {
+            return await facultyRepository.getAllFaculty();
+        } catch (error) {
+            console.log(error);
+            throw error;
+        }
+    },
+    acceptStatus: async (faculty_id) => {
+        try {
+            return await facultyRepository.acceptStatus(faculty_id);
+        } catch (error) {
+            throw error;
+        }
     }
 }
 

@@ -177,9 +177,9 @@ const conversationController = {
         }
     },
 
-    getAllConversations: async (req,res) => {
+    getAllConversationsGroup: async (req,res) => {
         try {
-            let result = await conversationService.getAllConversations();
+            let result = await conversationService.getAllConversationsGroup();
             console.log(result);
         
             let data = result;
@@ -310,6 +310,17 @@ const conversationController = {
         } catch (error) {
             console.log(error);
             return res.status(500).json({error: error.message})
+        }
+    },
+
+    acceptStatus: async (req,res) => {
+        try {
+            const conversation_id = req.params.conversation_id;
+            const result = await conversationService.acceptStatus(conversation_id);
+            if(result) return res.status(200).json('success');
+        } catch (error) {
+            console.log(error);
+            return res.status(500).json({error: error.message});
         }
     }
 }

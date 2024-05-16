@@ -11,6 +11,10 @@ const School = sequelize.define('schools',{
     },
     name:{
         type: DataTypes.STRING
+    },
+    status:{
+        type: DataTypes.ENUM(['pending', 'accept']),
+        defaultValue: 'pending'
     }
 })
 

@@ -21,7 +21,7 @@ router.get('/all-address',addressController.getAll);
 // ---------------------------------school
 router.get('/school/all-school',schoolController.getByAddress)
 router.get('/school/all-school-by-address',schoolController.getByAddressName)
-router.post('/school',schoolController.create)
+router.post('/school',checkLogin,schoolController.create)
 
 
 // ---------------------------------faculty --------------------------------

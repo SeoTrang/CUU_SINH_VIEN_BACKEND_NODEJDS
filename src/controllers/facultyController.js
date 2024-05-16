@@ -25,6 +25,27 @@ const facultyController = {
             console.log(error);
             return res.status(500).json({errr: error.message});
         }
+    },
+
+    getAllFaculty: async (req,res) => {
+        try {
+            const data = await facultyService.getAllFaculty();
+            return res.status(200).json(data);
+        } catch (error) {
+            console.log(error);
+            return res.status(404).json({errr: error.message});
+        }
+    },
+
+    acceptStatus: async (req,res) => {
+        try {
+            const faculty_id = req.params.faculty_id;
+            const result = await facultyService.acceptStatus(faculty_id);
+            if(result) return res.status(200).json('success');
+        } catch (error) {
+            console.log(error);
+            return res.status(500).json({error: error.message});
+        }
     }
 }
 

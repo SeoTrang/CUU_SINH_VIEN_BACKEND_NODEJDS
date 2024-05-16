@@ -43,6 +43,28 @@ const schoolController = {
             console.log(error);
             return res.status(500).json({error: error});
         }
+    },
+
+    // admin
+
+    getAllSchools: async (req,res) => {
+        try{
+            const schools = await schoolService.getAllSchool();
+            return res.status(200).json(schools)
+        }catch(error){
+
+        }
+    },
+
+    acceptStatus: async (req,res) => {
+        try {
+            const school_id = req.params.school_id;
+            const result = await schoolService.acceptStatus(school_id);
+            if(result) return res.status(200).json('success');
+        } catch (error) {
+            console.log(error);
+            return res.status(500).json({error: error.message});
+        }
     }
 }
 

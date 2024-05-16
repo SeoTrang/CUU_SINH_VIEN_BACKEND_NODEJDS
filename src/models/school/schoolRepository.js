@@ -1,6 +1,8 @@
+const sequelize = require("../../db/configDB");
 const Address = require("../address/address");
+const User = require("../user/user");
 const School = require("./school");
-const { Op } = require("sequelize");
+const { Op, where } = require("sequelize");
 
 const schoolRepository = {
     create: async (data) => {
@@ -54,6 +56,57 @@ const schoolRepository = {
         } catch (error) {
             console.log(error);
             return {error: error}
+        }
+    },
+
+
+    // admin
+
+    getAllSchools: async() => {
+        try{
+            const schools = await School.findAll({
+                attributes: {
+                    include: [
+                        [sequelize.literal(`(
+                            SELECT COUNT(*)
+                            FROM users AS users
+                            WHERE
+                            users.school_id  = schools.id
+                        )`), 'userCount'],
+
+                        [sequelize.literal(`(
+                            SELECT COUNT(*)
+                            FROM conversations AS conversations
+                            WHERE
+                            conversations.school_id  = schools.id
+                        )`), 'conversationCount']
+                    ]
+                },
+                include: [
+                    {
+                        model: User
+                    },
+                    {
+                        model: Address
+                    }
+                ]
+            });
+            return schools;
+        }catch(error){
+            console.log(error);
+            throw error;
+        }
+    },
+
+    acceptStatus: async (school_id) => {
+        try{
+            let school = await School.findByPk(school_id);
+            school.status = 'accept';
+            school.save();
+            return true;
+        }catch(error){
+            console.log(error);
+            throw error;
         }
     }
 }

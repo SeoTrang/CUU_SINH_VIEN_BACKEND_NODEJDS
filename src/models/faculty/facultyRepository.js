@@ -1,6 +1,8 @@
 const { Op } = require("sequelize");
 const School = require("../school/school");
-const Faculty = require("./faculty")
+const Faculty = require("./faculty");
+const User = require("../user/user");
+const sequelize = require("../../db/configDB");
 
 
 
@@ -41,6 +43,57 @@ const facultyRepository = {
             });
             if(result) return result;
         } catch (error) {
+            console.log(error);
+            throw error;
+        }
+    },
+
+    getAllFaculty: async () => {
+        try {
+            const data = await Faculty.findAll(
+                {
+                    include: [
+                        {
+                            model: User
+                        },
+                        {
+                            model: School
+                        }
+                    ],
+                    attributes: {
+                        include: [
+                            [sequelize.literal(`(
+                                SELECT COUNT(*)
+                                FROM users AS users
+                                WHERE
+                                users.faculty_id  = faculties.id
+                            )`), 'userCount'],
+    
+                            [sequelize.literal(`(
+                                SELECT COUNT(*)
+                                FROM conversations AS conversations
+                                WHERE
+                                conversations.faculty_id  = faculties.id
+                            )`), 'conversationCount']
+                        ]
+                    },
+                }
+            );
+
+            return data;
+        } catch (error) {
+            console.log(error);
+            throw error;
+        }
+    },
+
+    acceptStatus: async (faculty_id) => {
+        try{
+            let faculty = await Faculty.findByPk(faculty_id);
+            faculty.status = 'accept';
+            faculty.save();
+            return true;
+        }catch(error){
             console.log(error);
             throw error;
         }
