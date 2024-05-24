@@ -1,0 +1,5289 @@
+[2024-05-24 03:32:15] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+[2024-05-24 03:32:43] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+hello
+[2024-05-24 03:32:56] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+[2024-05-24 03:34:20] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+hello
+[
+  {
+    fieldname: 'files',
+    originalname: 'logo_tuba_2.png',
+    encoding: '7bit',
+    mimetype: 'image/png',
+    destination: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads',
+    filename: 'logo_tuba_2.png',
+    path: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads/logo_tuba_2.png',
+    size: 245032
+  }
+]
+/uploads/logo_tuba_2.png
+[2024-05-24 03:34:26] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+hello
+[
+  {
+    fieldname: 'files',
+    originalname: 'logo_tuba_2.png',
+    encoding: '7bit',
+    mimetype: 'image/png',
+    destination: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads',
+    filename: 'logo_tuba_2.png',
+    path: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads/logo_tuba_2.png',
+    size: 245032
+  }
+]
+/uploads/logo_tuba_2.png
+[2024-05-24 03:34:35] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+hello
+[
+  {
+    fieldname: 'files',
+    originalname: 'chat-zalo_accessKeys.csv',
+    encoding: '7bit',
+    mimetype: 'text/csv',
+    destination: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads',
+    filename: 'chat-zalo_accessKeys.csv',
+    path: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads/chat-zalo_accessKeys.csv',
+    size: 99
+  }
+]
+/uploads/chat-zalo_accessKeys.csv
+[2024-05-24 03:35:01] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+[2024-05-24 03:35:26] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+hello
+[
+  {
+    fieldname: 'files',
+    originalname: 'logo_tuba.jpg',
+    encoding: '7bit',
+    mimetype: 'image/jpeg',
+    destination: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads',
+    filename: 'logo_tuba.jpg',
+    path: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads/logo_tuba.jpg',
+    size: 113719
+  },
+  {
+    fieldname: 'files',
+    originalname: 'mo-hinh-mvc-la-gi.jpg',
+    encoding: '7bit',
+    mimetype: 'image/jpeg',
+    destination: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads',
+    filename: 'mo-hinh-mvc-la-gi.jpg',
+    path: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads/mo-hinh-mvc-la-gi.jpg',
+    size: 32597
+  }
+]
+/uploads/logo_tuba.jpg
+/uploads/mo-hinh-mvc-la-gi.jpg
+[2024-05-24 03:38:42] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+[2024-05-24 03:39:28] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+[2024-05-24 03:40:32] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+[2024-05-24 03:40:36] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+hello
+[
+  {
+    fieldname: 'files',
+    originalname: 'one_stop_system_main.sql',
+    encoding: '7bit',
+    mimetype: 'application/x-sql',
+    destination: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads',
+    filename: 'one_stop_system_main.sql',
+    path: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads/one_stop_system_main.sql',
+    size: 39972
+  }
+]
+/uploads/one_stop_system_main.sql
+[2024-05-24 03:40:53] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+[2024-05-24 03:41:08] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+[2024-05-24 03:44:22] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+[
+  {
+    fieldname: 'files',
+    originalname: '11-2.jpg',
+    encoding: '7bit',
+    mimetype: 'image/jpeg',
+    destination: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads',
+    filename: '11-2.jpg',
+    path: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads/11-2.jpg',
+    size: 86720
+  },
+  {
+    fieldname: 'files',
+    originalname: '358b3f93e51d3143680c.jpg',
+    encoding: '7bit',
+    mimetype: 'image/jpeg',
+    destination: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads',
+    filename: '358b3f93e51d3143680c.jpg',
+    path: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads/358b3f93e51d3143680c.jpg',
+    size: 130381
+  }
+]
+[2024-05-24 03:44:45] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+[2024-05-24 03:45:45] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+[
+  {
+    fieldname: 'files',
+    originalname: 'Ke hoach thuc tap TN-NN DHCQ K18 nam 2023-2024.pdf',
+    encoding: '7bit',
+    mimetype: 'application/pdf',
+    destination: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads',
+    filename: 'Ke hoach thuc tap TN-NN DHCQ K18 nam 2023-2024.pdf',
+    path: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads/Ke hoach thuc tap TN-NN DHCQ K18 nam 2023-2024.pdf',
+    size: 434035
+  },
+  {
+    fieldname: 'files',
+    originalname: 'kiểm tra xem có parent_id nếu có th.txt',
+    encoding: '7bit',
+    mimetype: 'text/plain',
+    destination: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads',
+    filename: 'kiểm tra xem có parent_id nếu có th.txt',
+    path: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads/kiểm tra xem có parent_id nếu có th.txt',
+    size: 1716
+  }
+]
+[2024-05-24 03:46:14] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+[
+  {
+    fieldname: 'files',
+    originalname: 'Mẫu (chốt) - HĐ ĐATN.xlsx',
+    encoding: '7bit',
+    mimetype: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+    destination: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads',
+    filename: 'Mẫu (chốt) - HĐ ĐATN.xlsx',
+    path: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads/Mẫu (chốt) - HĐ ĐATN.xlsx',
+    size: 307016
+  },
+  {
+    fieldname: 'files',
+    originalname: 'chat-zalo_accessKeys.csv',
+    encoding: '7bit',
+    mimetype: 'text/csv',
+    destination: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads',
+    filename: 'chat-zalo_accessKeys.csv',
+    path: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads/chat-zalo_accessKeys.csv',
+    size: 99
+  }
+]
+[2024-05-24 03:46:35] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+{ email: 'seotrangbh24@gmail.com', pass: 'trang789' }
+seotrangbh24@gmail.com
+users {
+  dataValues: {
+    id: 1,
+    user_name: 'Tráng',
+    phone: '038664039',
+    pass: '$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy',
+    avatar: '/img/avatar_default/avatar_1.jpg',
+    role: 1,
+    address_detail: 'Lào Cai',
+    gender: 'Nam',
+    email: 'seotrangbh24@gmail.com',
+    date_of_birth: '2024-04-11 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2023-12-29T01:31:57.000Z,
+    updatedAt: 2024-05-21T09:23:08.000Z,
+    school_id: 1,
+    faculty_id: 1,
+    address_id: 1
+  },
+  _previousDataValues: {
+    id: 1,
+    user_name: 'Tráng',
+    phone: '038664039',
+    pass: '$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy',
+    avatar: '/img/avatar_default/avatar_1.jpg',
+    role: 1,
+    address_detail: 'Lào Cai',
+    gender: 'Nam',
+    email: 'seotrangbh24@gmail.com',
+    date_of_birth: '2024-04-11 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2023-12-29T01:31:57.000Z,
+    updatedAt: 2024-05-21T09:23:08.000Z,
+    school_id: 1,
+    faculty_id: 1,
+    address_id: 1
+  },
+  uniqno: 1,
+  _changed: Set(0) {},
+  _options: {
+    isNewRecord: false,
+    _schema: null,
+    _schemaDelimiter: '',
+    raw: true,
+    attributes: [
+      'id',             'user_name',
+      'phone',          'pass',
+      'avatar',         'role',
+      'address_detail', 'gender',
+      'email',          'date_of_birth',
+      'background',     'is_public_birth',
+      'verifyEmail',    'address_id_work',
+      'createdAt',      'updatedAt',
+      'school_id',      'faculty_id',
+      'address_id'
+    ]
+  },
+  isNewRecord: false
+}
+A user connected  rfo72FLddTtooss4AAAB
+rfo72FLddTtooss4AAAB with info : 
+{
+  id: 1,
+  user_name: 'Tráng',
+  phone: '038664039',
+  pass: '$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy',
+  avatar: '/img/avatar_default/avatar_1.jpg',
+  role: 1,
+  address_detail: 'Lào Cai',
+  gender: 'Nam',
+  email: 'seotrangbh24@gmail.com',
+  date_of_birth: '2024-04-11 00:00:00.000',
+  background: '/uploads/1714736655167028.jpg',
+  is_public_birth: 0,
+  verifyEmail: true,
+  address_id_work: 'An Giang',
+  createdAt: '2023-12-29T01:31:57.000Z',
+  updatedAt: '2024-05-21T09:23:08.000Z',
+  school_id: 1,
+  faculty_id: 1,
+  address_id: 1,
+  school: {
+    id: 1,
+    name: 'ĐH CNTT An Giang',
+    status: 'accept',
+    createdAt: '2024-01-02T08:42:58.000Z',
+    updatedAt: '2024-01-02T08:42:58.000Z',
+    address_id: 1
+  },
+  faculty: {
+    id: 1,
+    name: 'Công nghệ thông tin',
+    status: 'accept',
+    createdAt: '2024-05-10T04:06:14.000Z',
+    updatedAt: '2024-05-23T03:21:27.000Z',
+    school_id: 1
+  }
+}
+[2024-05-24 06:16:03] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  w_aeqeq9_DbhBygPAAAB
+[2024-05-24 06:16:07] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  Jh3i2ab6Bkc04aRoAAAB
+User disconnected
+{ email: 'seotrangbh24@gmail.com', pass: 'trang789' }
+seotrangbh24@gmail.com
+users {
+  dataValues: {
+    id: 1,
+    user_name: 'Tráng',
+    phone: '038664039',
+    pass: '$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy',
+    avatar: '/img/avatar_default/avatar_1.jpg',
+    role: 1,
+    address_detail: 'Lào Cai',
+    gender: 'Nam',
+    email: 'seotrangbh24@gmail.com',
+    date_of_birth: '2024-04-11 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2023-12-29T01:31:57.000Z,
+    updatedAt: 2024-05-21T09:23:08.000Z,
+    school_id: 1,
+    faculty_id: 1,
+    address_id: 1
+  },
+  _previousDataValues: {
+    id: 1,
+    user_name: 'Tráng',
+    phone: '038664039',
+    pass: '$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy',
+    avatar: '/img/avatar_default/avatar_1.jpg',
+    role: 1,
+    address_detail: 'Lào Cai',
+    gender: 'Nam',
+    email: 'seotrangbh24@gmail.com',
+    date_of_birth: '2024-04-11 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2023-12-29T01:31:57.000Z,
+    updatedAt: 2024-05-21T09:23:08.000Z,
+    school_id: 1,
+    faculty_id: 1,
+    address_id: 1
+  },
+  uniqno: 1,
+  _changed: Set(0) {},
+  _options: {
+    isNewRecord: false,
+    _schema: null,
+    _schemaDelimiter: '',
+    raw: true,
+    attributes: [
+      'id',             'user_name',
+      'phone',          'pass',
+      'avatar',         'role',
+      'address_detail', 'gender',
+      'email',          'date_of_birth',
+      'background',     'is_public_birth',
+      'verifyEmail',    'address_id_work',
+      'createdAt',      'updatedAt',
+      'school_id',      'faculty_id',
+      'address_id'
+    ]
+  },
+  isNewRecord: false
+}
+A user connected  AADLZLaZm9SE0R8eAAAD
+AADLZLaZm9SE0R8eAAAD with info : 
+{
+  id: 1,
+  user_name: 'Tráng',
+  phone: '038664039',
+  pass: '$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy',
+  avatar: '/img/avatar_default/avatar_1.jpg',
+  role: 1,
+  address_detail: 'Lào Cai',
+  gender: 'Nam',
+  email: 'seotrangbh24@gmail.com',
+  date_of_birth: '2024-04-11 00:00:00.000',
+  background: '/uploads/1714736655167028.jpg',
+  is_public_birth: 0,
+  verifyEmail: true,
+  address_id_work: 'An Giang',
+  createdAt: '2023-12-29T01:31:57.000Z',
+  updatedAt: '2024-05-21T09:23:08.000Z',
+  school_id: 1,
+  faculty_id: 1,
+  address_id: 1,
+  school: {
+    id: 1,
+    name: 'ĐH CNTT An Giang',
+    status: 'accept',
+    createdAt: '2024-01-02T08:42:58.000Z',
+    updatedAt: '2024-01-02T08:42:58.000Z',
+    address_id: 1
+  },
+  faculty: {
+    id: 1,
+    name: 'Công nghệ thông tin',
+    status: 'accept',
+    createdAt: '2024-05-10T04:06:14.000Z',
+    updatedAt: '2024-05-23T03:21:27.000Z',
+    school_id: 1
+  }
+}
+User AADLZLaZm9SE0R8eAAAD joined room: 10
+User AADLZLaZm9SE0R8eAAAD joined room: 5
+User AADLZLaZm9SE0R8eAAAD joined room: 70
+User AADLZLaZm9SE0R8eAAAD joined room: 13
+User disconnected
+{ email: 'seotrangbh24@gmail.com', pass: 'trang789' }
+seotrangbh24@gmail.com
+users {
+  dataValues: {
+    id: 1,
+    user_name: 'Tráng',
+    phone: '038664039',
+    pass: '$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy',
+    avatar: '/img/avatar_default/avatar_1.jpg',
+    role: 1,
+    address_detail: 'Lào Cai',
+    gender: 'Nam',
+    email: 'seotrangbh24@gmail.com',
+    date_of_birth: '2024-04-11 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2023-12-29T01:31:57.000Z,
+    updatedAt: 2024-05-21T09:23:08.000Z,
+    school_id: 1,
+    faculty_id: 1,
+    address_id: 1
+  },
+  _previousDataValues: {
+    id: 1,
+    user_name: 'Tráng',
+    phone: '038664039',
+    pass: '$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy',
+    avatar: '/img/avatar_default/avatar_1.jpg',
+    role: 1,
+    address_detail: 'Lào Cai',
+    gender: 'Nam',
+    email: 'seotrangbh24@gmail.com',
+    date_of_birth: '2024-04-11 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2023-12-29T01:31:57.000Z,
+    updatedAt: 2024-05-21T09:23:08.000Z,
+    school_id: 1,
+    faculty_id: 1,
+    address_id: 1
+  },
+  uniqno: 1,
+  _changed: Set(0) {},
+  _options: {
+    isNewRecord: false,
+    _schema: null,
+    _schemaDelimiter: '',
+    raw: true,
+    attributes: [
+      'id',             'user_name',
+      'phone',          'pass',
+      'avatar',         'role',
+      'address_detail', 'gender',
+      'email',          'date_of_birth',
+      'background',     'is_public_birth',
+      'verifyEmail',    'address_id_work',
+      'createdAt',      'updatedAt',
+      'school_id',      'faculty_id',
+      'address_id'
+    ]
+  },
+  isNewRecord: false
+}
+A user connected  ND51CgD_frrMYenRAAAF
+ND51CgD_frrMYenRAAAF with info : 
+{
+  id: 1,
+  user_name: 'Tráng',
+  phone: '038664039',
+  pass: '$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy',
+  avatar: '/img/avatar_default/avatar_1.jpg',
+  role: 1,
+  address_detail: 'Lào Cai',
+  gender: 'Nam',
+  email: 'seotrangbh24@gmail.com',
+  date_of_birth: '2024-04-11 00:00:00.000',
+  background: '/uploads/1714736655167028.jpg',
+  is_public_birth: 0,
+  verifyEmail: true,
+  address_id_work: 'An Giang',
+  createdAt: '2023-12-29T01:31:57.000Z',
+  updatedAt: '2024-05-21T09:23:08.000Z',
+  school_id: 1,
+  faculty_id: 1,
+  address_id: 1,
+  school: {
+    id: 1,
+    name: 'ĐH CNTT An Giang',
+    status: 'accept',
+    createdAt: '2024-01-02T08:42:58.000Z',
+    updatedAt: '2024-01-02T08:42:58.000Z',
+    address_id: 1
+  },
+  faculty: {
+    id: 1,
+    name: 'Công nghệ thông tin',
+    status: 'accept',
+    createdAt: '2024-05-10T04:06:14.000Z',
+    updatedAt: '2024-05-23T03:21:27.000Z',
+    school_id: 1
+  }
+}
+User ND51CgD_frrMYenRAAAF joined room: 70
+{ email: 'lynamphuong@gmail.com', pass: 'trang789' }
+lynamphuong@gmail.com
+users {
+  dataValues: {
+    id: 5,
+    user_name: 'Lý Nam Phương',
+    phone: '038664065',
+    pass: '$2a$10$MiL7SECPtvh4RcjAoO9WH.6OLQ4SJ0tZF1axoHl0yyVuNRQMeJc0W',
+    avatar: '/uploads/1714749555660007.jpg',
+    role: 0,
+    address_detail: 'Yên Bái',
+    gender: 'Nam',
+    email: 'lynamphuong@gmail.com',
+    date_of_birth: '2001-12-14 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2024-01-03T03:21:46.000Z,
+    updatedAt: 2024-05-20T03:13:01.000Z,
+    school_id: 1,
+    faculty_id: 2,
+    address_id: 1
+  },
+  _previousDataValues: {
+    id: 5,
+    user_name: 'Lý Nam Phương',
+    phone: '038664065',
+    pass: '$2a$10$MiL7SECPtvh4RcjAoO9WH.6OLQ4SJ0tZF1axoHl0yyVuNRQMeJc0W',
+    avatar: '/uploads/1714749555660007.jpg',
+    role: 0,
+    address_detail: 'Yên Bái',
+    gender: 'Nam',
+    email: 'lynamphuong@gmail.com',
+    date_of_birth: '2001-12-14 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2024-01-03T03:21:46.000Z,
+    updatedAt: 2024-05-20T03:13:01.000Z,
+    school_id: 1,
+    faculty_id: 2,
+    address_id: 1
+  },
+  uniqno: 1,
+  _changed: Set(0) {},
+  _options: {
+    isNewRecord: false,
+    _schema: null,
+    _schemaDelimiter: '',
+    raw: true,
+    attributes: [
+      'id',             'user_name',
+      'phone',          'pass',
+      'avatar',         'role',
+      'address_detail', 'gender',
+      'email',          'date_of_birth',
+      'background',     'is_public_birth',
+      'verifyEmail',    'address_id_work',
+      'createdAt',      'updatedAt',
+      'school_id',      'faculty_id',
+      'address_id'
+    ]
+  },
+  isNewRecord: false
+}
+A user connected  I_i37XWDOGfeexAxAAAH
+I_i37XWDOGfeexAxAAAH with info : 
+{
+  id: 5,
+  user_name: 'Lý Nam Phương',
+  phone: '038664065',
+  pass: '$2a$10$MiL7SECPtvh4RcjAoO9WH.6OLQ4SJ0tZF1axoHl0yyVuNRQMeJc0W',
+  avatar: '/uploads/1714749555660007.jpg',
+  role: 0,
+  address_detail: 'Yên Bái',
+  gender: 'Nam',
+  email: 'lynamphuong@gmail.com',
+  date_of_birth: '2001-12-14 00:00:00.000',
+  background: '/uploads/1714736655167028.jpg',
+  is_public_birth: 0,
+  verifyEmail: true,
+  address_id_work: 'An Giang',
+  createdAt: '2024-01-03T03:21:46.000Z',
+  updatedAt: '2024-05-20T03:13:01.000Z',
+  school_id: 1,
+  faculty_id: 2,
+  address_id: 1,
+  school: {
+    id: 1,
+    name: 'ĐH CNTT An Giang',
+    status: 'accept',
+    createdAt: '2024-01-02T08:42:58.000Z',
+    updatedAt: '2024-01-02T08:42:58.000Z',
+    address_id: 1
+  },
+  faculty: {
+    id: 2,
+    name: 'Kỹ thuật phần mềm',
+    status: 'accept',
+    createdAt: '2024-05-13T02:51:57.000Z',
+    updatedAt: '2024-05-23T03:21:25.000Z',
+    school_id: 1
+  }
+}
+[2024-05-24 07:13:40] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  NQYSE_MKLd05bpq9AAAB
+A user connected  PuYEYRITenK0D4voAAAD
+[2024-05-24 07:13:43] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  uAMTQAdcxj0t2rbgAAAB
+A user connected  jyIPMUhpIQuRQ0bpAAAD
+[2024-05-24 07:13:47] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  gTCcgU8XCjdztz7iAAAB
+A user connected  S6sf2ga8mQZ9uuQiAAAD
+User disconnected
+User disconnected
+{ email: 'lynamphuong@gmail.com', pass: 'trang789' }
+lynamphuong@gmail.com
+users {
+  dataValues: {
+    id: 5,
+    user_name: 'Lý Nam Phương',
+    phone: '038664065',
+    pass: '$2a$10$MiL7SECPtvh4RcjAoO9WH.6OLQ4SJ0tZF1axoHl0yyVuNRQMeJc0W',
+    avatar: '/uploads/1714749555660007.jpg',
+    role: 0,
+    address_detail: 'Yên Bái',
+    gender: 'Nam',
+    email: 'lynamphuong@gmail.com',
+    date_of_birth: '2001-12-14 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2024-01-03T03:21:46.000Z,
+    updatedAt: 2024-05-20T03:13:01.000Z,
+    school_id: 1,
+    faculty_id: 2,
+    address_id: 1
+  },
+  _previousDataValues: {
+    id: 5,
+    user_name: 'Lý Nam Phương',
+    phone: '038664065',
+    pass: '$2a$10$MiL7SECPtvh4RcjAoO9WH.6OLQ4SJ0tZF1axoHl0yyVuNRQMeJc0W',
+    avatar: '/uploads/1714749555660007.jpg',
+    role: 0,
+    address_detail: 'Yên Bái',
+    gender: 'Nam',
+    email: 'lynamphuong@gmail.com',
+    date_of_birth: '2001-12-14 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2024-01-03T03:21:46.000Z,
+    updatedAt: 2024-05-20T03:13:01.000Z,
+    school_id: 1,
+    faculty_id: 2,
+    address_id: 1
+  },
+  uniqno: 1,
+  _changed: Set(0) {},
+  _options: {
+    isNewRecord: false,
+    _schema: null,
+    _schemaDelimiter: '',
+    raw: true,
+    attributes: [
+      'id',             'user_name',
+      'phone',          'pass',
+      'avatar',         'role',
+      'address_detail', 'gender',
+      'email',          'date_of_birth',
+      'background',     'is_public_birth',
+      'verifyEmail',    'address_id_work',
+      'createdAt',      'updatedAt',
+      'school_id',      'faculty_id',
+      'address_id'
+    ]
+  },
+  isNewRecord: false
+}
+A user connected  _sV8b_vcZnz-E1fwAAAF
+_sV8b_vcZnz-E1fwAAAF with info : 
+{
+  id: 5,
+  user_name: 'Lý Nam Phương',
+  phone: '038664065',
+  pass: '$2a$10$MiL7SECPtvh4RcjAoO9WH.6OLQ4SJ0tZF1axoHl0yyVuNRQMeJc0W',
+  avatar: '/uploads/1714749555660007.jpg',
+  role: 0,
+  address_detail: 'Yên Bái',
+  gender: 'Nam',
+  email: 'lynamphuong@gmail.com',
+  date_of_birth: '2001-12-14 00:00:00.000',
+  background: '/uploads/1714736655167028.jpg',
+  is_public_birth: 0,
+  verifyEmail: true,
+  address_id_work: 'An Giang',
+  createdAt: '2024-01-03T03:21:46.000Z',
+  updatedAt: '2024-05-20T03:13:01.000Z',
+  school_id: 1,
+  faculty_id: 2,
+  address_id: 1,
+  school: {
+    id: 1,
+    name: 'ĐH CNTT An Giang',
+    status: 'accept',
+    createdAt: '2024-01-02T08:42:58.000Z',
+    updatedAt: '2024-01-02T08:42:58.000Z',
+    address_id: 1
+  },
+  faculty: {
+    id: 2,
+    name: 'Kỹ thuật phần mềm',
+    status: 'accept',
+    createdAt: '2024-05-13T02:51:57.000Z',
+    updatedAt: '2024-05-23T03:21:25.000Z',
+    school_id: 1
+  }
+}
+[2024-05-24 07:16:30] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  r6-ApuxV3TUlFVGXAAAB
+{ email: 'seotrangbh24@gmail.com', pass: 'trang789' }
+seotrangbh24@gmail.com
+users {
+  dataValues: {
+    id: 1,
+    user_name: 'Tráng',
+    phone: '038664039',
+    pass: '$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy',
+    avatar: '/img/avatar_default/avatar_1.jpg',
+    role: 1,
+    address_detail: 'Lào Cai',
+    gender: 'Nam',
+    email: 'seotrangbh24@gmail.com',
+    date_of_birth: '2024-04-11 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2023-12-29T01:31:57.000Z,
+    updatedAt: 2024-05-21T09:23:08.000Z,
+    school_id: 1,
+    faculty_id: 1,
+    address_id: 1
+  },
+  _previousDataValues: {
+    id: 1,
+    user_name: 'Tráng',
+    phone: '038664039',
+    pass: '$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy',
+    avatar: '/img/avatar_default/avatar_1.jpg',
+    role: 1,
+    address_detail: 'Lào Cai',
+    gender: 'Nam',
+    email: 'seotrangbh24@gmail.com',
+    date_of_birth: '2024-04-11 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2023-12-29T01:31:57.000Z,
+    updatedAt: 2024-05-21T09:23:08.000Z,
+    school_id: 1,
+    faculty_id: 1,
+    address_id: 1
+  },
+  uniqno: 1,
+  _changed: Set(0) {},
+  _options: {
+    isNewRecord: false,
+    _schema: null,
+    _schemaDelimiter: '',
+    raw: true,
+    attributes: [
+      'id',             'user_name',
+      'phone',          'pass',
+      'avatar',         'role',
+      'address_detail', 'gender',
+      'email',          'date_of_birth',
+      'background',     'is_public_birth',
+      'verifyEmail',    'address_id_work',
+      'createdAt',      'updatedAt',
+      'school_id',      'faculty_id',
+      'address_id'
+    ]
+  },
+  isNewRecord: false
+}
+A user connected  vNCKrQckeZkDcpeOAAAD
+vNCKrQckeZkDcpeOAAAD with info : 
+{
+  id: 1,
+  user_name: 'Tráng',
+  phone: '038664039',
+  pass: '$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy',
+  avatar: '/img/avatar_default/avatar_1.jpg',
+  role: 1,
+  address_detail: 'Lào Cai',
+  gender: 'Nam',
+  email: 'seotrangbh24@gmail.com',
+  date_of_birth: '2024-04-11 00:00:00.000',
+  background: '/uploads/1714736655167028.jpg',
+  is_public_birth: 0,
+  verifyEmail: true,
+  address_id_work: 'An Giang',
+  createdAt: '2023-12-29T01:31:57.000Z',
+  updatedAt: '2024-05-21T09:23:08.000Z',
+  school_id: 1,
+  faculty_id: 1,
+  address_id: 1,
+  school: {
+    id: 1,
+    name: 'ĐH CNTT An Giang',
+    status: 'accept',
+    createdAt: '2024-01-02T08:42:58.000Z',
+    updatedAt: '2024-01-02T08:42:58.000Z',
+    address_id: 1
+  },
+  faculty: {
+    id: 1,
+    name: 'Công nghệ thông tin',
+    status: 'accept',
+    createdAt: '2024-05-10T04:06:14.000Z',
+    updatedAt: '2024-05-23T03:21:27.000Z',
+    school_id: 1
+  }
+}
+User vNCKrQckeZkDcpeOAAAD joined room: 5
+[
+  {
+    fieldname: 'files',
+    originalname: 'conditions.docx',
+    encoding: '7bit',
+    mimetype: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+    destination: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads',
+    filename: 'conditions.docx',
+    path: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads/conditions.docx',
+    size: 16193
+  },
+  {
+    fieldname: 'files',
+    originalname: 'template.dotx',
+    encoding: '7bit',
+    mimetype: 'application/vnd.openxmlformats-officedocument.wordprocessingml.template',
+    destination: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads',
+    filename: 'template.dotx',
+    path: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads/template.dotx',
+    size: 59016
+  }
+]
+[2024-05-24 07:18:20] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  d4ST039SOf2qqFQiAAAB
+A user connected  uomTEaCiHh785urrAAAD
+User d4ST039SOf2qqFQiAAAB joined room: 70
+{
+  fieldname: 'img',
+  originalname: 'logo_tuba_2.png',
+  encoding: '7bit',
+  mimetype: 'image/png',
+  destination: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads',
+  filename: 'logo_tuba_2.png',
+  path: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads/logo_tuba_2.png',
+  size: 245032
+}
+[2024-05-24 07:19:03] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  ygwFUdkYULxJq18rAAAB
+A user connected  Qbl9GFPbXDls2bMBAAAD
+[2024-05-24 07:19:10] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  VyQueGH9-7yW2yqjAAAB
+A user connected  BqpxCmebcIXhNTDNAAAD
+[2024-05-24 07:19:54] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  UIy8wj8oRjfojJMdAAAB
+A user connected  uM0hBDxtrv2coVR1AAAD
+{
+  fieldname: 'img',
+  originalname: 'mo-hinh-mvc-la-gi.jpg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg',
+  destination: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads',
+  filename: 'mo-hinh-mvc-la-gi.jpg',
+  path: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads/mo-hinh-mvc-la-gi.jpg',
+  size: 32597
+}
+[2024-05-24 07:20:07] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  vgZY6E1IDSJEkEAPAAAB
+A user connected  -CtqAXmyGY_zF-OLAAAD
+[2024-05-24 07:20:48] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  xSm489iIw9prx86UAAAB
+A user connected  Awy00PdrADlSU5JoAAAD
+[2024-05-24 07:21:34] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  iEmcIvhPXI2L1F1KAAAB
+A user connected  8t09Ir7o_2JuxK2WAAAD
+{ phone: '0386640395', pass: 'trang789' }
+undefined
+Error: WHERE parameter "email" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1743:13)
+    at /home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1732:35)
+    at MySQLQueryGenerator.getWhereConditions (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2075:19)
+    at MySQLQueryGenerator.selectQuery (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/dialects/abstract/query-generator.js:988:28)
+    at MySQLQueryInterface.select (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:59)
+    at users.findAll (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/model.js:1140:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async users.findOne (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/model.js:1240:12)
+{
+  error: Error: WHERE parameter "email" has invalid "undefined" value
+      at MySQLQueryGenerator.whereItemQuery (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1743:13)
+      at /home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1734:25
+      at Array.forEach (<anonymous>)
+      at MySQLQueryGenerator.whereItemsQuery (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1732:35)
+      at MySQLQueryGenerator.getWhereConditions (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2075:19)
+      at MySQLQueryGenerator.selectQuery (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/dialects/abstract/query-generator.js:988:28)
+      at MySQLQueryInterface.select (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:59)
+      at users.findAll (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/model.js:1140:47)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async users.findOne (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/model.js:1240:12)
+}
+{ phone: 'saotrangbh24@gmail.com', pass: 'trang789' }
+undefined
+Error: WHERE parameter "email" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1743:13)
+    at /home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1732:35)
+    at MySQLQueryGenerator.getWhereConditions (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2075:19)
+    at MySQLQueryGenerator.selectQuery (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/dialects/abstract/query-generator.js:988:28)
+    at MySQLQueryInterface.select (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:59)
+    at users.findAll (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/model.js:1140:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async users.findOne (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/model.js:1240:12)
+{
+  error: Error: WHERE parameter "email" has invalid "undefined" value
+      at MySQLQueryGenerator.whereItemQuery (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1743:13)
+      at /home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1734:25
+      at Array.forEach (<anonymous>)
+      at MySQLQueryGenerator.whereItemsQuery (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1732:35)
+      at MySQLQueryGenerator.getWhereConditions (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2075:19)
+      at MySQLQueryGenerator.selectQuery (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/dialects/abstract/query-generator.js:988:28)
+      at MySQLQueryInterface.select (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:59)
+      at users.findAll (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/model.js:1140:47)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async users.findOne (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/model.js:1240:12)
+}
+{ phone: 'seotrangbh24@gmail.com', pass: 'trang789' }
+undefined
+Error: WHERE parameter "email" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1743:13)
+    at /home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1732:35)
+    at MySQLQueryGenerator.getWhereConditions (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2075:19)
+    at MySQLQueryGenerator.selectQuery (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/dialects/abstract/query-generator.js:988:28)
+    at MySQLQueryInterface.select (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:59)
+    at users.findAll (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/model.js:1140:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async users.findOne (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/model.js:1240:12)
+{
+  error: Error: WHERE parameter "email" has invalid "undefined" value
+      at MySQLQueryGenerator.whereItemQuery (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1743:13)
+      at /home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1734:25
+      at Array.forEach (<anonymous>)
+      at MySQLQueryGenerator.whereItemsQuery (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1732:35)
+      at MySQLQueryGenerator.getWhereConditions (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2075:19)
+      at MySQLQueryGenerator.selectQuery (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/dialects/abstract/query-generator.js:988:28)
+      at MySQLQueryInterface.select (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:59)
+      at users.findAll (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/model.js:1140:47)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async users.findOne (/home/devtrang/web/trang-dev.ictu.vn/chat/node_modules/sequelize/lib/model.js:1240:12)
+}
+[2024-05-24 07:22:06] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  l1j2U1LUHqgoT-U0AAAB
+A user connected  JB0Ow6Q-tCA0xLxgAAAD
+{ email: 'seotrangbh24@gmail.com', pass: 'trang789' }
+seotrangbh24@gmail.com
+users {
+  dataValues: {
+    id: 1,
+    user_name: 'Tráng',
+    phone: '038664039',
+    pass: '$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy',
+    avatar: '/img/avatar_default/avatar_1.jpg',
+    role: 1,
+    address_detail: 'Lào Cai',
+    gender: 'Nam',
+    email: 'seotrangbh24@gmail.com',
+    date_of_birth: '2024-04-11 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2023-12-29T01:31:57.000Z,
+    updatedAt: 2024-05-21T09:23:08.000Z,
+    school_id: 1,
+    faculty_id: 1,
+    address_id: 1
+  },
+  _previousDataValues: {
+    id: 1,
+    user_name: 'Tráng',
+    phone: '038664039',
+    pass: '$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy',
+    avatar: '/img/avatar_default/avatar_1.jpg',
+    role: 1,
+    address_detail: 'Lào Cai',
+    gender: 'Nam',
+    email: 'seotrangbh24@gmail.com',
+    date_of_birth: '2024-04-11 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2023-12-29T01:31:57.000Z,
+    updatedAt: 2024-05-21T09:23:08.000Z,
+    school_id: 1,
+    faculty_id: 1,
+    address_id: 1
+  },
+  uniqno: 1,
+  _changed: Set(0) {},
+  _options: {
+    isNewRecord: false,
+    _schema: null,
+    _schemaDelimiter: '',
+    raw: true,
+    attributes: [
+      'id',             'user_name',
+      'phone',          'pass',
+      'avatar',         'role',
+      'address_detail', 'gender',
+      'email',          'date_of_birth',
+      'background',     'is_public_birth',
+      'verifyEmail',    'address_id_work',
+      'createdAt',      'updatedAt',
+      'school_id',      'faculty_id',
+      'address_id'
+    ]
+  },
+  isNewRecord: false
+}
+{
+  fieldname: 'img',
+  originalname: 'tải xuống.png',
+  encoding: '7bit',
+  mimetype: 'image/png',
+  destination: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads',
+  filename: 'tải xuống.png',
+  path: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads/tải xuống.png',
+  size: 8076
+}
+[2024-05-24 07:23:02] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  5rQ-vsqSODNTS8owAAAB
+{
+  fieldname: 'img',
+  originalname: 'tải xuống.png',
+  encoding: '7bit',
+  mimetype: 'image/png',
+  destination: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads',
+  filename: 'tải xuống.png',
+  path: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads/tải xuống.png',
+  size: 8076
+}
+[2024-05-24 07:23:06] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  fzKwb2Y42qyoWlaYAAAB
+User disconnected
+A user connected  UBQsAxF8Gt2Bm6vfAAAD
+{ email: 'seotrangbh24@gmail.com', pass: 'trang789' }
+seotrangbh24@gmail.com
+users {
+  dataValues: {
+    id: 1,
+    user_name: 'Tráng',
+    phone: '038664039',
+    pass: '$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy',
+    avatar: '/img/avatar_default/avatar_1.jpg',
+    role: 1,
+    address_detail: 'Lào Cai',
+    gender: 'Nam',
+    email: 'seotrangbh24@gmail.com',
+    date_of_birth: '2024-04-11 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2023-12-29T01:31:57.000Z,
+    updatedAt: 2024-05-21T09:23:08.000Z,
+    school_id: 1,
+    faculty_id: 1,
+    address_id: 1
+  },
+  _previousDataValues: {
+    id: 1,
+    user_name: 'Tráng',
+    phone: '038664039',
+    pass: '$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy',
+    avatar: '/img/avatar_default/avatar_1.jpg',
+    role: 1,
+    address_detail: 'Lào Cai',
+    gender: 'Nam',
+    email: 'seotrangbh24@gmail.com',
+    date_of_birth: '2024-04-11 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2023-12-29T01:31:57.000Z,
+    updatedAt: 2024-05-21T09:23:08.000Z,
+    school_id: 1,
+    faculty_id: 1,
+    address_id: 1
+  },
+  uniqno: 1,
+  _changed: Set(0) {},
+  _options: {
+    isNewRecord: false,
+    _schema: null,
+    _schemaDelimiter: '',
+    raw: true,
+    attributes: [
+      'id',             'user_name',
+      'phone',          'pass',
+      'avatar',         'role',
+      'address_detail', 'gender',
+      'email',          'date_of_birth',
+      'background',     'is_public_birth',
+      'verifyEmail',    'address_id_work',
+      'createdAt',      'updatedAt',
+      'school_id',      'faculty_id',
+      'address_id'
+    ]
+  },
+  isNewRecord: false
+}
+User disconnected
+{ email: 'seotrangbh24@gmail.com', pass: 'trang789' }
+seotrangbh24@gmail.com
+users {
+  dataValues: {
+    id: 1,
+    user_name: 'Tráng',
+    phone: '038664039',
+    pass: '$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy',
+    avatar: '/img/avatar_default/avatar_1.jpg',
+    role: 1,
+    address_detail: 'Lào Cai',
+    gender: 'Nam',
+    email: 'seotrangbh24@gmail.com',
+    date_of_birth: '2024-04-11 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2023-12-29T01:31:57.000Z,
+    updatedAt: 2024-05-21T09:23:08.000Z,
+    school_id: 1,
+    faculty_id: 1,
+    address_id: 1
+  },
+  _previousDataValues: {
+    id: 1,
+    user_name: 'Tráng',
+    phone: '038664039',
+    pass: '$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy',
+    avatar: '/img/avatar_default/avatar_1.jpg',
+    role: 1,
+    address_detail: 'Lào Cai',
+    gender: 'Nam',
+    email: 'seotrangbh24@gmail.com',
+    date_of_birth: '2024-04-11 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2023-12-29T01:31:57.000Z,
+    updatedAt: 2024-05-21T09:23:08.000Z,
+    school_id: 1,
+    faculty_id: 1,
+    address_id: 1
+  },
+  uniqno: 1,
+  _changed: Set(0) {},
+  _options: {
+    isNewRecord: false,
+    _schema: null,
+    _schemaDelimiter: '',
+    raw: true,
+    attributes: [
+      'id',             'user_name',
+      'phone',          'pass',
+      'avatar',         'role',
+      'address_detail', 'gender',
+      'email',          'date_of_birth',
+      'background',     'is_public_birth',
+      'verifyEmail',    'address_id_work',
+      'createdAt',      'updatedAt',
+      'school_id',      'faculty_id',
+      'address_id'
+    ]
+  },
+  isNewRecord: false
+}
+A user connected  aLjkkBvi_FTU6qbFAAAF
+aLjkkBvi_FTU6qbFAAAF with info : 
+{
+  id: 1,
+  user_name: 'Tráng',
+  phone: '038664039',
+  pass: '$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy',
+  avatar: '/img/avatar_default/avatar_1.jpg',
+  role: 1,
+  address_detail: 'Lào Cai',
+  gender: 'Nam',
+  email: 'seotrangbh24@gmail.com',
+  date_of_birth: '2024-04-11 00:00:00.000',
+  background: '/uploads/1714736655167028.jpg',
+  is_public_birth: 0,
+  verifyEmail: true,
+  address_id_work: 'An Giang',
+  createdAt: '2023-12-29T01:31:57.000Z',
+  updatedAt: '2024-05-21T09:23:08.000Z',
+  school_id: 1,
+  faculty_id: 1,
+  address_id: 1,
+  school: {
+    id: 1,
+    name: 'ĐH CNTT An Giang',
+    status: 'accept',
+    createdAt: '2024-01-02T08:42:58.000Z',
+    updatedAt: '2024-01-02T08:42:58.000Z',
+    address_id: 1
+  },
+  faculty: {
+    id: 1,
+    name: 'Công nghệ thông tin',
+    status: 'accept',
+    createdAt: '2024-05-10T04:06:14.000Z',
+    updatedAt: '2024-05-23T03:21:27.000Z',
+    school_id: 1
+  }
+}
+{ email: 'lynamphuong@gmail.com', pass: 'trang789' }
+lynamphuong@gmail.com
+users {
+  dataValues: {
+    id: 5,
+    user_name: 'Lý Nam Phương',
+    phone: '038664065',
+    pass: '$2a$10$MiL7SECPtvh4RcjAoO9WH.6OLQ4SJ0tZF1axoHl0yyVuNRQMeJc0W',
+    avatar: '/uploads/1714749555660007.jpg',
+    role: 0,
+    address_detail: 'Yên Bái',
+    gender: 'Nam',
+    email: 'lynamphuong@gmail.com',
+    date_of_birth: '2001-12-14 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2024-01-03T03:21:46.000Z,
+    updatedAt: 2024-05-20T03:13:01.000Z,
+    school_id: 1,
+    faculty_id: 2,
+    address_id: 1
+  },
+  _previousDataValues: {
+    id: 5,
+    user_name: 'Lý Nam Phương',
+    phone: '038664065',
+    pass: '$2a$10$MiL7SECPtvh4RcjAoO9WH.6OLQ4SJ0tZF1axoHl0yyVuNRQMeJc0W',
+    avatar: '/uploads/1714749555660007.jpg',
+    role: 0,
+    address_detail: 'Yên Bái',
+    gender: 'Nam',
+    email: 'lynamphuong@gmail.com',
+    date_of_birth: '2001-12-14 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2024-01-03T03:21:46.000Z,
+    updatedAt: 2024-05-20T03:13:01.000Z,
+    school_id: 1,
+    faculty_id: 2,
+    address_id: 1
+  },
+  uniqno: 1,
+  _changed: Set(0) {},
+  _options: {
+    isNewRecord: false,
+    _schema: null,
+    _schemaDelimiter: '',
+    raw: true,
+    attributes: [
+      'id',             'user_name',
+      'phone',          'pass',
+      'avatar',         'role',
+      'address_detail', 'gender',
+      'email',          'date_of_birth',
+      'background',     'is_public_birth',
+      'verifyEmail',    'address_id_work',
+      'createdAt',      'updatedAt',
+      'school_id',      'faculty_id',
+      'address_id'
+    ]
+  },
+  isNewRecord: false
+}
+A user connected  EY6VniN2iVxxBHYSAAAH
+EY6VniN2iVxxBHYSAAAH with info : 
+{
+  id: 5,
+  user_name: 'Lý Nam Phương',
+  phone: '038664065',
+  pass: '$2a$10$MiL7SECPtvh4RcjAoO9WH.6OLQ4SJ0tZF1axoHl0yyVuNRQMeJc0W',
+  avatar: '/uploads/1714749555660007.jpg',
+  role: 0,
+  address_detail: 'Yên Bái',
+  gender: 'Nam',
+  email: 'lynamphuong@gmail.com',
+  date_of_birth: '2001-12-14 00:00:00.000',
+  background: '/uploads/1714736655167028.jpg',
+  is_public_birth: 0,
+  verifyEmail: true,
+  address_id_work: 'An Giang',
+  createdAt: '2024-01-03T03:21:46.000Z',
+  updatedAt: '2024-05-20T03:13:01.000Z',
+  school_id: 1,
+  faculty_id: 2,
+  address_id: 1,
+  school: {
+    id: 1,
+    name: 'ĐH CNTT An Giang',
+    status: 'accept',
+    createdAt: '2024-01-02T08:42:58.000Z',
+    updatedAt: '2024-01-02T08:42:58.000Z',
+    address_id: 1
+  },
+  faculty: {
+    id: 2,
+    name: 'Kỹ thuật phần mềm',
+    status: 'accept',
+    createdAt: '2024-05-13T02:51:57.000Z',
+    updatedAt: '2024-05-23T03:21:25.000Z',
+    school_id: 1
+  }
+}
+{
+  fieldname: 'img',
+  originalname: '1716535562904000.png',
+  encoding: '7bit',
+  mimetype: 'image/png',
+  destination: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads',
+  filename: '1716535562904000.png',
+  path: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads/1716535562904000.png',
+  size: 8076
+}
+[2024-05-24 07:26:03] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  zwxap1RAtIf8KzDQAAAC
+A user connected  x931UUVlIPbgCrbpAAAD
+{
+  fieldname: 'img',
+  originalname: '1716535587785000.png',
+  encoding: '7bit',
+  mimetype: 'image/png',
+  destination: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads',
+  filename: '1716535587785000.png',
+  path: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads/1716535587785000.png',
+  size: 8076
+}
+[2024-05-24 07:26:28] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  2GV6ObJA8WbQPfUnAAAB
+A user connected  KeRWQ0mxu-4iaHZbAAAD
+User disconnected
+A user connected  ZkC4VxbnEvDkY7XbAAAF
+[2024-05-24 07:28:57] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  HOIdJpfnWerhPlo_AAAB
+A user connected  TP0VIVSJ7Fbp3B-AAAAD
+[2024-05-24 07:29:11] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  y08fST6c3ZOcyyqhAAAB
+A user connected  ihScocTpjY5R-ZqPAAAD
+{
+  fieldname: 'img',
+  originalname: '1716535801373000.png',
+  encoding: '7bit',
+  mimetype: 'image/png',
+  destination: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads',
+  filename: '1716535801373000.png',
+  path: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads/1716535801373000.png',
+  size: 8076
+}
+[2024-05-24 07:30:02] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  gHKX6n0BR7TikQ3TAAAB
+A user connected  YfXk4CvItxX8uClTAAAD
+access token expired
+{ email: 'seotrangbh24@gmail.com', pass: 'trang789' }
+seotrangbh24@gmail.com
+users {
+  dataValues: {
+    id: 1,
+    user_name: 'Tráng',
+    phone: '038664039',
+    pass: '$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy',
+    avatar: '/img/avatar_default/avatar_1.jpg',
+    role: 1,
+    address_detail: 'Lào Cai',
+    gender: 'Nam',
+    email: 'seotrangbh24@gmail.com',
+    date_of_birth: '2024-04-11 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2023-12-29T01:31:57.000Z,
+    updatedAt: 2024-05-21T09:23:08.000Z,
+    school_id: 1,
+    faculty_id: 1,
+    address_id: 1
+  },
+  _previousDataValues: {
+    id: 1,
+    user_name: 'Tráng',
+    phone: '038664039',
+    pass: '$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy',
+    avatar: '/img/avatar_default/avatar_1.jpg',
+    role: 1,
+    address_detail: 'Lào Cai',
+    gender: 'Nam',
+    email: 'seotrangbh24@gmail.com',
+    date_of_birth: '2024-04-11 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2023-12-29T01:31:57.000Z,
+    updatedAt: 2024-05-21T09:23:08.000Z,
+    school_id: 1,
+    faculty_id: 1,
+    address_id: 1
+  },
+  uniqno: 1,
+  _changed: Set(0) {},
+  _options: {
+    isNewRecord: false,
+    _schema: null,
+    _schemaDelimiter: '',
+    raw: true,
+    attributes: [
+      'id',             'user_name',
+      'phone',          'pass',
+      'avatar',         'role',
+      'address_detail', 'gender',
+      'email',          'date_of_birth',
+      'background',     'is_public_birth',
+      'verifyEmail',    'address_id_work',
+      'createdAt',      'updatedAt',
+      'school_id',      'faculty_id',
+      'address_id'
+    ]
+  },
+  isNewRecord: false
+}
+Error: could not update user
+    at update (/home/devtrang/web/trang-dev.ictu.vn/chat/src/controllers/userController.js:51:19)
+[2024-05-24 07:32:43] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  B9Vw9pIid8d4LuDlAAAB
+A user connected  ikRLqhbqInBgJLM1AAAD
+[2024-05-24 07:32:52] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  UbPcIFJ8zuGTbtyhAAAB
+A user connected  bBmQSIVFrl3lAalQAAAD
+{
+  fieldname: 'img',
+  originalname: '1716535982246000.png',
+  encoding: '7bit',
+  mimetype: 'image/png',
+  destination: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads',
+  filename: '1716535982246000.png',
+  path: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads/1716535982246000.png',
+  size: 8076
+}
+[2024-05-24 07:33:03] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  RcTgZdhs7YdRzyo6AAAB
+A user connected  epdkdXD9F-1uVHdPAAAD
+User disconnected
+{ email: 'seotrangbh24@gmail.com', pass: 'trang789' }
+seotrangbh24@gmail.com
+users {
+  dataValues: {
+    id: 1,
+    user_name: 'Tráng',
+    phone: '038664039',
+    pass: '$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy',
+    avatar: '/uploads/1716535801373000.png',
+    role: 1,
+    address_detail: 'Lào Cai',
+    gender: 'Nam',
+    email: 'seotrangbh24@gmail.com',
+    date_of_birth: '2024-04-11 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2023-12-29T01:31:57.000Z,
+    updatedAt: 2024-05-24T07:34:30.000Z,
+    school_id: 1,
+    faculty_id: 1,
+    address_id: 1
+  },
+  _previousDataValues: {
+    id: 1,
+    user_name: 'Tráng',
+    phone: '038664039',
+    pass: '$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy',
+    avatar: '/uploads/1716535801373000.png',
+    role: 1,
+    address_detail: 'Lào Cai',
+    gender: 'Nam',
+    email: 'seotrangbh24@gmail.com',
+    date_of_birth: '2024-04-11 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2023-12-29T01:31:57.000Z,
+    updatedAt: 2024-05-24T07:34:30.000Z,
+    school_id: 1,
+    faculty_id: 1,
+    address_id: 1
+  },
+  uniqno: 1,
+  _changed: Set(0) {},
+  _options: {
+    isNewRecord: false,
+    _schema: null,
+    _schemaDelimiter: '',
+    raw: true,
+    attributes: [
+      'id',             'user_name',
+      'phone',          'pass',
+      'avatar',         'role',
+      'address_detail', 'gender',
+      'email',          'date_of_birth',
+      'background',     'is_public_birth',
+      'verifyEmail',    'address_id_work',
+      'createdAt',      'updatedAt',
+      'school_id',      'faculty_id',
+      'address_id'
+    ]
+  },
+  isNewRecord: false
+}
+A user connected  LbOSIo_zqOWjS_XNAAAF
+LbOSIo_zqOWjS_XNAAAF with info : 
+{
+  id: 1,
+  user_name: 'Tráng',
+  phone: '038664039',
+  pass: '$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy',
+  avatar: '/uploads/1716535801373000.png',
+  role: 1,
+  address_detail: 'Lào Cai',
+  gender: 'Nam',
+  email: 'seotrangbh24@gmail.com',
+  date_of_birth: '2024-04-11 00:00:00.000',
+  background: '/uploads/1714736655167028.jpg',
+  is_public_birth: 0,
+  verifyEmail: true,
+  address_id_work: 'An Giang',
+  createdAt: '2023-12-29T01:31:57.000Z',
+  updatedAt: '2024-05-24T07:34:30.000Z',
+  school_id: 1,
+  faculty_id: 1,
+  address_id: 1,
+  school: {
+    id: 1,
+    name: 'ĐH CNTT An Giang',
+    status: 'accept',
+    createdAt: '2024-01-02T08:42:58.000Z',
+    updatedAt: '2024-01-02T08:42:58.000Z',
+    address_id: 1
+  },
+  faculty: {
+    id: 1,
+    name: 'Công nghệ thông tin',
+    status: 'accept',
+    createdAt: '2024-05-10T04:06:14.000Z',
+    updatedAt: '2024-05-23T03:21:27.000Z',
+    school_id: 1
+  }
+}
+User disconnected
+[2024-05-24 07:37:37] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  Z8OjLPpe_0OrmujaAAAB
+{
+  fieldname: 'img',
+  originalname: '1716536292512000.png',
+  encoding: '7bit',
+  mimetype: 'image/png',
+  destination: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads',
+  filename: '1716536292512000.png',
+  path: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads/1716536292512000.png',
+  size: 8076
+}
+[2024-05-24 07:38:14] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  PwnPwLv6bHvHrlywAAAB
+{ email: 'lynamphuong@gmail.com', pass: 'trang789' }
+lynamphuong@gmail.com
+users {
+  dataValues: {
+    id: 5,
+    user_name: 'Lý Nam Phương',
+    phone: '038664065',
+    pass: '$2a$10$MiL7SECPtvh4RcjAoO9WH.6OLQ4SJ0tZF1axoHl0yyVuNRQMeJc0W',
+    avatar: '/uploads/1716536292512000.png',
+    role: 0,
+    address_detail: 'Yên Bái',
+    gender: 'Nam',
+    email: 'lynamphuong@gmail.com',
+    date_of_birth: '2001-12-14 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2024-01-03T03:21:46.000Z,
+    updatedAt: 2024-05-24T07:38:20.000Z,
+    school_id: 1,
+    faculty_id: 2,
+    address_id: 1
+  },
+  _previousDataValues: {
+    id: 5,
+    user_name: 'Lý Nam Phương',
+    phone: '038664065',
+    pass: '$2a$10$MiL7SECPtvh4RcjAoO9WH.6OLQ4SJ0tZF1axoHl0yyVuNRQMeJc0W',
+    avatar: '/uploads/1716536292512000.png',
+    role: 0,
+    address_detail: 'Yên Bái',
+    gender: 'Nam',
+    email: 'lynamphuong@gmail.com',
+    date_of_birth: '2001-12-14 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2024-01-03T03:21:46.000Z,
+    updatedAt: 2024-05-24T07:38:20.000Z,
+    school_id: 1,
+    faculty_id: 2,
+    address_id: 1
+  },
+  uniqno: 1,
+  _changed: Set(0) {},
+  _options: {
+    isNewRecord: false,
+    _schema: null,
+    _schemaDelimiter: '',
+    raw: true,
+    attributes: [
+      'id',             'user_name',
+      'phone',          'pass',
+      'avatar',         'role',
+      'address_detail', 'gender',
+      'email',          'date_of_birth',
+      'background',     'is_public_birth',
+      'verifyEmail',    'address_id_work',
+      'createdAt',      'updatedAt',
+      'school_id',      'faculty_id',
+      'address_id'
+    ]
+  },
+  isNewRecord: false
+}
+A user connected  gWEn0Zo5XPt7K4f7AAAD
+gWEn0Zo5XPt7K4f7AAAD with info : 
+{
+  id: 5,
+  user_name: 'Lý Nam Phương',
+  phone: '038664065',
+  pass: '$2a$10$MiL7SECPtvh4RcjAoO9WH.6OLQ4SJ0tZF1axoHl0yyVuNRQMeJc0W',
+  avatar: '/uploads/1716536292512000.png',
+  role: 0,
+  address_detail: 'Yên Bái',
+  gender: 'Nam',
+  email: 'lynamphuong@gmail.com',
+  date_of_birth: '2001-12-14 00:00:00.000',
+  background: '/uploads/1714736655167028.jpg',
+  is_public_birth: 0,
+  verifyEmail: true,
+  address_id_work: 'An Giang',
+  createdAt: '2024-01-03T03:21:46.000Z',
+  updatedAt: '2024-05-24T07:38:20.000Z',
+  school_id: 1,
+  faculty_id: 2,
+  address_id: 1,
+  school: {
+    id: 1,
+    name: 'ĐH CNTT An Giang',
+    status: 'accept',
+    createdAt: '2024-01-02T08:42:58.000Z',
+    updatedAt: '2024-01-02T08:42:58.000Z',
+    address_id: 1
+  },
+  faculty: {
+    id: 2,
+    name: 'Kỹ thuật phần mềm',
+    status: 'accept',
+    createdAt: '2024-05-13T02:51:57.000Z',
+    updatedAt: '2024-05-23T03:21:25.000Z',
+    school_id: 1
+  }
+}
+User disconnected
+{ email: 'lynamphuong@gmail.com', pass: 'trang789' }
+lynamphuong@gmail.com
+users {
+  dataValues: {
+    id: 5,
+    user_name: 'Lý Nam Phương',
+    phone: '038664065',
+    pass: '$2a$10$MiL7SECPtvh4RcjAoO9WH.6OLQ4SJ0tZF1axoHl0yyVuNRQMeJc0W',
+    avatar: '/uploads/1716536292512000.png',
+    role: 0,
+    address_detail: 'Yên Bái',
+    gender: 'Nam',
+    email: 'lynamphuong@gmail.com',
+    date_of_birth: '2001-12-14 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2024-01-03T03:21:46.000Z,
+    updatedAt: 2024-05-24T07:38:20.000Z,
+    school_id: 1,
+    faculty_id: 2,
+    address_id: 1
+  },
+  _previousDataValues: {
+    id: 5,
+    user_name: 'Lý Nam Phương',
+    phone: '038664065',
+    pass: '$2a$10$MiL7SECPtvh4RcjAoO9WH.6OLQ4SJ0tZF1axoHl0yyVuNRQMeJc0W',
+    avatar: '/uploads/1716536292512000.png',
+    role: 0,
+    address_detail: 'Yên Bái',
+    gender: 'Nam',
+    email: 'lynamphuong@gmail.com',
+    date_of_birth: '2001-12-14 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2024-01-03T03:21:46.000Z,
+    updatedAt: 2024-05-24T07:38:20.000Z,
+    school_id: 1,
+    faculty_id: 2,
+    address_id: 1
+  },
+  uniqno: 1,
+  _changed: Set(0) {},
+  _options: {
+    isNewRecord: false,
+    _schema: null,
+    _schemaDelimiter: '',
+    raw: true,
+    attributes: [
+      'id',             'user_name',
+      'phone',          'pass',
+      'avatar',         'role',
+      'address_detail', 'gender',
+      'email',          'date_of_birth',
+      'background',     'is_public_birth',
+      'verifyEmail',    'address_id_work',
+      'createdAt',      'updatedAt',
+      'school_id',      'faculty_id',
+      'address_id'
+    ]
+  },
+  isNewRecord: false
+}
+{ email: 'lynamphuong@gmail.com', pass: 'trang789' }
+lynamphuong@gmail.com
+users {
+  dataValues: {
+    id: 5,
+    user_name: 'Lý Nam Phương',
+    phone: '038664065',
+    pass: '$2a$10$MiL7SECPtvh4RcjAoO9WH.6OLQ4SJ0tZF1axoHl0yyVuNRQMeJc0W',
+    avatar: '/uploads/1716536292512000.png',
+    role: 0,
+    address_detail: 'Yên Bái',
+    gender: 'Nam',
+    email: 'lynamphuong@gmail.com',
+    date_of_birth: '2001-12-14 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2024-01-03T03:21:46.000Z,
+    updatedAt: 2024-05-24T07:38:20.000Z,
+    school_id: 1,
+    faculty_id: 2,
+    address_id: 1
+  },
+  _previousDataValues: {
+    id: 5,
+    user_name: 'Lý Nam Phương',
+    phone: '038664065',
+    pass: '$2a$10$MiL7SECPtvh4RcjAoO9WH.6OLQ4SJ0tZF1axoHl0yyVuNRQMeJc0W',
+    avatar: '/uploads/1716536292512000.png',
+    role: 0,
+    address_detail: 'Yên Bái',
+    gender: 'Nam',
+    email: 'lynamphuong@gmail.com',
+    date_of_birth: '2001-12-14 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2024-01-03T03:21:46.000Z,
+    updatedAt: 2024-05-24T07:38:20.000Z,
+    school_id: 1,
+    faculty_id: 2,
+    address_id: 1
+  },
+  uniqno: 1,
+  _changed: Set(0) {},
+  _options: {
+    isNewRecord: false,
+    _schema: null,
+    _schemaDelimiter: '',
+    raw: true,
+    attributes: [
+      'id',             'user_name',
+      'phone',          'pass',
+      'avatar',         'role',
+      'address_detail', 'gender',
+      'email',          'date_of_birth',
+      'background',     'is_public_birth',
+      'verifyEmail',    'address_id_work',
+      'createdAt',      'updatedAt',
+      'school_id',      'faculty_id',
+      'address_id'
+    ]
+  },
+  isNewRecord: false
+}
+A user connected  JawhCD9YpKBGvs76AAAF
+JawhCD9YpKBGvs76AAAF with info : 
+{
+  id: 5,
+  user_name: 'Lý Nam Phương',
+  phone: '038664065',
+  pass: '$2a$10$MiL7SECPtvh4RcjAoO9WH.6OLQ4SJ0tZF1axoHl0yyVuNRQMeJc0W',
+  avatar: '/uploads/1716536292512000.png',
+  role: 0,
+  address_detail: 'Yên Bái',
+  gender: 'Nam',
+  email: 'lynamphuong@gmail.com',
+  date_of_birth: '2001-12-14 00:00:00.000',
+  background: '/uploads/1714736655167028.jpg',
+  is_public_birth: 0,
+  verifyEmail: true,
+  address_id_work: 'An Giang',
+  createdAt: '2024-01-03T03:21:46.000Z',
+  updatedAt: '2024-05-24T07:38:20.000Z',
+  school_id: 1,
+  faculty_id: 2,
+  address_id: 1,
+  school: {
+    id: 1,
+    name: 'ĐH CNTT An Giang',
+    status: 'accept',
+    createdAt: '2024-01-02T08:42:58.000Z',
+    updatedAt: '2024-01-02T08:42:58.000Z',
+    address_id: 1
+  },
+  faculty: {
+    id: 2,
+    name: 'Kỹ thuật phần mềm',
+    status: 'accept',
+    createdAt: '2024-05-13T02:51:57.000Z',
+    updatedAt: '2024-05-23T03:21:25.000Z',
+    school_id: 1
+  }
+}
+User disconnected
+[2024-05-24 07:47:25] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  PJw3z7vCrAyu2eJYAAAB
+[2024-05-24 07:47:47] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  7Fd_CxRz9QinOWnlAAAB
+[2024-05-24 07:47:57] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  jIpjEue2FNMuJAaHAAAB
+{
+  fieldname: 'img',
+  originalname: '1716536887315000.png',
+  encoding: '7bit',
+  mimetype: 'image/png',
+  destination: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads',
+  filename: '1716536887315000.png',
+  path: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads/1716536887315000.png',
+  size: 1144
+}
+[2024-05-24 07:48:08] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  _9QClB-ZUM6vBRZEAAAB
+{ email: 'lynamphuong@gmail.com', pass: 'trang789' }
+lynamphuong@gmail.com
+users {
+  dataValues: {
+    id: 5,
+    user_name: 'Lý Nam Phương',
+    phone: '038664065',
+    pass: '$2a$10$MiL7SECPtvh4RcjAoO9WH.6OLQ4SJ0tZF1axoHl0yyVuNRQMeJc0W',
+    avatar: '/uploads/1716536292512000.png',
+    role: 0,
+    address_detail: 'Yên Bái',
+    gender: 'Nam',
+    email: 'lynamphuong@gmail.com',
+    date_of_birth: '2001-12-14 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2024-01-03T03:21:46.000Z,
+    updatedAt: 2024-05-24T07:38:20.000Z,
+    school_id: 1,
+    faculty_id: 2,
+    address_id: 1
+  },
+  _previousDataValues: {
+    id: 5,
+    user_name: 'Lý Nam Phương',
+    phone: '038664065',
+    pass: '$2a$10$MiL7SECPtvh4RcjAoO9WH.6OLQ4SJ0tZF1axoHl0yyVuNRQMeJc0W',
+    avatar: '/uploads/1716536292512000.png',
+    role: 0,
+    address_detail: 'Yên Bái',
+    gender: 'Nam',
+    email: 'lynamphuong@gmail.com',
+    date_of_birth: '2001-12-14 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2024-01-03T03:21:46.000Z,
+    updatedAt: 2024-05-24T07:38:20.000Z,
+    school_id: 1,
+    faculty_id: 2,
+    address_id: 1
+  },
+  uniqno: 1,
+  _changed: Set(0) {},
+  _options: {
+    isNewRecord: false,
+    _schema: null,
+    _schemaDelimiter: '',
+    raw: true,
+    attributes: [
+      'id',             'user_name',
+      'phone',          'pass',
+      'avatar',         'role',
+      'address_detail', 'gender',
+      'email',          'date_of_birth',
+      'background',     'is_public_birth',
+      'verifyEmail',    'address_id_work',
+      'createdAt',      'updatedAt',
+      'school_id',      'faculty_id',
+      'address_id'
+    ]
+  },
+  isNewRecord: false
+}
+A user connected  hLPfMAPOqCA2OSQIAAAD
+hLPfMAPOqCA2OSQIAAAD with info : 
+{
+  id: 5,
+  user_name: 'Lý Nam Phương',
+  phone: '038664065',
+  pass: '$2a$10$MiL7SECPtvh4RcjAoO9WH.6OLQ4SJ0tZF1axoHl0yyVuNRQMeJc0W',
+  avatar: '/uploads/1716536292512000.png',
+  role: 0,
+  address_detail: 'Yên Bái',
+  gender: 'Nam',
+  email: 'lynamphuong@gmail.com',
+  date_of_birth: '2001-12-14 00:00:00.000',
+  background: '/uploads/1714736655167028.jpg',
+  is_public_birth: 0,
+  verifyEmail: true,
+  address_id_work: 'An Giang',
+  createdAt: '2024-01-03T03:21:46.000Z',
+  updatedAt: '2024-05-24T07:38:20.000Z',
+  school_id: 1,
+  faculty_id: 2,
+  address_id: 1,
+  school: {
+    id: 1,
+    name: 'ĐH CNTT An Giang',
+    status: 'accept',
+    createdAt: '2024-01-02T08:42:58.000Z',
+    updatedAt: '2024-01-02T08:42:58.000Z',
+    address_id: 1
+  },
+  faculty: {
+    id: 2,
+    name: 'Kỹ thuật phần mềm',
+    status: 'accept',
+    createdAt: '2024-05-13T02:51:57.000Z',
+    updatedAt: '2024-05-23T03:21:25.000Z',
+    school_id: 1
+  }
+}
+User disconnected
+A user connected  LDKTSpbVRYoCqwkjAAAF
+User disconnected
+{ email: 'lynamphuong@gmail.com', pass: 'trang789' }
+lynamphuong@gmail.com
+users {
+  dataValues: {
+    id: 5,
+    user_name: 'Lý Nam Phương',
+    phone: '038664065',
+    pass: '$2a$10$MiL7SECPtvh4RcjAoO9WH.6OLQ4SJ0tZF1axoHl0yyVuNRQMeJc0W',
+    avatar: '/uploads/1716536292512000.png',
+    role: 0,
+    address_detail: 'Yên Bái',
+    gender: 'Nam',
+    email: 'lynamphuong@gmail.com',
+    date_of_birth: '2001-12-14 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2024-01-03T03:21:46.000Z,
+    updatedAt: 2024-05-24T07:38:20.000Z,
+    school_id: 1,
+    faculty_id: 2,
+    address_id: 1
+  },
+  _previousDataValues: {
+    id: 5,
+    user_name: 'Lý Nam Phương',
+    phone: '038664065',
+    pass: '$2a$10$MiL7SECPtvh4RcjAoO9WH.6OLQ4SJ0tZF1axoHl0yyVuNRQMeJc0W',
+    avatar: '/uploads/1716536292512000.png',
+    role: 0,
+    address_detail: 'Yên Bái',
+    gender: 'Nam',
+    email: 'lynamphuong@gmail.com',
+    date_of_birth: '2001-12-14 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2024-01-03T03:21:46.000Z,
+    updatedAt: 2024-05-24T07:38:20.000Z,
+    school_id: 1,
+    faculty_id: 2,
+    address_id: 1
+  },
+  uniqno: 1,
+  _changed: Set(0) {},
+  _options: {
+    isNewRecord: false,
+    _schema: null,
+    _schemaDelimiter: '',
+    raw: true,
+    attributes: [
+      'id',             'user_name',
+      'phone',          'pass',
+      'avatar',         'role',
+      'address_detail', 'gender',
+      'email',          'date_of_birth',
+      'background',     'is_public_birth',
+      'verifyEmail',    'address_id_work',
+      'createdAt',      'updatedAt',
+      'school_id',      'faculty_id',
+      'address_id'
+    ]
+  },
+  isNewRecord: false
+}
+A user connected  hvu9fYwmCC4YkUbmAAAH
+hvu9fYwmCC4YkUbmAAAH with info : 
+{
+  id: 5,
+  user_name: 'Lý Nam Phương',
+  phone: '038664065',
+  pass: '$2a$10$MiL7SECPtvh4RcjAoO9WH.6OLQ4SJ0tZF1axoHl0yyVuNRQMeJc0W',
+  avatar: '/uploads/1716536292512000.png',
+  role: 0,
+  address_detail: 'Yên Bái',
+  gender: 'Nam',
+  email: 'lynamphuong@gmail.com',
+  date_of_birth: '2001-12-14 00:00:00.000',
+  background: '/uploads/1714736655167028.jpg',
+  is_public_birth: 0,
+  verifyEmail: true,
+  address_id_work: 'An Giang',
+  createdAt: '2024-01-03T03:21:46.000Z',
+  updatedAt: '2024-05-24T07:38:20.000Z',
+  school_id: 1,
+  faculty_id: 2,
+  address_id: 1,
+  school: {
+    id: 1,
+    name: 'ĐH CNTT An Giang',
+    status: 'accept',
+    createdAt: '2024-01-02T08:42:58.000Z',
+    updatedAt: '2024-01-02T08:42:58.000Z',
+    address_id: 1
+  },
+  faculty: {
+    id: 2,
+    name: 'Kỹ thuật phần mềm',
+    status: 'accept',
+    createdAt: '2024-05-13T02:51:57.000Z',
+    updatedAt: '2024-05-23T03:21:25.000Z',
+    school_id: 1
+  }
+}
+[2024-05-24 07:55:25] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  aCKJjDT0ApclwKsaAAAB
+A user connected  yhoVjkbHr-o8vSCYAAAD
+[2024-05-24 07:55:39] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  6XyIIe2hMbxhtlHjAAAB
+A user connected  LvGS-u7edSQjB5eLAAAD
+{
+  fieldname: 'img',
+  originalname: '1716537347350000.png',
+  encoding: '7bit',
+  mimetype: 'image/png',
+  destination: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads',
+  filename: '1716537347350000.png',
+  path: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads/1716537347350000.png',
+  size: 1144
+}
+[2024-05-24 07:55:48] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  pJCXlDFCyFplFHffAAAC
+A user connected  OZL8VgnKwIcK2xDdAAAD
+[2024-05-24 07:57:58] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  WXtxps6infurHikdAAAB
+A user connected  H86ounuuSZX2DP5qAAAD
+[2024-05-24 07:58:03] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  0p29eSMCo0yYFsm6AAAB
+A user connected  mQ6UQM5WYB5VDUDIAAAD
+[2024-05-24 07:58:19] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  C6ZpP6EHadRGfnsBAAAB
+A user connected  -L4FqQBLGwciaAQuAAAD
+[2024-05-24 07:58:23] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  fNeQFt3F91qwmjMiAAAB
+A user connected  S8ulAfauzlLhR6ZZAAAD
+User disconnected
+A user connected  Rb-Dg6CZnwlAng7KAAAF
+{ email: 'lynamphuong@gmail.com', pass: 'trang789' }
+lynamphuong@gmail.com
+users {
+  dataValues: {
+    id: 5,
+    user_name: 'Lý Nam Phương',
+    phone: '038664065',
+    pass: '$2a$10$MiL7SECPtvh4RcjAoO9WH.6OLQ4SJ0tZF1axoHl0yyVuNRQMeJc0W',
+    avatar: '/uploads/1716536292512000.png',
+    role: 0,
+    address_detail: 'Yên Bái',
+    gender: 'Nam',
+    email: 'lynamphuong@gmail.com',
+    date_of_birth: '2001-12-14 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2024-01-03T03:21:46.000Z,
+    updatedAt: 2024-05-24T08:00:18.000Z,
+    school_id: 1,
+    faculty_id: 2,
+    address_id: 1
+  },
+  _previousDataValues: {
+    id: 5,
+    user_name: 'Lý Nam Phương',
+    phone: '038664065',
+    pass: '$2a$10$MiL7SECPtvh4RcjAoO9WH.6OLQ4SJ0tZF1axoHl0yyVuNRQMeJc0W',
+    avatar: '/uploads/1716536292512000.png',
+    role: 0,
+    address_detail: 'Yên Bái',
+    gender: 'Nam',
+    email: 'lynamphuong@gmail.com',
+    date_of_birth: '2001-12-14 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2024-01-03T03:21:46.000Z,
+    updatedAt: 2024-05-24T08:00:18.000Z,
+    school_id: 1,
+    faculty_id: 2,
+    address_id: 1
+  },
+  uniqno: 1,
+  _changed: Set(0) {},
+  _options: {
+    isNewRecord: false,
+    _schema: null,
+    _schemaDelimiter: '',
+    raw: true,
+    attributes: [
+      'id',             'user_name',
+      'phone',          'pass',
+      'avatar',         'role',
+      'address_detail', 'gender',
+      'email',          'date_of_birth',
+      'background',     'is_public_birth',
+      'verifyEmail',    'address_id_work',
+      'createdAt',      'updatedAt',
+      'school_id',      'faculty_id',
+      'address_id'
+    ]
+  },
+  isNewRecord: false
+}
+A user connected  bp2iIzrfTMTdPFHdAAAH
+bp2iIzrfTMTdPFHdAAAH with info : 
+{
+  id: 5,
+  user_name: 'Lý Nam Phương',
+  phone: '038664065',
+  pass: '$2a$10$MiL7SECPtvh4RcjAoO9WH.6OLQ4SJ0tZF1axoHl0yyVuNRQMeJc0W',
+  avatar: '/uploads/1716536292512000.png',
+  role: 0,
+  address_detail: 'Yên Bái',
+  gender: 'Nam',
+  email: 'lynamphuong@gmail.com',
+  date_of_birth: '2001-12-14 00:00:00.000',
+  background: '/uploads/1714736655167028.jpg',
+  is_public_birth: 0,
+  verifyEmail: true,
+  address_id_work: 'An Giang',
+  createdAt: '2024-01-03T03:21:46.000Z',
+  updatedAt: '2024-05-24T08:00:18.000Z',
+  school_id: 1,
+  faculty_id: 2,
+  address_id: 1,
+  school: {
+    id: 1,
+    name: 'ĐH CNTT An Giang',
+    status: 'accept',
+    createdAt: '2024-01-02T08:42:58.000Z',
+    updatedAt: '2024-01-02T08:42:58.000Z',
+    address_id: 1
+  },
+  faculty: {
+    id: 2,
+    name: 'Kỹ thuật phần mềm',
+    status: 'accept',
+    createdAt: '2024-05-13T02:51:57.000Z',
+    updatedAt: '2024-05-23T03:21:25.000Z',
+    school_id: 1
+  }
+}
+[2024-05-24 08:21:58] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  adZGf2IkgWvVcy3sAAAB
+A user connected  fUkciZtwd0fMnMX3AAAE
+A user connected  72AHLY271HIEtRA-AAAF
+[2024-05-24 08:22:01] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  Exe1-_pMT4MytFJ0AAAB
+A user connected  orTG0FiBLB0YvSlJAAAE
+A user connected  UDeyOjvi72DMPtS3AAAF
+[2024-05-24 08:22:05] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  j0WqAHRVETg3WVLCAAAC
+A user connected  IU4gweW1hMWhQWnzAAAD
+A user connected  lVhIbjayFylXBzc3AAAF
+{
+  fieldname: 'img',
+  originalname: '1716538935671000.png',
+  encoding: '7bit',
+  mimetype: 'image/png',
+  destination: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads',
+  filename: '1716538935671000.png',
+  path: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads/1716538935671000.png',
+  size: 8076
+}
+[2024-05-24 08:22:16] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  U95k5RNOFD7bpn4IAAAB
+A user connected  G_DjzxmhVPwesQ0mAAAD
+A user connected  D3OFZIEwWeT40j_cAAAF
+[2024-05-24 08:22:31] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  wzju0MeOJJdafn0mAAAC
+A user connected  IbhFzKe3WSfouna6AAAD
+A user connected  yMm-SsuJywOhNhX8AAAF
+[2024-05-24 08:22:38] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  PtP_nY2zGERgOLrxAAAB
+A user connected  a07tebmwjXqs_z9BAAAE
+A user connected  eyUQSF1apbsLJLy6AAAF
+[2024-05-24 08:22:41] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  zUiQgCP7q6Zr-LK3AAAB
+A user connected  CQg4quFFzx329FXyAAAE
+A user connected  tm-f8kneNzIn6Io8AAAF
+[2024-05-24 08:22:46] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  JiJyeQmaoBz-u0BeAAAB
+A user connected  Y0ROaac3Lz4tPlQrAAAD
+A user connected  nRAmdk42RrNq8nx6AAAF
+{
+  fieldname: 'img',
+  originalname: '1716538984425000.jpg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg',
+  destination: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads',
+  filename: '1716538984425000.jpg',
+  path: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads/1716538984425000.jpg',
+  size: 6002
+}
+[2024-05-24 08:23:10] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  fvGsVJKXZD3H5b_GAAAB
+A user connected  h_UJBUOtpUaE0hrBAAAE
+A user connected  jsepGoNOC5jk7GJcAAAF
+User disconnected
+A user connected  NKeuK7YxDFFdKf3LAAAH
+[2024-05-24 08:27:46] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  6T-xMiHJu8fUCbEMAAAB
+A user connected  0hV5QGTVCkeHNWCdAAAE
+A user connected  FxocdyI7hUxs2XlEAAAF
+[2024-05-24 08:27:52] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  eFMHFsJlDZUoeF7XAAAC
+A user connected  FPtRHB6zL4FuIUH-AAAD
+A user connected  5pGkfmSBzyNC0PooAAAF
+[2024-05-24 08:28:00] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  s7xcsXkq90zjLMv6AAAC
+A user connected  KmVXcfR6bTrmxfsqAAAD
+A user connected  tUeUKehjthJjSXG3AAAF
+[2024-05-24 08:28:06] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  v8KFMDkf9jiykzxyAAAD
+A user connected  jQKxYxrI1mJFrpYBAAAE
+A user connected  F_qpZGxxTUWcJ7waAAAF
+[2024-05-24 08:28:15] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  UUySzEHaIga4ZCXZAAAB
+A user connected  H936z3PnnZZl7VNSAAAD
+A user connected  USfmcrfS8spasCDIAAAF
+[2024-05-24 08:28:25] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  IIZWbJnh4Od_gG99AAAB
+A user connected  tzIl9vEc0VoObr4pAAAD
+A user connected  rmZnqFdpU83BhGwIAAAF
+[2024-05-24 08:28:42] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  P2RSgj8jukF-veYiAAAB
+A user connected  NbXwBXyIUY8e3KYFAAAE
+A user connected  hfJQnCZbdtyx0VWdAAAF
+User disconnected
+A user connected  jpZicWYfVN0jnTSnAAAH
+[2024-05-24 08:35:10] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  cGsj3j9I6zH4zlAzAAAB
+A user connected  tyAWKlPmf61RG8VVAAAD
+A user connected  NmDOMAn-jVa_pDAaAAAF
+[2024-05-24 08:35:26] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  tPB-ODB_SQxOMIWqAAAC
+A user connected  wewJ-KJ7kCtRM__ZAAAD
+A user connected  tRF1aJEtAJptW1pPAAAF
+[2024-05-24 08:35:40] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  AAcyLDAuiDityKT-AAAB
+A user connected  rSFkY9WBTW4GdLMeAAAD
+A user connected  _-8HHcuhuTR2zktrAAAF
+User rSFkY9WBTW4GdLMeAAAD joined room: 77
+[2024-05-24 08:36:02] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  lMOCV_PmG7HJ2LMaAAAB
+A user connected  D0M_o2waGcGgfW2pAAAD
+A user connected  dpkw5eGD9jv14KEhAAAF
+User disconnected
+A user connected  hvs_6N-ouAFhp_dtAAAH
+{ email: 'lynamphuong@gmail.com', pass: 'trang789' }
+lynamphuong@gmail.com
+users {
+  dataValues: {
+    id: 5,
+    user_name: 'Lý Nam Phương',
+    phone: '038664065',
+    pass: '$2a$10$MiL7SECPtvh4RcjAoO9WH.6OLQ4SJ0tZF1axoHl0yyVuNRQMeJc0W',
+    avatar: '/uploads/1716538984425000.jpg',
+    role: 0,
+    address_detail: 'Yên Bái',
+    gender: 'Nam',
+    email: 'lynamphuong@gmail.com',
+    date_of_birth: '2001-12-14 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2024-01-03T03:21:46.000Z,
+    updatedAt: 2024-05-24T08:23:14.000Z,
+    school_id: 1,
+    faculty_id: 2,
+    address_id: 1
+  },
+  _previousDataValues: {
+    id: 5,
+    user_name: 'Lý Nam Phương',
+    phone: '038664065',
+    pass: '$2a$10$MiL7SECPtvh4RcjAoO9WH.6OLQ4SJ0tZF1axoHl0yyVuNRQMeJc0W',
+    avatar: '/uploads/1716538984425000.jpg',
+    role: 0,
+    address_detail: 'Yên Bái',
+    gender: 'Nam',
+    email: 'lynamphuong@gmail.com',
+    date_of_birth: '2001-12-14 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2024-01-03T03:21:46.000Z,
+    updatedAt: 2024-05-24T08:23:14.000Z,
+    school_id: 1,
+    faculty_id: 2,
+    address_id: 1
+  },
+  uniqno: 1,
+  _changed: Set(0) {},
+  _options: {
+    isNewRecord: false,
+    _schema: null,
+    _schemaDelimiter: '',
+    raw: true,
+    attributes: [
+      'id',             'user_name',
+      'phone',          'pass',
+      'avatar',         'role',
+      'address_detail', 'gender',
+      'email',          'date_of_birth',
+      'background',     'is_public_birth',
+      'verifyEmail',    'address_id_work',
+      'createdAt',      'updatedAt',
+      'school_id',      'faculty_id',
+      'address_id'
+    ]
+  },
+  isNewRecord: false
+}
+A user connected  Hwxzyn7ZQ5WAqGZiAAAJ
+Hwxzyn7ZQ5WAqGZiAAAJ with info : 
+{
+  id: 5,
+  user_name: 'Lý Nam Phương',
+  phone: '038664065',
+  pass: '$2a$10$MiL7SECPtvh4RcjAoO9WH.6OLQ4SJ0tZF1axoHl0yyVuNRQMeJc0W',
+  avatar: '/uploads/1716538984425000.jpg',
+  role: 0,
+  address_detail: 'Yên Bái',
+  gender: 'Nam',
+  email: 'lynamphuong@gmail.com',
+  date_of_birth: '2001-12-14 00:00:00.000',
+  background: '/uploads/1714736655167028.jpg',
+  is_public_birth: 0,
+  verifyEmail: true,
+  address_id_work: 'An Giang',
+  createdAt: '2024-01-03T03:21:46.000Z',
+  updatedAt: '2024-05-24T08:23:14.000Z',
+  school_id: 1,
+  faculty_id: 2,
+  address_id: 1,
+  school: {
+    id: 1,
+    name: 'ĐH CNTT An Giang',
+    status: 'accept',
+    createdAt: '2024-01-02T08:42:58.000Z',
+    updatedAt: '2024-01-02T08:42:58.000Z',
+    address_id: 1
+  },
+  faculty: {
+    id: 2,
+    name: 'Kỹ thuật phần mềm',
+    status: 'accept',
+    createdAt: '2024-05-13T02:51:57.000Z',
+    updatedAt: '2024-05-23T03:21:25.000Z',
+    school_id: 1
+  }
+}
+User disconnected
+{ email: 'lynamphuong@gmail.com', pass: 'trang789' }
+lynamphuong@gmail.com
+users {
+  dataValues: {
+    id: 5,
+    user_name: 'Lý Nam Phương',
+    phone: '038664065',
+    pass: '$2a$10$MiL7SECPtvh4RcjAoO9WH.6OLQ4SJ0tZF1axoHl0yyVuNRQMeJc0W',
+    avatar: '/uploads/1716538984425000.jpg',
+    role: 0,
+    address_detail: 'Yên Bái',
+    gender: 'Nam',
+    email: 'lynamphuong@gmail.com',
+    date_of_birth: '2001-12-14 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2024-01-03T03:21:46.000Z,
+    updatedAt: 2024-05-24T08:23:14.000Z,
+    school_id: 1,
+    faculty_id: 2,
+    address_id: 1
+  },
+  _previousDataValues: {
+    id: 5,
+    user_name: 'Lý Nam Phương',
+    phone: '038664065',
+    pass: '$2a$10$MiL7SECPtvh4RcjAoO9WH.6OLQ4SJ0tZF1axoHl0yyVuNRQMeJc0W',
+    avatar: '/uploads/1716538984425000.jpg',
+    role: 0,
+    address_detail: 'Yên Bái',
+    gender: 'Nam',
+    email: 'lynamphuong@gmail.com',
+    date_of_birth: '2001-12-14 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2024-01-03T03:21:46.000Z,
+    updatedAt: 2024-05-24T08:23:14.000Z,
+    school_id: 1,
+    faculty_id: 2,
+    address_id: 1
+  },
+  uniqno: 1,
+  _changed: Set(0) {},
+  _options: {
+    isNewRecord: false,
+    _schema: null,
+    _schemaDelimiter: '',
+    raw: true,
+    attributes: [
+      'id',             'user_name',
+      'phone',          'pass',
+      'avatar',         'role',
+      'address_detail', 'gender',
+      'email',          'date_of_birth',
+      'background',     'is_public_birth',
+      'verifyEmail',    'address_id_work',
+      'createdAt',      'updatedAt',
+      'school_id',      'faculty_id',
+      'address_id'
+    ]
+  },
+  isNewRecord: false
+}
+A user connected  cMKUFemxTJWV5ECpAAAL
+cMKUFemxTJWV5ECpAAAL with info : 
+{
+  id: 5,
+  user_name: 'Lý Nam Phương',
+  phone: '038664065',
+  pass: '$2a$10$MiL7SECPtvh4RcjAoO9WH.6OLQ4SJ0tZF1axoHl0yyVuNRQMeJc0W',
+  avatar: '/uploads/1716538984425000.jpg',
+  role: 0,
+  address_detail: 'Yên Bái',
+  gender: 'Nam',
+  email: 'lynamphuong@gmail.com',
+  date_of_birth: '2001-12-14 00:00:00.000',
+  background: '/uploads/1714736655167028.jpg',
+  is_public_birth: 0,
+  verifyEmail: true,
+  address_id_work: 'An Giang',
+  createdAt: '2024-01-03T03:21:46.000Z',
+  updatedAt: '2024-05-24T08:23:14.000Z',
+  school_id: 1,
+  faculty_id: 2,
+  address_id: 1,
+  school: {
+    id: 1,
+    name: 'ĐH CNTT An Giang',
+    status: 'accept',
+    createdAt: '2024-01-02T08:42:58.000Z',
+    updatedAt: '2024-01-02T08:42:58.000Z',
+    address_id: 1
+  },
+  faculty: {
+    id: 2,
+    name: 'Kỹ thuật phần mềm',
+    status: 'accept',
+    createdAt: '2024-05-13T02:51:57.000Z',
+    updatedAt: '2024-05-23T03:21:25.000Z',
+    school_id: 1
+  }
+}
+User disconnected
+A user connected  Z_Y-DtXCi7_H6d0CAAAN
+access token expired
+User disconnected
+A user connected  zsykR_FMSxwJyftZAAAP
+[2024-05-24 09:48:51] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  DsG3rjrEG9RIs3MPAAAD
+A user connected  84I3ILvcrzX2WJNeAAAE
+A user connected  1774XOo_55lcUdDRAAAF
+A user connected  gS2bOsvxQEij7m0ZAAAH
+{
+  fieldname: 'img',
+  originalname: '1716544228420000.jpg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg',
+  destination: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads',
+  filename: '1716544228420000.jpg',
+  path: '/home/devtrang/web/trang-dev.ictu.vn/chat/src/public/uploads/1716544228420000.jpg',
+  size: 13033
+}
+[2024-05-24 09:50:30] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+A user connected  iny5-sg8VbTPWyocAAAC
+A user connected  8pYT7O-hCBgq_qLvAAAD
+A user connected  smWFypky6Yxk5yxWAAAF
+A user connected  rbzdN1ankkZvsPExAAAH
+User disconnected
+A user connected  eX32p4OV2ul2bZ43AAAJ
+User disconnected
+A user connected  iolHcD-I-cOjQ4HgAAAL
+User disconnected
+A user connected  vZMm9cyAZ3Nhxu1rAAAN
+User disconnected
+A user connected  TA41E0YeXZt5WEdvAAAP
+User disconnected
+User disconnected
+User disconnected
+User disconnected
+{ email: 'seotrangbh24@gmail.com', pass: 'trang789' }
+seotrangbh24@gmail.com
+users {
+  dataValues: {
+    id: 1,
+    user_name: 'Tráng',
+    phone: '038664039',
+    pass: '$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy',
+    avatar: '/uploads/1716537347350000.png',
+    role: 1,
+    address_detail: 'Lào Cai',
+    gender: 'Nam',
+    email: 'seotrangbh24@gmail.com',
+    date_of_birth: '10/12/2001',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2023-12-29T01:31:57.000Z,
+    updatedAt: 2024-05-24T09:04:07.000Z,
+    school_id: 1,
+    faculty_id: 1,
+    address_id: 1
+  },
+  _previousDataValues: {
+    id: 1,
+    user_name: 'Tráng',
+    phone: '038664039',
+    pass: '$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy',
+    avatar: '/uploads/1716537347350000.png',
+    role: 1,
+    address_detail: 'Lào Cai',
+    gender: 'Nam',
+    email: 'seotrangbh24@gmail.com',
+    date_of_birth: '10/12/2001',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2023-12-29T01:31:57.000Z,
+    updatedAt: 2024-05-24T09:04:07.000Z,
+    school_id: 1,
+    faculty_id: 1,
+    address_id: 1
+  },
+  uniqno: 1,
+  _changed: Set(0) {},
+  _options: {
+    isNewRecord: false,
+    _schema: null,
+    _schemaDelimiter: '',
+    raw: true,
+    attributes: [
+      'id',             'user_name',
+      'phone',          'pass',
+      'avatar',         'role',
+      'address_detail', 'gender',
+      'email',          'date_of_birth',
+      'background',     'is_public_birth',
+      'verifyEmail',    'address_id_work',
+      'createdAt',      'updatedAt',
+      'school_id',      'faculty_id',
+      'address_id'
+    ]
+  },
+  isNewRecord: false
+}
+{ email: 'lynamphuong@gmail.com', pass: 'trang789' }
+lynamphuong@gmail.com
+users {
+  dataValues: {
+    id: 5,
+    user_name: 'Lý Nam Phương',
+    phone: '038664065',
+    pass: '$2a$10$MiL7SECPtvh4RcjAoO9WH.6OLQ4SJ0tZF1axoHl0yyVuNRQMeJc0W',
+    avatar: '/uploads/1716538984425000.jpg',
+    role: 0,
+    address_detail: 'Yên Bái',
+    gender: 'Nam',
+    email: 'lynamphuong@gmail.com',
+    date_of_birth: '2001-12-14 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2024-01-03T03:21:46.000Z,
+    updatedAt: 2024-05-24T08:23:14.000Z,
+    school_id: 1,
+    faculty_id: 2,
+    address_id: 1
+  },
+  _previousDataValues: {
+    id: 5,
+    user_name: 'Lý Nam Phương',
+    phone: '038664065',
+    pass: '$2a$10$MiL7SECPtvh4RcjAoO9WH.6OLQ4SJ0tZF1axoHl0yyVuNRQMeJc0W',
+    avatar: '/uploads/1716538984425000.jpg',
+    role: 0,
+    address_detail: 'Yên Bái',
+    gender: 'Nam',
+    email: 'lynamphuong@gmail.com',
+    date_of_birth: '2001-12-14 00:00:00.000',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: 2024-01-03T03:21:46.000Z,
+    updatedAt: 2024-05-24T08:23:14.000Z,
+    school_id: 1,
+    faculty_id: 2,
+    address_id: 1
+  },
+  uniqno: 1,
+  _changed: Set(0) {},
+  _options: {
+    isNewRecord: false,
+    _schema: null,
+    _schemaDelimiter: '',
+    raw: true,
+    attributes: [
+      'id',             'user_name',
+      'phone',          'pass',
+      'avatar',         'role',
+      'address_detail', 'gender',
+      'email',          'date_of_birth',
+      'background',     'is_public_birth',
+      'verifyEmail',    'address_id_work',
+      'createdAt',      'updatedAt',
+      'school_id',      'faculty_id',
+      'address_id'
+    ]
+  },
+  isNewRecord: false
+}
+A user connected  ZutfxQ4KkwFzk-hvAAAR
+ZutfxQ4KkwFzk-hvAAAR with info : 
+{
+  id: 1,
+  user_name: 'Tráng',
+  phone: '038664039',
+  pass: '$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy',
+  avatar: '/uploads/1716537347350000.png',
+  role: 1,
+  address_detail: 'Lào Cai',
+  gender: 'Nam',
+  email: 'seotrangbh24@gmail.com',
+  date_of_birth: '10/12/2001',
+  background: '/uploads/1714736655167028.jpg',
+  is_public_birth: 0,
+  verifyEmail: true,
+  address_id_work: 'An Giang',
+  createdAt: '2023-12-29T01:31:57.000Z',
+  updatedAt: '2024-05-24T09:04:07.000Z',
+  school_id: 1,
+  faculty_id: 1,
+  address_id: 1,
+  school: {
+    id: 1,
+    name: 'ĐH CNTT An Giang',
+    status: 'accept',
+    createdAt: '2024-01-02T08:42:58.000Z',
+    updatedAt: '2024-01-02T08:42:58.000Z',
+    address_id: 1
+  },
+  faculty: {
+    id: 1,
+    name: 'Công nghệ thông tin',
+    status: 'accept',
+    createdAt: '2024-05-10T04:06:14.000Z',
+    updatedAt: '2024-05-23T03:21:27.000Z',
+    school_id: 1
+  }
+}
+A user connected  aM48lCk2rRBQO7T7AAAT
+aM48lCk2rRBQO7T7AAAT with info : 
+{
+  id: 5,
+  user_name: 'Lý Nam Phương',
+  phone: '038664065',
+  pass: '$2a$10$MiL7SECPtvh4RcjAoO9WH.6OLQ4SJ0tZF1axoHl0yyVuNRQMeJc0W',
+  avatar: '/uploads/1716538984425000.jpg',
+  role: 0,
+  address_detail: 'Yên Bái',
+  gender: 'Nam',
+  email: 'lynamphuong@gmail.com',
+  date_of_birth: '2001-12-14 00:00:00.000',
+  background: '/uploads/1714736655167028.jpg',
+  is_public_birth: 0,
+  verifyEmail: true,
+  address_id_work: 'An Giang',
+  createdAt: '2024-01-03T03:21:46.000Z',
+  updatedAt: '2024-05-24T08:23:14.000Z',
+  school_id: 1,
+  faculty_id: 2,
+  address_id: 1,
+  school: {
+    id: 1,
+    name: 'ĐH CNTT An Giang',
+    status: 'accept',
+    createdAt: '2024-01-02T08:42:58.000Z',
+    updatedAt: '2024-01-02T08:42:58.000Z',
+    address_id: 1
+  },
+  faculty: {
+    id: 2,
+    name: 'Kỹ thuật phần mềm',
+    status: 'accept',
+    createdAt: '2024-05-13T02:51:57.000Z',
+    updatedAt: '2024-05-23T03:21:25.000Z',
+    school_id: 1
+  }
+}
+ An Giang 
+ An Giang 
+ An Giang ĐH CNTT An Giang
+  
+User ZutfxQ4KkwFzk-hvAAAR joined room: 70
+User aM48lCk2rRBQO7T7AAAT joined room: 70
+data sent from client : 
+{
+  room: 70,
+  message: [ 'hello' ],
+  user: {
+    id: 1,
+    user_name: 'Tráng',
+    phone: '038664039',
+    pass: '$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy',
+    avatar: '/uploads/1716537347350000.png',
+    role: 1,
+    address_detail: 'Lào Cai',
+    gender: 'Nam',
+    email: 'seotrangbh24@gmail.com',
+    date_of_birth: '10/12/2001',
+    background: '/uploads/1714736655167028.jpg',
+    is_public_birth: 0,
+    verifyEmail: true,
+    address_id_work: 'An Giang',
+    createdAt: '2023-12-29T01:31:57.000Z',
+    updatedAt: '2024-05-24T09:04:07.000Z',
+    school_id: 1,
+    faculty_id: 1,
+    address_id: 1,
+    school: {
+      id: 1,
+      name: 'ĐH CNTT An Giang',
+      status: 'accept',
+      createdAt: '2024-01-02T08:42:58.000Z',
+      updatedAt: '2024-01-02T08:42:58.000Z',
+      address_id: 1
+    },
+    faculty: {
+      id: 1,
+      name: 'Công nghệ thông tin',
+      status: 'accept',
+      createdAt: '2024-05-10T04:06:14.000Z',
+      updatedAt: '2024-05-23T03:21:27.000Z',
+      school_id: 1
+    }
+  },
+  type: 'text',
+  userIds: [
+    {
+      id: 1,
+      user_name: 'Tráng',
+      phone: '038664039',
+      pass: '$2a$10$i5SLAFmigQOubOeXRiRFKeeopBJYxKWweX9A0XlOct7WzvKy0jxsy',
+      avatar: '/uploads/1716537347350000.png',
+      role: 1,
+      address_detail: 'Lào Cai',
+      gender: 'Nam',
+      email: 'seotrangbh24@gmail.com',
+      date_of_birth: '10/12/2001',
+      background: '/uploads/1714736655167028.jpg',
+      is_public_birth: 0,
+      verifyEmail: true,
+      address_id_work: 'An Giang',
+      createdAt: '2023-12-29T01:31:57.000Z',
+      updatedAt: '2024-05-24T09:04:07.000Z',
+      school_id: 1,
+      faculty_id: 1,
+      address_id: 1,
+      user_conversations: [Object]
+    },
+    {
+      id: 5,
+      user_name: 'Lý Nam Phương',
+      phone: '038664065',
+      pass: '$2a$10$MiL7SECPtvh4RcjAoO9WH.6OLQ4SJ0tZF1axoHl0yyVuNRQMeJc0W',
+      avatar: '/uploads/1716538984425000.jpg',
+      role: 0,
+      address_detail: 'Yên Bái',
+      gender: 'Nam',
+      email: 'lynamphuong@gmail.com',
+      date_of_birth: '2001-12-14 00:00:00.000',
+      background: '/uploads/1714736655167028.jpg',
+      is_public_birth: 0,
+      verifyEmail: true,
+      address_id_work: 'An Giang',
+      createdAt: '2024-01-03T03:21:46.000Z',
+      updatedAt: '2024-05-24T08:23:14.000Z',
+      school_id: 1,
+      faculty_id: 2,
+      address_id: 1,
+      user_conversations: [Object]
+    }
+  ]
+}
+[
+  socketids {
+    dataValues: {
+      socketid: '-lBBrCDPPgHp-DYAAAAF',
+      createdAt: 2024-04-28T16:38:42.000Z,
+      updatedAt: 2024-04-28T16:38:42.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: '-lBBrCDPPgHp-DYAAAAF',
+      createdAt: 2024-04-28T16:38:42.000Z,
+      updatedAt: 2024-04-28T16:38:42.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: '-OV867lAM7knlD63AAAN',
+      createdAt: 2024-04-29T15:04:16.000Z,
+      updatedAt: 2024-04-29T15:04:16.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: '-OV867lAM7knlD63AAAN',
+      createdAt: 2024-04-29T15:04:16.000Z,
+      updatedAt: 2024-04-29T15:04:16.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: '-tWl47aePBbuwBijAAAB',
+      createdAt: 2024-05-03T04:14:42.000Z,
+      updatedAt: 2024-05-03T04:14:42.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: '-tWl47aePBbuwBijAAAB',
+      createdAt: 2024-05-03T04:14:42.000Z,
+      updatedAt: 2024-05-03T04:14:42.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: '064Vwi9mUsTeX1ELAAAF',
+      createdAt: 2024-05-11T16:00:20.000Z,
+      updatedAt: 2024-05-11T16:00:20.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: '064Vwi9mUsTeX1ELAAAF',
+      createdAt: 2024-05-11T16:00:20.000Z,
+      updatedAt: 2024-05-11T16:00:20.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: '2YZHHWiR_4JewhGmAAAB',
+      createdAt: 2024-05-22T01:55:11.000Z,
+      updatedAt: 2024-05-22T01:55:11.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: '2YZHHWiR_4JewhGmAAAB',
+      createdAt: 2024-05-22T01:55:11.000Z,
+      updatedAt: 2024-05-22T01:55:11.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: '4xwb10KAf9_etwdcAAAJ',
+      createdAt: 2024-05-03T03:12:14.000Z,
+      updatedAt: 2024-05-03T03:12:14.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: '4xwb10KAf9_etwdcAAAJ',
+      createdAt: 2024-05-03T03:12:14.000Z,
+      updatedAt: 2024-05-03T03:12:14.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: '67SxJBTBf3JnCL8YAAAD',
+      createdAt: 2024-05-03T03:11:55.000Z,
+      updatedAt: 2024-05-03T03:11:55.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: '67SxJBTBf3JnCL8YAAAD',
+      createdAt: 2024-05-03T03:11:55.000Z,
+      updatedAt: 2024-05-03T03:11:55.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: '8cqJeNeakV36OAaEAAAF',
+      createdAt: 2024-04-28T16:42:10.000Z,
+      updatedAt: 2024-04-28T16:42:10.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: '8cqJeNeakV36OAaEAAAF',
+      createdAt: 2024-04-28T16:42:10.000Z,
+      updatedAt: 2024-04-28T16:42:10.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: '98ib2SMR6oaqD2ooAAAJ',
+      createdAt: 2024-05-03T04:01:24.000Z,
+      updatedAt: 2024-05-03T04:01:24.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: '98ib2SMR6oaqD2ooAAAJ',
+      createdAt: 2024-05-03T04:01:24.000Z,
+      updatedAt: 2024-05-03T04:01:24.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'a0ifa-nuQTqOYDvlAAAH',
+      createdAt: 2024-04-28T16:48:52.000Z,
+      updatedAt: 2024-04-28T16:48:52.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'a0ifa-nuQTqOYDvlAAAH',
+      createdAt: 2024-04-28T16:48:52.000Z,
+      updatedAt: 2024-04-28T16:48:52.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'A8VMF_b-oWK6JxcHAAAD',
+      createdAt: 2024-05-03T04:20:17.000Z,
+      updatedAt: 2024-05-03T04:20:17.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'A8VMF_b-oWK6JxcHAAAD',
+      createdAt: 2024-05-03T04:20:17.000Z,
+      updatedAt: 2024-05-03T04:20:17.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'aGshKcU26vVYFzWaAAAF',
+      createdAt: 2024-05-03T04:15:24.000Z,
+      updatedAt: 2024-05-03T04:15:24.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'aGshKcU26vVYFzWaAAAF',
+      createdAt: 2024-05-03T04:15:24.000Z,
+      updatedAt: 2024-05-03T04:15:24.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'aLjkkBvi_FTU6qbFAAAF',
+      createdAt: 2024-05-24T07:23:25.000Z,
+      updatedAt: 2024-05-24T07:23:25.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'aLjkkBvi_FTU6qbFAAAF',
+      createdAt: 2024-05-24T07:23:25.000Z,
+      updatedAt: 2024-05-24T07:23:25.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'ao7xkFIQX1oRVTz5AAAP',
+      createdAt: 2024-05-13T03:11:29.000Z,
+      updatedAt: 2024-05-13T03:11:29.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'ao7xkFIQX1oRVTz5AAAP',
+      createdAt: 2024-05-13T03:11:29.000Z,
+      updatedAt: 2024-05-13T03:11:29.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'BFJmN7SVyzmLSnHkAAAF',
+      createdAt: 2024-04-28T16:32:56.000Z,
+      updatedAt: 2024-04-28T16:32:56.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'BFJmN7SVyzmLSnHkAAAF',
+      createdAt: 2024-04-28T16:32:56.000Z,
+      updatedAt: 2024-04-28T16:32:56.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'bMOUSYTp3KSLMpaBAAAF',
+      createdAt: 2024-05-03T03:10:24.000Z,
+      updatedAt: 2024-05-03T03:10:24.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'bMOUSYTp3KSLMpaBAAAF',
+      createdAt: 2024-05-03T03:10:24.000Z,
+      updatedAt: 2024-05-03T03:10:24.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'BoelksIR_-JOVuacAAAD',
+      createdAt: 2024-05-22T02:57:35.000Z,
+      updatedAt: 2024-05-22T02:57:35.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'BoelksIR_-JOVuacAAAD',
+      createdAt: 2024-05-22T02:57:35.000Z,
+      updatedAt: 2024-05-22T02:57:35.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'ccWb97qD8m4k7--6AAAy',
+      createdAt: 2024-05-02T04:01:15.000Z,
+      updatedAt: 2024-05-02T04:01:15.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'ccWb97qD8m4k7--6AAAy',
+      createdAt: 2024-05-02T04:01:15.000Z,
+      updatedAt: 2024-05-02T04:01:15.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'Cd7qQgEu_cK5flsSAAAh',
+      createdAt: 2024-05-14T07:41:29.000Z,
+      updatedAt: 2024-05-14T07:41:29.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'Cd7qQgEu_cK5flsSAAAh',
+      createdAt: 2024-05-14T07:41:29.000Z,
+      updatedAt: 2024-05-14T07:41:29.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'CP9wg3I-LswW-qcCAAAB',
+      createdAt: 2024-05-22T02:45:52.000Z,
+      updatedAt: 2024-05-22T02:45:52.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'CP9wg3I-LswW-qcCAAAB',
+      createdAt: 2024-05-22T02:45:52.000Z,
+      updatedAt: 2024-05-22T02:45:52.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'djBHPc6p2hfEt83JAAAR',
+      createdAt: 2024-04-29T01:06:02.000Z,
+      updatedAt: 2024-04-29T01:06:02.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'djBHPc6p2hfEt83JAAAR',
+      createdAt: 2024-04-29T01:06:02.000Z,
+      updatedAt: 2024-04-29T01:06:02.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'dOoRwjveOVSqKsRuAAAF',
+      createdAt: 2024-05-03T04:18:32.000Z,
+      updatedAt: 2024-05-03T04:18:32.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'dOoRwjveOVSqKsRuAAAF',
+      createdAt: 2024-05-03T04:18:32.000Z,
+      updatedAt: 2024-05-03T04:18:32.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'DsxQqqVhD-53B1hqAAAD',
+      createdAt: 2024-05-22T02:10:02.000Z,
+      updatedAt: 2024-05-22T02:10:02.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'DsxQqqVhD-53B1hqAAAD',
+      createdAt: 2024-05-22T02:10:02.000Z,
+      updatedAt: 2024-05-22T02:10:02.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'dZPqSmQOXZsMHFNmAAAB',
+      createdAt: 2024-05-22T02:43:29.000Z,
+      updatedAt: 2024-05-22T02:43:29.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'dZPqSmQOXZsMHFNmAAAB',
+      createdAt: 2024-05-22T02:43:29.000Z,
+      updatedAt: 2024-05-22T02:43:29.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'f-RlWtRJNchnbecDAAAF',
+      createdAt: 2024-05-03T03:06:43.000Z,
+      updatedAt: 2024-05-03T03:06:43.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'f-RlWtRJNchnbecDAAAF',
+      createdAt: 2024-05-03T03:06:43.000Z,
+      updatedAt: 2024-05-03T03:06:43.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'FAEhYEm0yBZOEfZwAAAH',
+      createdAt: 2024-05-09T03:47:17.000Z,
+      updatedAt: 2024-05-09T03:47:17.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'FAEhYEm0yBZOEfZwAAAH',
+      createdAt: 2024-05-09T03:47:17.000Z,
+      updatedAt: 2024-05-09T03:47:17.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'Fei614UF7y5hniPTAAAH',
+      createdAt: 2024-05-03T04:16:46.000Z,
+      updatedAt: 2024-05-03T04:16:46.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'Fei614UF7y5hniPTAAAH',
+      createdAt: 2024-05-03T04:16:46.000Z,
+      updatedAt: 2024-05-03T04:16:46.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'FmD9gyy_KwZXBeMNAAAD',
+      createdAt: 2024-05-09T03:08:00.000Z,
+      updatedAt: 2024-05-09T03:08:00.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'FmD9gyy_KwZXBeMNAAAD',
+      createdAt: 2024-05-09T03:08:00.000Z,
+      updatedAt: 2024-05-09T03:08:00.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'FuHphe9sn-cnmvtSAAAD',
+      createdAt: 2024-05-03T04:15:22.000Z,
+      updatedAt: 2024-05-03T04:15:22.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'FuHphe9sn-cnmvtSAAAD',
+      createdAt: 2024-05-03T04:15:22.000Z,
+      updatedAt: 2024-05-03T04:15:22.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'g5ZogyWReJWMq63ZAAAF',
+      createdAt: 2024-05-22T02:56:50.000Z,
+      updatedAt: 2024-05-22T02:56:50.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'g5ZogyWReJWMq63ZAAAF',
+      createdAt: 2024-05-22T02:56:50.000Z,
+      updatedAt: 2024-05-22T02:56:50.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'GscQxeneQphqs3RhAAAF',
+      createdAt: 2024-05-09T03:46:02.000Z,
+      updatedAt: 2024-05-09T03:46:02.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'GscQxeneQphqs3RhAAAF',
+      createdAt: 2024-05-09T03:46:02.000Z,
+      updatedAt: 2024-05-09T03:46:02.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'h0nNE6qf28OHBd5gAAAJ',
+      createdAt: 2024-04-28T17:02:18.000Z,
+      updatedAt: 2024-04-28T17:02:18.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'h0nNE6qf28OHBd5gAAAJ',
+      createdAt: 2024-04-28T17:02:18.000Z,
+      updatedAt: 2024-04-28T17:02:18.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'Hu4mPJiP9r08V7x1AAAB',
+      createdAt: 2024-05-16T02:14:19.000Z,
+      updatedAt: 2024-05-16T02:14:19.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'Hu4mPJiP9r08V7x1AAAB',
+      createdAt: 2024-05-16T02:14:19.000Z,
+      updatedAt: 2024-05-16T02:14:19.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'iWxmEkHmPP-_pgQ3AAAF',
+      createdAt: 2024-04-28T16:01:36.000Z,
+      updatedAt: 2024-04-28T16:01:36.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'iWxmEkHmPP-_pgQ3AAAF',
+      createdAt: 2024-04-28T16:01:36.000Z,
+      updatedAt: 2024-04-28T16:01:36.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'JnLaiwKDGEiJxRy1AAAF',
+      createdAt: 2024-04-28T16:34:34.000Z,
+      updatedAt: 2024-04-28T16:34:34.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'JnLaiwKDGEiJxRy1AAAF',
+      createdAt: 2024-04-28T16:34:34.000Z,
+      updatedAt: 2024-04-28T16:34:34.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'KQdF3_enKgpDdPeKAAAD',
+      createdAt: 2024-05-03T04:15:56.000Z,
+      updatedAt: 2024-05-03T04:15:56.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'KQdF3_enKgpDdPeKAAAD',
+      createdAt: 2024-05-03T04:15:56.000Z,
+      updatedAt: 2024-05-03T04:15:56.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'K_6A_d4qKMO1huPpAAAD',
+      createdAt: 2024-04-28T16:22:48.000Z,
+      updatedAt: 2024-04-28T16:22:48.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'K_6A_d4qKMO1huPpAAAD',
+      createdAt: 2024-04-28T16:22:48.000Z,
+      updatedAt: 2024-04-28T16:22:48.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'NBQ4vVYwCqtf9pf_AAAF',
+      createdAt: 2024-05-13T02:46:36.000Z,
+      updatedAt: 2024-05-13T02:46:36.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'NBQ4vVYwCqtf9pf_AAAF',
+      createdAt: 2024-05-13T02:46:36.000Z,
+      updatedAt: 2024-05-13T02:46:36.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'ND51CgD_frrMYenRAAAF',
+      createdAt: 2024-05-24T07:09:06.000Z,
+      updatedAt: 2024-05-24T07:09:06.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'ND51CgD_frrMYenRAAAF',
+      createdAt: 2024-05-24T07:09:06.000Z,
+      updatedAt: 2024-05-24T07:09:06.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'od5uCg64D218D1iIAAAP',
+      createdAt: 2024-05-22T02:39:50.000Z,
+      updatedAt: 2024-05-22T02:39:50.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'od5uCg64D218D1iIAAAP',
+      createdAt: 2024-05-22T02:39:50.000Z,
+      updatedAt: 2024-05-22T02:39:50.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'Om-gQ8PiX4WHugOeAAAE',
+      createdAt: 2024-05-22T02:28:43.000Z,
+      updatedAt: 2024-05-22T02:28:43.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'Om-gQ8PiX4WHugOeAAAE',
+      createdAt: 2024-05-22T02:28:43.000Z,
+      updatedAt: 2024-05-22T02:28:43.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'OrncwWsNSRVv7yH2AAAF',
+      createdAt: 2024-04-28T16:44:26.000Z,
+      updatedAt: 2024-04-28T16:44:26.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'OrncwWsNSRVv7yH2AAAF',
+      createdAt: 2024-04-28T16:44:26.000Z,
+      updatedAt: 2024-04-28T16:44:26.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'pyvp7qIlEXOdRpfGAAAD',
+      createdAt: 2024-05-09T08:25:54.000Z,
+      updatedAt: 2024-05-09T08:25:54.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'pyvp7qIlEXOdRpfGAAAD',
+      createdAt: 2024-05-09T08:25:54.000Z,
+      updatedAt: 2024-05-09T08:25:54.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'qGyZ9SVno9Wp34huAAAl',
+      createdAt: 2024-04-29T17:11:16.000Z,
+      updatedAt: 2024-04-29T17:11:16.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'qGyZ9SVno9Wp34huAAAl',
+      createdAt: 2024-04-29T17:11:16.000Z,
+      updatedAt: 2024-04-29T17:11:16.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'QQEKfHZvyOs4YG-YAAAD',
+      createdAt: 2024-05-22T01:58:29.000Z,
+      updatedAt: 2024-05-22T01:58:29.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'QQEKfHZvyOs4YG-YAAAD',
+      createdAt: 2024-05-22T01:58:29.000Z,
+      updatedAt: 2024-05-22T01:58:29.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'r6ijNh77Iv6HbrYMAAAH',
+      createdAt: 2024-04-28T16:53:57.000Z,
+      updatedAt: 2024-04-28T16:53:57.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'r6ijNh77Iv6HbrYMAAAH',
+      createdAt: 2024-04-28T16:53:57.000Z,
+      updatedAt: 2024-04-28T16:53:57.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'rfo72FLddTtooss4AAAB',
+      createdAt: 2024-05-24T06:15:10.000Z,
+      updatedAt: 2024-05-24T06:15:10.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'rfo72FLddTtooss4AAAB',
+      createdAt: 2024-05-24T06:15:10.000Z,
+      updatedAt: 2024-05-24T06:15:10.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'SdgmkSZcByE2lg4qAAAD',
+      createdAt: 2024-05-22T02:22:47.000Z,
+      updatedAt: 2024-05-22T02:22:47.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'SdgmkSZcByE2lg4qAAAD',
+      createdAt: 2024-05-22T02:22:47.000Z,
+      updatedAt: 2024-05-22T02:22:47.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'sLyGhQ4IKHOANYbWAAAJ',
+      createdAt: 2024-04-28T16:04:03.000Z,
+      updatedAt: 2024-04-28T16:04:03.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'sLyGhQ4IKHOANYbWAAAJ',
+      createdAt: 2024-04-28T16:04:03.000Z,
+      updatedAt: 2024-04-28T16:04:03.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'T3MHTedtvHcxUzYrAAAH',
+      createdAt: 2024-04-28T15:48:28.000Z,
+      updatedAt: 2024-04-28T15:48:28.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'T3MHTedtvHcxUzYrAAAH',
+      createdAt: 2024-04-28T15:48:28.000Z,
+      updatedAt: 2024-04-28T15:48:28.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'tALc2pxNhxEGK1bcAAAF',
+      createdAt: 2024-05-03T03:11:15.000Z,
+      updatedAt: 2024-05-03T03:11:15.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'tALc2pxNhxEGK1bcAAAF',
+      createdAt: 2024-05-03T03:11:15.000Z,
+      updatedAt: 2024-05-03T03:11:15.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'UinAzVMSUCKFJZZbAAAF',
+      createdAt: 2024-05-09T03:40:10.000Z,
+      updatedAt: 2024-05-09T03:40:10.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'UinAzVMSUCKFJZZbAAAF',
+      createdAt: 2024-05-09T03:40:10.000Z,
+      updatedAt: 2024-05-09T03:40:10.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'V1RKbfX1C_fFZWMvAAAD',
+      createdAt: 2024-05-03T04:27:32.000Z,
+      updatedAt: 2024-05-03T04:27:32.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'V1RKbfX1C_fFZWMvAAAD',
+      createdAt: 2024-05-03T04:27:32.000Z,
+      updatedAt: 2024-05-03T04:27:32.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'vh5_K4p2f5rchfUkAAAB',
+      createdAt: 2024-05-22T01:43:32.000Z,
+      updatedAt: 2024-05-22T01:43:32.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'vh5_K4p2f5rchfUkAAAB',
+      createdAt: 2024-05-22T01:43:32.000Z,
+      updatedAt: 2024-05-22T01:43:32.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'vNCKrQckeZkDcpeOAAAD',
+      createdAt: 2024-05-24T07:17:54.000Z,
+      updatedAt: 2024-05-24T07:17:54.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'vNCKrQckeZkDcpeOAAAD',
+      createdAt: 2024-05-24T07:17:54.000Z,
+      updatedAt: 2024-05-24T07:17:54.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'xlv1i59Ace9u4qXSAAAB',
+      createdAt: 2024-05-22T02:24:17.000Z,
+      updatedAt: 2024-05-22T02:24:17.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'xlv1i59Ace9u4qXSAAAB',
+      createdAt: 2024-05-22T02:24:17.000Z,
+      updatedAt: 2024-05-22T02:24:17.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'yzNMpKPQM6VWHiq9AAAD',
+      createdAt: 2024-05-03T03:03:23.000Z,
+      updatedAt: 2024-05-03T03:03:23.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'yzNMpKPQM6VWHiq9AAAD',
+      createdAt: 2024-05-03T03:03:23.000Z,
+      updatedAt: 2024-05-03T03:03:23.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'ZSrRKqtZ0X2aPOIyAAAF',
+      createdAt: 2024-04-28T15:43:40.000Z,
+      updatedAt: 2024-04-28T15:43:40.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'ZSrRKqtZ0X2aPOIyAAAF',
+      createdAt: 2024-04-28T15:43:40.000Z,
+      updatedAt: 2024-04-28T15:43:40.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'ZutfxQ4KkwFzk-hvAAAR',
+      createdAt: 2024-05-24T15:07:12.000Z,
+      updatedAt: 2024-05-24T15:07:12.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: 'ZutfxQ4KkwFzk-hvAAAR',
+      createdAt: 2024-05-24T15:07:12.000Z,
+      updatedAt: 2024-05-24T15:07:12.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: '_I5qVkO5_M4l_viHAAAF',
+      createdAt: 2024-04-28T16:59:19.000Z,
+      updatedAt: 2024-04-28T16:59:19.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: '_I5qVkO5_M4l_viHAAAF',
+      createdAt: 2024-04-28T16:59:19.000Z,
+      updatedAt: 2024-04-28T16:59:19.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: '_UTNXWPS3tNd--WMAAAR',
+      createdAt: 2024-05-13T01:59:57.000Z,
+      updatedAt: 2024-05-13T01:59:57.000Z,
+      user_id: 1
+    },
+    _previousDataValues: {
+      socketid: '_UTNXWPS3tNd--WMAAAR',
+      createdAt: 2024-05-13T01:59:57.000Z,
+      updatedAt: 2024-05-13T01:59:57.000Z,
+      user_id: 1
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  }
+]
+[
+  socketids {
+    dataValues: {
+      socketid: '0M4yEMT7361BtHwzAAAh',
+      createdAt: 2024-05-20T04:22:53.000Z,
+      updatedAt: 2024-05-20T04:22:53.000Z,
+      user_id: 5
+    },
+    _previousDataValues: {
+      socketid: '0M4yEMT7361BtHwzAAAh',
+      createdAt: 2024-05-20T04:22:53.000Z,
+      updatedAt: 2024-05-20T04:22:53.000Z,
+      user_id: 5
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: '0SjdrrBDPXrcCXdBAAAD',
+      createdAt: 2024-05-09T02:38:01.000Z,
+      updatedAt: 2024-05-09T02:38:01.000Z,
+      user_id: 5
+    },
+    _previousDataValues: {
+      socketid: '0SjdrrBDPXrcCXdBAAAD',
+      createdAt: 2024-05-09T02:38:01.000Z,
+      updatedAt: 2024-05-09T02:38:01.000Z,
+      user_id: 5
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: '8nd9_TWim3nZI3hUAAAB',
+      createdAt: 2024-05-09T07:52:26.000Z,
+      updatedAt: 2024-05-09T07:52:26.000Z,
+      user_id: 5
+    },
+    _previousDataValues: {
+      socketid: '8nd9_TWim3nZI3hUAAAB',
+      createdAt: 2024-05-09T07:52:26.000Z,
+      updatedAt: 2024-05-09T07:52:26.000Z,
+      user_id: 5
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'aM48lCk2rRBQO7T7AAAT',
+      createdAt: 2024-05-24T15:07:28.000Z,
+      updatedAt: 2024-05-24T15:07:28.000Z,
+      user_id: 5
+    },
+    _previousDataValues: {
+      socketid: 'aM48lCk2rRBQO7T7AAAT',
+      createdAt: 2024-05-24T15:07:28.000Z,
+      updatedAt: 2024-05-24T15:07:28.000Z,
+      user_id: 5
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'apHbZhX0b9p9aDAzAAAD',
+      createdAt: 2024-05-09T02:47:43.000Z,
+      updatedAt: 2024-05-09T02:47:43.000Z,
+      user_id: 5
+    },
+    _previousDataValues: {
+      socketid: 'apHbZhX0b9p9aDAzAAAD',
+      createdAt: 2024-05-09T02:47:43.000Z,
+      updatedAt: 2024-05-09T02:47:43.000Z,
+      user_id: 5
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'bp2iIzrfTMTdPFHdAAAH',
+      createdAt: 2024-05-24T08:21:26.000Z,
+      updatedAt: 2024-05-24T08:21:26.000Z,
+      user_id: 5
+    },
+    _previousDataValues: {
+      socketid: 'bp2iIzrfTMTdPFHdAAAH',
+      createdAt: 2024-05-24T08:21:26.000Z,
+      updatedAt: 2024-05-24T08:21:26.000Z,
+      user_id: 5
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'cMKUFemxTJWV5ECpAAAL',
+      createdAt: 2024-05-24T08:45:46.000Z,
+      updatedAt: 2024-05-24T08:45:46.000Z,
+      user_id: 5
+    },
+    _previousDataValues: {
+      socketid: 'cMKUFemxTJWV5ECpAAAL',
+      createdAt: 2024-05-24T08:45:46.000Z,
+      updatedAt: 2024-05-24T08:45:46.000Z,
+      user_id: 5
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'EY6VniN2iVxxBHYSAAAH',
+      createdAt: 2024-05-24T07:24:59.000Z,
+      updatedAt: 2024-05-24T07:24:59.000Z,
+      user_id: 5
+    },
+    _previousDataValues: {
+      socketid: 'EY6VniN2iVxxBHYSAAAH',
+      createdAt: 2024-05-24T07:24:59.000Z,
+      updatedAt: 2024-05-24T07:24:59.000Z,
+      user_id: 5
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'fCwuPBvp8M7wBa_kAAAD',
+      createdAt: 2024-04-28T16:07:32.000Z,
+      updatedAt: 2024-04-28T16:07:32.000Z,
+      user_id: 5
+    },
+    _previousDataValues: {
+      socketid: 'fCwuPBvp8M7wBa_kAAAD',
+      createdAt: 2024-04-28T16:07:32.000Z,
+      updatedAt: 2024-04-28T16:07:32.000Z,
+      user_id: 5
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'hvu9fYwmCC4YkUbmAAAH',
+      createdAt: 2024-05-24T07:52:54.000Z,
+      updatedAt: 2024-05-24T07:52:54.000Z,
+      user_id: 5
+    },
+    _previousDataValues: {
+      socketid: 'hvu9fYwmCC4YkUbmAAAH',
+      createdAt: 2024-05-24T07:52:54.000Z,
+      updatedAt: 2024-05-24T07:52:54.000Z,
+      user_id: 5
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'iIB_5MTURLlR9dRQAAAH',
+      createdAt: 2024-04-28T16:02:59.000Z,
+      updatedAt: 2024-04-28T16:02:59.000Z,
+      user_id: 5
+    },
+    _previousDataValues: {
+      socketid: 'iIB_5MTURLlR9dRQAAAH',
+      createdAt: 2024-04-28T16:02:59.000Z,
+      updatedAt: 2024-04-28T16:02:59.000Z,
+      user_id: 5
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'IQOV6dp8bK5zSVkSAAAP',
+      createdAt: 2024-04-29T15:05:26.000Z,
+      updatedAt: 2024-04-29T15:05:26.000Z,
+      user_id: 5
+    },
+    _previousDataValues: {
+      socketid: 'IQOV6dp8bK5zSVkSAAAP',
+      createdAt: 2024-04-29T15:05:26.000Z,
+      updatedAt: 2024-04-29T15:05:26.000Z,
+      user_id: 5
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'I_i37XWDOGfeexAxAAAH',
+      createdAt: 2024-05-24T07:09:48.000Z,
+      updatedAt: 2024-05-24T07:09:48.000Z,
+      user_id: 5
+    },
+    _previousDataValues: {
+      socketid: 'I_i37XWDOGfeexAxAAAH',
+      createdAt: 2024-05-24T07:09:48.000Z,
+      updatedAt: 2024-05-24T07:09:48.000Z,
+      user_id: 5
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'j5cVcdgmzfqPitkdAAAB',
+      createdAt: 2024-05-09T07:35:49.000Z,
+      updatedAt: 2024-05-09T07:35:49.000Z,
+      user_id: 5
+    },
+    _previousDataValues: {
+      socketid: 'j5cVcdgmzfqPitkdAAAB',
+      createdAt: 2024-05-09T07:35:49.000Z,
+      updatedAt: 2024-05-09T07:35:49.000Z,
+      user_id: 5
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'l1GPWQ5jewcrqG2IAAAJ',
+      createdAt: 2024-05-23T02:41:44.000Z,
+      updatedAt: 2024-05-23T02:41:44.000Z,
+      user_id: 5
+    },
+    _previousDataValues: {
+      socketid: 'l1GPWQ5jewcrqG2IAAAJ',
+      createdAt: 2024-05-23T02:41:44.000Z,
+      updatedAt: 2024-05-23T02:41:44.000Z,
+      user_id: 5
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'LJcbrntz0YBiGkZFAAAF',
+      createdAt: 2024-05-09T03:34:59.000Z,
+      updatedAt: 2024-05-09T03:34:59.000Z,
+      user_id: 5
+    },
+    _previousDataValues: {
+      socketid: 'LJcbrntz0YBiGkZFAAAF',
+      createdAt: 2024-05-09T03:34:59.000Z,
+      updatedAt: 2024-05-09T03:34:59.000Z,
+      user_id: 5
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'QfF2d8t0__Z-IY5SAAAz',
+      createdAt: 2024-05-23T02:22:37.000Z,
+      updatedAt: 2024-05-23T02:22:37.000Z,
+      user_id: 5
+    },
+    _previousDataValues: {
+      socketid: 'QfF2d8t0__Z-IY5SAAAz',
+      createdAt: 2024-05-23T02:22:37.000Z,
+      updatedAt: 2024-05-23T02:22:37.000Z,
+      user_id: 5
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'Q_c5ySJDHcNHpy9qAAAD',
+      createdAt: 2024-05-09T03:39:36.000Z,
+      updatedAt: 2024-05-09T03:39:36.000Z,
+      user_id: 5
+    },
+    _previousDataValues: {
+      socketid: 'Q_c5ySJDHcNHpy9qAAAD',
+      createdAt: 2024-05-09T03:39:36.000Z,
+      updatedAt: 2024-05-09T03:39:36.000Z,
+      user_id: 5
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 's1Zk_sP7CkoRNvXsAAAB',
+      createdAt: 2024-05-22T02:15:59.000Z,
+      updatedAt: 2024-05-22T02:15:59.000Z,
+      user_id: 5
+    },
+    _previousDataValues: {
+      socketid: 's1Zk_sP7CkoRNvXsAAAB',
+      createdAt: 2024-05-22T02:15:59.000Z,
+      updatedAt: 2024-05-22T02:15:59.000Z,
+      user_id: 5
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'tqO-_zsEIHtLHG0EAAAf',
+      createdAt: 2024-05-20T04:11:42.000Z,
+      updatedAt: 2024-05-20T04:11:42.000Z,
+      user_id: 5
+    },
+    _previousDataValues: {
+      socketid: 'tqO-_zsEIHtLHG0EAAAf',
+      createdAt: 2024-05-20T04:11:42.000Z,
+      updatedAt: 2024-05-20T04:11:42.000Z,
+      user_id: 5
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'u7kz1ip224iHn13oAAAB',
+      createdAt: 2024-05-09T04:20:41.000Z,
+      updatedAt: 2024-05-09T04:20:41.000Z,
+      user_id: 5
+    },
+    _previousDataValues: {
+      socketid: 'u7kz1ip224iHn13oAAAB',
+      createdAt: 2024-05-09T04:20:41.000Z,
+      updatedAt: 2024-05-09T04:20:41.000Z,
+      user_id: 5
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'vHLWh00wMWOLnnfNAAAd',
+      createdAt: 2024-05-20T03:46:50.000Z,
+      updatedAt: 2024-05-20T03:46:50.000Z,
+      user_id: 5
+    },
+    _previousDataValues: {
+      socketid: 'vHLWh00wMWOLnnfNAAAd',
+      createdAt: 2024-05-20T03:46:50.000Z,
+      updatedAt: 2024-05-20T03:46:50.000Z,
+      user_id: 5
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: 'xBOAkpn9cTFxwCCrAAAB',
+      createdAt: 2024-05-09T02:44:49.000Z,
+      updatedAt: 2024-05-09T02:44:49.000Z,
+      user_id: 5
+    },
+    _previousDataValues: {
+      socketid: 'xBOAkpn9cTFxwCCrAAAB',
+      createdAt: 2024-05-09T02:44:49.000Z,
+      updatedAt: 2024-05-09T02:44:49.000Z,
+      user_id: 5
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  socketids {
+    dataValues: {
+      socketid: '_sV8b_vcZnz-E1fwAAAF',
+      createdAt: 2024-05-24T07:16:02.000Z,
+      updatedAt: 2024-05-24T07:16:02.000Z,
+      user_id: 5
+    },
+    _previousDataValues: {
+      socketid: '_sV8b_vcZnz-E1fwAAAF',
+      createdAt: 2024-05-24T07:16:02.000Z,
+      updatedAt: 2024-05-24T07:16:02.000Z,
+      user_id: 5
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  }
+]
+User disconnected
+User disconnected
+[2024-05-24 15:18:28] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!
+[2024-05-24 15:25:41] DEBUG Creating transport: nodemailer (6.9.13; +https://nodemailer.com/; SMTP/6.9.13[client:6.9.13])
+Socket.IO server is running on wss://localhost:10094
+app running on https://localhost:10093
+Kết nối thành công!
+faculties table created successfully!

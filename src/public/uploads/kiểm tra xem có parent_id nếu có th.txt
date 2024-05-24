@@ -1,0 +1,30 @@
+kiểm tra xem có parent_id nếu có thì kiểm tra xem người đăng bài với parent_id có phải là 1 không.
+ +) nếu là 1 người thì 
+   -) kiểm tra xem đã có người thứ 3 trong bài phải hồi bình luận chưa nếu có thì thông báo (và những người khác đã trả lời bình luận của bạn)
+   -) nếu không có người thứ 3 thì thông báo (đã trả lời bình luận của bạn)
+ +) nếu không phải là 1 thì thông báo ( đã bình luận bài viết của bạn)
+   -) kiểm tra xem có người thứ 3 đã bình luận bài viết chưa nếu có thì thông báo (và những người khác đã bình luận bài viết của bạn)
+   -) nếu không có thì thông báo ( đã bình luận bài viết của bạn)
+nếu không có parent_id thì:
+ +) kiểm tra xem đã có bình luận trước đó chưa
+   -) nếu chưa có thì thông báo( đã bình luận bài viết của bạn)
+   -) nếu có thì sửa lại thông báo về trạn thái chưa đọc và sủa thông báo thành (và những người khác đã bình luận bài viết của bạn)
+
+
+
+//để xóa 1 thông báo trước đó thì 
+1. lấy id người đã trả lời bình luận gần nhất
+SELECT user_id
+FROM post_comments
+WHERE post_id = 33 AND parent_id = 33
+ORDER BY createdAt DESC
+LIMIT 1;
+
+
+
+// truy tìm notification object để xóa thông báo
+SELECT notification_changes.*, notification_objects.*
+FROM notification_changes
+JOIN notification_objects on notification_changes.notification_object_id = notification_objects.id
+WHERE notification_changes.actor_id = 1 and notification_objects.entity_id = 33;
+

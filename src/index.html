@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Socket.IO Client</title>
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+  <script>
+    // Kết nối tới máy chủ
+    // const socket = io("wss://117.6.44.200:10099");
+    const socket = io("wss://ea9f-2402-800-613e-55cd-ed3b-a1a3-fc77-42ba.ngrok-free.app");
+    // https://117.6.44.200:10093/
+    // Bắt sự kiện khi kết nối thành công
+    socket.on("connect", () => {
+      console.log("Connected to server");
+    });
+
+    // Bắt sự kiện khi nhận được tin nhắn từ máy chủ
+    socket.on("message", (data) => {
+      console.log("Received message from server:", data);
+    });
+
+    // Gửi tin nhắn tới máy chủ
+    function sendMessage() {
+      const message = document.getElementById("messageInput").value;
+      socket.emit("message", message);
+    }
+  </script>
+</head>
+<body>
+  <h1>Socket.IO Client</h1>
+  <input type="text" id="messageInput" placeholder="Type your message">
+  <button onclick="sendMessage()">Send</button>
+</body>
+</html>
